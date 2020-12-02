@@ -27,14 +27,13 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
+        <title>Remote Jamstack</title>
       </Head>
 
       <div>
-        <h1>My Job Board</h1>
+        <h1 className='p-10 font-bold text-center'>Remote Jamstack</h1>
 
-        {jobPosts.length > 0
+        {/**jobPosts.length > 0
           ? jobPosts.map((job) => (
               <div>
                 <img src={job.companyImage} />
@@ -45,7 +44,7 @@ export default function Home() {
                 <p>{job.createdAt}</p>
               </div>
             ))
-          : null}
+          : null**/}
       </div>
     </div>
   )
