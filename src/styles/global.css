@@ -1,0 +1,18 @@
+@tailwind base;
+
+@layer base {
+  html,
+  body {
+    @apply bg-theme-black;
+  }
+}
+
+@tailwind components;
+
+@layer components {
+}
+
+@tailwind utilities;
+
+@layer utilities {
+}

@@ -30,9 +30,24 @@ export default function Home() {
         <title>Remote Jamstack</title>
       </Head>
 
+      <div className='p-20 text-center'>
+        <div className='text-2xl text-white'>
+          Remote <span className='font-bold'>Jamstack</span>
+        </div>
+        <h1 className='py-20 text-5xl font-medium text-white'>
+          Remote jobs for the{' '}
+          <span className='block pt-2 text-theme-red'>Jamstack ecosystem</span>
+        </h1>
+        <p className='text-lg text-white'>Coming soon.</p>
+        {/*<nav>
+          <ul className='text-white'>
+            <li>Jobs</li>
+            <li>Employers</li>
+            <li className='px-4 py-2 bg-theme-blue'>Post a Job</li>
+          </ul>
+        </nav>*/}
+      </div>
       <div>
-        <h1 className='p-10 font-bold text-center'>Remote Jamstack</h1>
-
         {/**jobPosts.length > 0
           ? jobPosts.map((job) => (
               <div>
