@@ -30,7 +30,7 @@ export default function Home() {
         <title>Remote Jamstack</title>
       </Head>
 
-      <div className='p-20 text-center'>
+      <div className='px-10 py-20 text-center'>
         <div className='text-2xl text-white'>
           Remote <span className='font-bold'>Jamstack</span>
         </div>
