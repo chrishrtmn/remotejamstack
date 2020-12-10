@@ -1,4 +1,4 @@
-import { AuthProvider } from '../libraries/firebase-auth'
+import { AuthProvider } from '../utilities/firebase-auth'
 
 import '../styles/global.css'
 

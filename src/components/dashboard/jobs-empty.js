@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Shell from './shell'
+import Shell from './dashboard-shell'
 
 const JobsEmpty = () => (
   <Shell>

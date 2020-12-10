@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import { useAuth } from '../libraries/firebase-auth'
+import { useAuth } from '../utilities/firebase-auth'
 
 import Header from '../components/header'
 
