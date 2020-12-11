@@ -13,7 +13,7 @@ const Masthead = () => {
       <div>
         <Link href='/job/create'>
           <a className='inline-block px-8 py-2 mx-4 text-lg font-medium text-white bg-blue-700 rounded-md hover:bg-blue-800'>
-            Submit Job
+            Post a Job
           </a>
         </Link>
         <Link href='/about'>

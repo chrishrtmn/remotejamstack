@@ -33,7 +33,7 @@ const Header = () => {
             <div className='flex'>
               <Link href='/jobs'>
                 <a className='pt-2 font-medium text-gray-700 text-md hover:text-blue-700'>
-                  Remote Jobs
+                  Browse Jobs
                 </a>
               </Link>
               <Link href='/about'>
@@ -51,7 +51,7 @@ const Header = () => {
                 <>
                   <Link href='/job/create'>
                     <a className='inline-block px-4 py-2 mx-8 font-medium text-white bg-blue-700 border border-opacity-0 rounded-md hover:bg-blue-800'>
-                      Submit Job
+                      Post a Job
                     </a>
                   </Link>
                   <div className='relative'>

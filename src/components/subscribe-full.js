@@ -9,16 +9,16 @@ const SubscribeFull = () => {
             Sign up for our newsletter
           </h3>
           <p className='mt-6 text-xl text-blue-200'>
-            Receive weekly featured jobs, new blog posts, and feature updates.
+            Receive weekly job alerts, new blog posts, and feature updates.
           </p>
         </div>
         <div>
           <form className='flex inline-block p-1 bg-white rounded-md'>
             <input
               placeholder='Enter your email'
-              class='flex-grow px-1 py-2 text-lg px-3 focus:outline-none focus:ring-2 text-gray-800 focus:ring-blue-400 focus:border-transparent rounded-tl-md rounded-bl-md'
+              className='flex-grow px-1 px-3 py-2 text-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent rounded-tl-md rounded-bl-md'
             />
-            <button class='ml-1 bg-blue-700 hover:bg-blue-800 focus:outline-none rounded-tr-md rounded-br-md py-2 px-4 font-medium text-lg text-white'>
+            <button className='px-4 py-2 ml-1 text-lg font-medium text-white bg-blue-700 hover:bg-blue-800 focus:outline-none rounded-tr-md rounded-br-md'>
               Subscribe
             </button>
           </form>
