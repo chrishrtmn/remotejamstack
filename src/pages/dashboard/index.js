@@ -3,23 +3,21 @@ import Link from 'next/link'
 
 import { useAuth } from '../../utilities/firebase-auth'
 
-import Header from '../../components/header'
 import JobsEmpty from '../../components/dashboard/jobs-empty'
-
-//import Subscribe from '../components/subscribe'
+import Jobs from '../../components/dashboard/jobs'
 
 const Dashboard = () => {
   const auth = useAuth()
 
   if (!auth.user) {
     return (
-      <div className='p-10 font-bold text-center'>
+      <div className='p-10 font-medium text-center'>
         Please sign in or{' '}
         <Link href='/'>
           <a className='text-red-500'>go back home</a>
         </Link>
         <br />
-        (This is the loading state too)
+        (This can be the loading state too)
       </div>
     )
   }
@@ -30,11 +28,8 @@ const Dashboard = () => {
         <title>Dashboard - Remote Jamstack</title>
       </Head>
 
-      <Header />
-
-      <div className='p-10 text-center'>
-        <JobsEmpty />
-      </div>
+      <JobsEmpty />
+      {/* <Jobs /> */}
     </>
   )
 }
