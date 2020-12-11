@@ -2,13 +2,13 @@ import Link from 'next/link'
 
 const HeaderBanner = () => {
   return (
-    <div className='relative z-10 bg-blue-700'>
+    <div className='relative z-10 bg-gray-700'>
       <div className='px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8'>
         <div className='flex flex-wrap items-center justify-between'>
           <div className='flex items-center flex-1 w-0'>
-            <span className='flex p-2 bg-blue-800 rounded-md'>
+            <span className='flex p-2 bg-white rounded-md'>
               <svg
-                className='w-6 h-6 text-white'
+                className='w-6 h-6 text-red-500'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
@@ -24,19 +24,18 @@ const HeaderBanner = () => {
             </span>
             <p className='ml-3 font-medium text-white truncate'>
               <span className='md:hidden'>
-                For our new product launch, we're giving out the first 20 job
-                submissions for free!
+                With our Early Access launch, we're giving out the next 20
+                standard job submissions for free!
               </span>
               <span className='hidden md:inline'>
-                Welcome! For our new product launch, we're giving out the first
-                20 job submissions for free!{' '}
-                <span className='text-xs italic'>(Limit 1 per account)</span>
+                Welcome! With our Early Access launch, we're giving out the next
+                20 standard job submissions for free!
               </span>
             </p>
           </div>
           <div className='flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto'>
             <Link href='/about#pricing'>
-              <a className='flex items-center justify-center px-4 py-2 text-sm font-medium text-blue-700 bg-white border border-transparent rounded-md shadow-sm hover:bg-blue-50'>
+              <a className='flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-transparent rounded-md shadow-sm hover:text-gray-900 hover:bg-gray-200'>
                 Learn more
               </a>
             </Link>
@@ -44,7 +43,7 @@ const HeaderBanner = () => {
           <div className='flex-shrink-0 order-2 sm:order-3 sm:ml-3'>
             <button
               type='button'
-              className='flex p-2 -mr-1 rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
+              className='flex p-2 -mr-1 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
             >
               <span className='sr-only'>Dismiss</span>
 

@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-import DashboardShell from './dashboard-shell'
+import Shell from './shell'
 
 const JobsEmpty = () => (
-  <DashboardShell>
+  <Shell>
     <div className='border-4 border-gray-200 border-dashed rounded-md'>
       <div className='p-10 text-center'>
         <h3 className='block text-xl font-bold text-gray-700'>
@@ -17,7 +17,7 @@ const JobsEmpty = () => (
         </Link>
       </div>
     </div>
-  </DashboardShell>
+  </Shell>
 )
 
 export default JobsEmpty

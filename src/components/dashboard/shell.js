@@ -1,6 +1,6 @@
 import { useAuth } from '../../utilities/firebase-auth'
 
-const DashboardShell = ({ children }) => {
+const Shell = ({ children }) => {
   const auth = useAuth()
 
   return (
@@ -18,4 +18,4 @@ const DashboardShell = ({ children }) => {
   )
 }
 
-export default DashboardShell
+export default Shell

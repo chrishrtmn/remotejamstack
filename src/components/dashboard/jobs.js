@@ -1,9 +1,9 @@
-import DashboardShell from './dashboard-shell'
+import Shell from './shell'
 
 const Jobs = () => (
-  <DashboardShell>
+  <Shell>
     <p>Table/list of jobs posted</p>
-  </DashboardShell>
+  </Shell>
 )
 
 export default Jobs

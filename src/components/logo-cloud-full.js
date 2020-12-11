@@ -3,7 +3,7 @@ const LogoCloudFull = () => {
     <div className='py-20 bg-white'>
       <div className='w-full m-auto sm:px-6 lg:px-8 max-w-7xl'>
         <div className='px-10 text-center'>
-          <h2 className='pb-4 text-xl font-medium text-gray-500 uppercase'>
+          <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
             Popular Tags
           </h2>
           <h3 className='pb-12 text-5xl font-bold text-center text-gray-800'>
@@ -11,7 +11,7 @@ const LogoCloudFull = () => {
             <span className='relative z-0'>
               stacks
               <svg
-                className='absolute w-14 h-14 -left-8 -bottom-12'
+                className='absolute w-14 h-14 -left-8 -bottom-11'
                 viewBox='0 0 530 438'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
@@ -26,7 +26,7 @@ const LogoCloudFull = () => {
                 />
               </svg>
               <svg
-                className='absolute transform w-11 h-11 -right-2 -rotate-12 top-2.5'
+                className='absolute transform w-12 h-12 -right-2.5 -rotate-12 top-2.5'
                 viewBox='0 0 312 317'
                 fill='none'
                 xmlns='http://www.w3.org/2000/svg'
@@ -35,53 +35,42 @@ const LogoCloudFull = () => {
                   d='M24.0544 249.929L24.1331 250.019L24.2073 250.113C69.0102 306.553 156.243 292.293 176.444 222.456L176.472 222.359L176.504 222.264C177.142 220.35 177.593 218.228 177.991 216.001C154.063 209.947 130.688 198.315 112.391 182.919C92.9529 166.562 78.8268 145.578 76.5153 122.132L76.5141 122.12L76.513 122.108C74.4894 100.523 84.5837 85.6017 99.6199 79.6593C114.289 73.8617 132.724 76.9873 147.125 89.0435L147.132 89.0491L147.138 89.0547C178.157 115.208 200.546 153.26 203.73 194.272C232.745 197.133 259.673 188.37 274.782 160.855C288.202 136.296 286.094 107.12 274.094 81.2077C262.101 55.3072 240.531 33.3955 216.214 23.5088C210.497 21.5015 209.093 15.8489 210.253 11.7897C210.841 9.72888 212.154 7.654 214.284 6.32229C216.509 4.93194 219.209 4.62042 221.875 5.47317C259.193 16.128 287.15 47.3591 299.574 83.2072C312.018 119.112 309.163 160.51 283.64 191.525L283.626 191.542L283.612 191.559C264.191 214.74 233.819 222.627 202.719 220.113C196.245 261.72 163.181 294.093 124.689 306.924L124.68 306.927L124.67 306.93C77.3348 322.492 34.2887 299.574 7.14023 263.602C5.15576 261.031 4.59286 258.024 5.27948 255.217C5.92691 252.57 7.58472 250.45 9.44678 249.023C12.914 246.365 19.5059 244.73 24.0544 249.929ZM115.863 150.181C130.268 166.721 153.704 181.53 178.445 189.403C175.178 169.331 165.106 149.672 153.297 132.485C143.486 119.001 131.462 105.013 116.63 100.069L116.603 100.06L116.576 100.05C113.775 99.0805 111.889 99.4203 110.458 100.168C108.848 101.009 107.254 102.673 105.803 105.221C102.873 110.364 101.454 117.474 101.172 121.921C100.692 131.828 107.725 141.414 115.756 150.063L115.81 150.121L115.863 150.181Z'
                   fill='#EF4444'
                   stroke='#EF4444'
-                  strokeWidth='10'
+                  strokeWidth='5'
                 />
               </svg>
             </span>
-            .
           </h3>
-          <div className='w-full max-w-xl mx-auto mt-6 text-xl text-gray-500'>
+          {/* <div className='w-full max-w-xl mx-auto mt-6 text-xl text-gray-500'>
             Jobs contain up to three tags related to Jamstack. Here are some of
             the most popular technology stacks.
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='flex w-full mx-auto mt-20 text-center'>
         <span className='flex-1'>
           Next.js
           <br />
-          Tailwind CSS
-          <br />
           Vercel
         </span>
         <span className='flex-1'>
           Gatsby
-          <br />
-          GraphQL
           <br />
           Netlify
         </span>
         <span className='flex-1'>
           React.js
           <br />
-          Contentful
-          <br />
-          Something else
+          Tailwind CSS
         </span>
         <span className='flex-1'>
           Vue.js
           <br />
           Strapi
-          <br />
-          Something else
         </span>
         <span className='flex-1'>
-          5th Stack
+          Contentful
           <br />
-          Something else
-          <br />
-          Something else
+          GraphQL
         </span>
       </div>
     </div>
