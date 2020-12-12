@@ -1,6 +1,6 @@
-const LogoCloudFull = () => {
+const StacksLogoCloudFull = () => {
   return (
-    <div className='py-20 bg-white'>
+    <div className='py-32'>
       <div className='w-full m-auto sm:px-6 lg:px-8 max-w-7xl'>
         <div className='px-10 text-center'>
           <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
@@ -73,4 +73,4 @@ const LogoCloudFull = () => {
   )
 }
 
-export default LogoCloudFull
+export default StacksLogoCloudFull

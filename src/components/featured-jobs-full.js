@@ -3,8 +3,8 @@ import Link from 'next/link'
 const FeaturedJobsFull = () => {
   return (
     <div className='m-auto max-w-7xl sm:px-6 lg:px-8'>
-      <div className='px-10 pt-10 pb-20 text-center'>
-        <span className='inline-block px-3 mb-4 text-xs font-medium leading-6 text-blue-700 bg-blue-100 border border-blue-200 rounded-full'>
+      <div className='px-10 pt-24 pb-32 text-center'>
+        <span className='inline-block px-3 mb-4 text-xs font-medium leading-6 text-red-400 bg-red-100 border border-red-200 rounded-full'>
           Coming Soon
         </span>
         <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
@@ -296,16 +296,16 @@ const FeaturedJobsFull = () => {
             </div>
           </div>
         </div>
-        <div className='max-w-2xl p-5 mx-auto border border-gray-300 border-dashed rounded-md'>
-          <p className='text-gray-500 text-md'>
+        <div className='max-w-2xl p-5 mx-auto border border-red-300 border-dashed rounded-md'>
+          <p className='text-gray-600 text-md'>
             After the{' '}
             <Link href='/pricing#earlyaccess'>
-              <a className='text-blue-700'>Early Access</a>
+              <a className='text-red-500'>Early Access</a>
             </Link>{' '}
             promotion ends, the featured jobs can be submitted and displayed
             above.{' '}
             <Link href='/pricing'>
-              <a className='text-blue-700'>Learn more</a>
+              <a className='text-red-500'>Learn more</a>
             </Link>{' '}
             about our pricing.
           </p>
