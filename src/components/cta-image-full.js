@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
+import { useAuth } from '../utilities/firebase-auth'
+
 const CtaImageFull = () => {
+  const auth = useAuth()
+
+  const href = auth.user ? '/job/create' : '/signup'
+
   return (
     <div className='py-16'>
       <div className='container px-6 m-auto bg-white rounded-md shadow-md'>
@@ -14,13 +20,11 @@ const CtaImageFull = () => {
             <p className='my-4'>
               Our{' '}
               <Link href='/pricing'>
-                <a href='#' className='text-red-500 underline'>
-                  Early Access
-                </a>
+                <a className='text-red-500 underline'>Early Access</a>
               </Link>{' '}
               plan starts at $49.
             </p>
-            <Link href='/job/create'>
+            <Link href={href}>
               <a className='inline-block px-8 py-2 text-lg font-medium text-white bg-red-500 rounded-md hover:bg-red-400'>
                 Post a Job
               </a>
