@@ -13,6 +13,9 @@ module.exports = {
         'red-theme': '#F95C73',
         'blue-theme': '#3C82F4',
       },
+      fontFamily: {
+        cursive: ['Pacifico', 'sans-serif'],
+      },
     },
   },
   variants: {

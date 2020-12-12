@@ -40,10 +40,6 @@ const LogoCloudFull = () => {
               </svg>
             </span>
           </h3>
-          {/* <div className='w-full max-w-xl mx-auto mt-6 text-xl text-gray-500'>
-            Jobs contain up to three tags related to Jamstack. Here are some of
-            the most popular technology stacks.
-          </div> */}
         </div>
       </div>
       <div className='flex w-full mx-auto mt-20 text-center'>

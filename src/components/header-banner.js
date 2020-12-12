@@ -35,7 +35,7 @@ const HeaderBanner = () => {
           </div>
           <div className='flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto'>
             <Link href='/about#pricing'>
-              <a className='flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-transparent rounded-md shadow-sm hover:text-gray-900 hover:bg-gray-200'>
+              <a className='flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-800 bg-white border border-transparent rounded-md shadow-sm hover:text-gray-900 hover:bg-gray-200'>
                 Learn more
               </a>
             </Link>

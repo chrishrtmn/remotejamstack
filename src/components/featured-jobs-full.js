@@ -4,13 +4,13 @@ const FeaturedJobsFull = () => {
   return (
     <div className='m-auto max-w-7xl sm:px-6 lg:px-8'>
       <div className='px-10 pt-10 pb-20 text-center'>
-        <span class='inline-block mb-4 px-3 text-xs leading-6 font-medium rounded-full border-blue-200 border bg-blue-100 text-blue-700'>
+        <span className='inline-block px-3 mb-4 text-xs font-medium leading-6 text-blue-700 bg-blue-100 border border-blue-200 rounded-full'>
           Coming Soon
         </span>
         <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
           Featured Jobs
         </h2>
-        <h3 className='pb-12 text-5xl font-bold text-center text-gray-700'>
+        <h3 className='pb-12 text-5xl font-bold text-center text-gray-800'>
           Drop it{' '}
           <span className='relative z-0 inline-block w-1'>
             <svg
@@ -69,7 +69,7 @@ const FeaturedJobsFull = () => {
                   fill='#EF4444'
                 />
               </svg>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 Open Position
               </p>
               <p className='text-gray-500'>Your Company Name</p>
@@ -106,7 +106,7 @@ const FeaturedJobsFull = () => {
                   fill='#EF4444'
                 />
               </svg>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 Front-End Developer
               </p>
               <p className='text-gray-500'>Vercel</p>
@@ -132,7 +132,7 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 Support Technician
               </p>
               <p className='text-gray-500'>GraphCMS</p>
@@ -158,7 +158,7 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 DX Specialist
               </p>
               <p className='text-gray-500'>Netlify</p>
@@ -184,7 +184,7 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 UI Designer
               </p>
               <p className='text-gray-500'>Gatsby</p>
@@ -211,7 +211,7 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 React Developer
               </p>
               <p className='text-gray-500'>Facebook</p>
@@ -237,7 +237,7 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 GraphQL Engineer
               </p>
               <p className='text-gray-500'>Fauna</p>
@@ -263,7 +263,7 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 Internship
               </p>
               <p className='text-gray-500'>Nuxt</p>
@@ -289,49 +289,26 @@ const FeaturedJobsFull = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
-              <p className='text-lg font-bold leading-6 text-gray-700'>
+              <p className='text-lg font-bold leading-6 text-gray-800'>
                 Back-End Developer
               </p>
               <p className='text-gray-500'>Google</p>
             </div>
           </div>
         </div>
-        <div className='flex justify-between max-w-2xl p-5 mx-auto border border-gray-300 border-dashed rounded-md'>
-          <div className='flex-1 pr-20'>
-            <p className='text-gray-500 text-md'>
-              After the{' '}
-              <Link href='/pricing#earlyaccess'>
-                <a className='text-blue-700'>Early Access</a>
-              </Link>{' '}
-              promotion ends, the featured jobs can be submitted and displayed
-              above.{' '}
-              <Link href='/pricing'>
-                <a className='text-blue-700'>Learn more</a>
-              </Link>{' '}
-              about our pricing.
-            </p>
-          </div>
-          {/* <div>
-            <Link href='/jobs'>
-              <a className='inline-block px-8 py-2 text-lg font-medium text-gray-500 rounded-md hover:bg-white'>
-                View All Jobs{' '}
-                <svg
-                  className='inline w-4 h-4 ml-0 -mt-1'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={3}
-                    d='M9 5l7 7-7 7'
-                  />
-                </svg>
-              </a>
-            </Link>
-          </div> */}
+        <div className='max-w-2xl p-5 mx-auto border border-gray-300 border-dashed rounded-md'>
+          <p className='text-gray-500 text-md'>
+            After the{' '}
+            <Link href='/pricing#earlyaccess'>
+              <a className='text-blue-700'>Early Access</a>
+            </Link>{' '}
+            promotion ends, the featured jobs can be submitted and displayed
+            above.{' '}
+            <Link href='/pricing'>
+              <a className='text-blue-700'>Learn more</a>
+            </Link>{' '}
+            about our pricing.
+          </p>
         </div>
       </div>
     </div>

@@ -31,12 +31,12 @@ class MyDocument extends Document {
           <link
             rel='mask-icon'
             href='/favicons/safari-pinned-tab.svg'
-            color='#333333'
+            color='#555555'
           />
           <link rel='shortcut icon' href='/favicons/favicon.ico' />
           <meta name='apple-mobile-web-app-title' content='Remote Jamstack' />
           <meta name='application-name' content='Remote Jamstack' />
-          <meta name='msapplication-TileColor' content='#ffffff' />
+          <meta name='msapplication-TileColor' content='#000000' />
           <meta
             name='msapplication-config'
             content='/favicons/browserconfig.xml'

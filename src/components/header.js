@@ -23,26 +23,23 @@ const Header = () => {
         <div className='p-5 mx-auto max-w-7xl sm:px-6 lg:px-8'>
           <div className='flex justify-between'>
             <Link href='/'>
-              <a className='pt-1 text-2xl text-gray-700'>
-                Remote <span className='font-bold'>Jamstack</span>{' '}
-                {/* <span className='relative inline-block p-1 px-2 ml-2 text-xs font-medium text-gray-300 uppercase border border-gray-300 rounded-md -top-1'>
-                  beta
-                </span> */}
+              <a className='pt-1 text-3xl text-gray-800 font-cursive'>
+                <span className='text-gray-600'>Remote</span> Jamstack
               </a>
             </Link>
             <div className='flex'>
               <Link href='/jobs'>
-                <a className='pt-2 font-medium text-gray-700 text-md hover:text-blue-700'>
+                <a className='pt-2 font-medium text-gray-800 text-md hover:text-blue-700'>
                   Browse Jobs
                 </a>
               </Link>
               <Link href='/about'>
-                <a className='pt-2 ml-8 font-medium text-gray-700 text-md hover:text-blue-700'>
+                <a className='pt-2 ml-8 font-medium text-gray-800 text-md hover:text-blue-700'>
                   About
                 </a>
               </Link>
               <Link href='/pricing'>
-                <a className='pt-2 ml-8 font-medium text-gray-700 text-md hover:text-blue-700'>
+                <a className='pt-2 ml-8 font-medium text-gray-800 text-md hover:text-blue-700'>
                   Pricing
                 </a>
               </Link>
@@ -78,7 +75,7 @@ const Header = () => {
                       <div class='py-1'>
                         <Link href='/dashboard'>
                           <a
-                            className='block px-5 py-2 text-sm text-gray-700 hover:bg-gray-100'
+                            className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
                             role='menuitem'
                           >
                             Dashboard
@@ -88,7 +85,7 @@ const Header = () => {
                       <div class='py-1'>
                         <Link href='/profile'>
                           <a
-                            className='block px-5 py-2 text-sm text-gray-700 hover:bg-gray-100'
+                            className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
                             role='menuitem'
                           >
                             Profile
@@ -96,7 +93,7 @@ const Header = () => {
                         </Link>
                         <Link href='/settings'>
                           <a
-                            className='block px-5 py-2 text-sm text-gray-700 hover:bg-gray-100'
+                            className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
                             role='menuitem'
                           >
                             Settings
@@ -108,7 +105,7 @@ const Header = () => {
                           onClick={(e) =>
                             auth.signout() && userToast('You logged out.')
                           }
-                          className='w-full px-5 py-2 text-sm text-left text-gray-700 hover:bg-gray-100'
+                          className='w-full px-5 py-2 text-sm text-left text-gray-800 hover:bg-gray-100'
                           role='menuitem'
                         >
                           Logout
@@ -123,7 +120,7 @@ const Header = () => {
                     onClick={(e) =>
                       auth.signinWithGitHub() && userToast('Welcome back!')
                     }
-                    className='inline-block px-4 py-2 ml-8 mr-4 font-medium text-gray-700 border border-gray-300 rounded-md hover:bg-gray-100'
+                    className='inline-block px-4 py-2 ml-8 mr-4 font-medium text-gray-800 border border-gray-300 rounded-md hover:bg-gray-100'
                   >
                     Login
                   </button>
