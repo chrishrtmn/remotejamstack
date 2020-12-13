@@ -377,14 +377,14 @@ const FeaturedJobsFull = () => {
             </div>
           </div>
         </div>
-        <div className='max-w-xl p-5 mx-auto border border-red-300 border-dashed rounded-md'>
+        <div className='max-w-2xl p-4 mx-auto border border-red-300 border-dashed rounded-md'>
           <p className='text-gray-600 text-md'>
             After the{' '}
             <Link href='/pricing#earlyaccess'>
               <a className='text-red-500'>Early Access</a>
             </Link>{' '}
-            promotion ends, your featured jobs can be submitted and displayed
-            above.{' '}
+            promotion ends, your featured jobs can be submitted and displayed on
+            the Jobs listing page.{' '}
             <Link href='/pricing'>
               <a className='text-red-500'>Learn more</a>
             </Link>{' '}

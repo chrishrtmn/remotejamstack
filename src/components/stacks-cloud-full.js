@@ -68,6 +68,9 @@ const StacksCloudFull = () => {
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Strapi
                     </span>
+                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                      Hugo
+                    </span>
                   </>
                 )}
               </Ticker>
@@ -96,6 +99,12 @@ const StacksCloudFull = () => {
                       <span className='mx-10 text-gray-800 whitespace-nowrap'>
                         Vercel
                       </span>
+                      <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                        11ty
+                      </span>
+                      <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                        Gridsome
+                      </span>
                     </>
                   )}
                 </Ticker>
@@ -103,6 +112,9 @@ const StacksCloudFull = () => {
               <Ticker>
                 {({ index }) => (
                   <>
+                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                      Jekyll
+                    </span>
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Netlify
                     </span>
@@ -118,7 +130,7 @@ const StacksCloudFull = () => {
                     <span className='mx-10 text-gray-800 whitespace-nowrap'>
                       Fauna
                     </span>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
                       Hasura
                     </span>
                   </>

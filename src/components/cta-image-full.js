@@ -33,7 +33,7 @@ const CtaImageFull = () => {
               Post a Job
             </a>
           </Link>
-          <Link href='/pricing'>
+          <Link href='/about'>
             <a className='inline-block px-8 py-2 mx-4 text-lg font-medium text-gray-800 border border-gray-300 rounded-md hover:bg-gray-100'>
               Learn More
             </a>

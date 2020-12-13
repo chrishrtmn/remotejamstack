@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const SubscribeFull = () => {
   return (
-    <div className='mx-auto my-20 max-w-7xl sm:px-6 lg:px-8'>
+    <div id='subscribe' className='mx-auto my-20 max-w-7xl sm:px-6 lg:px-8'>
       <div className='flex items-center justify-between px-10 bg-blue-700 rounded-md py-14'>
         <div className='pr-20'>
           <h3 className='text-4xl font-bold text-white'>
