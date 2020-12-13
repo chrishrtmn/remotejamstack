@@ -2,8 +2,8 @@ import Head from 'next/head'
 
 import Masthead from '../components/masthead'
 import FeaturedJobsFull from '../components/featured-jobs-full'
-import StacksLogoCloudFull from '../components/stacks-logo-cloud-full'
-import StatsDisplayFull from '../components/stats-display-full'
+import StacksCloudFull from '../components/stacks-cloud-full'
+import SiteMetricsFull from '../components/site-metrics-full'
 import CtaImageFull from '../components/cta-image-full'
 import SubscribeFull from '../components/subscribe-full'
 
@@ -16,8 +16,8 @@ const Home = () => {
 
       <Masthead />
       <FeaturedJobsFull />
-      <StatsDisplayFull />
-      <StacksLogoCloudFull />
+      <SiteMetricsFull />
+      <StacksCloudFull />
       <CtaImageFull />
       <SubscribeFull />
     </>

@@ -10,9 +10,13 @@ const CtaImageFull = () => {
 
   return (
     <div className='bg-white'>
-      <div className='px-5 py-20 m-auto mx-auto max-w-7xl sm:px-6 lg:px-8'>
-        <h3 className='text-4xl font-bold text-gray-800'>Get started</h3>
-        <p className='text-xl text-gray-500'>Ready to post your first job?</p>
+      <div className='px-5 py-32 m-auto mx-auto max-w-7xl sm:px-6 lg:px-8'>
+        <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
+          Get started
+        </h2>
+        <h3 className='pb-12 text-5xl font-bold text-gray-800'>
+          Ready to post your first job?
+        </h3>
         <p className='my-4'>
           Our{' '}
           <Link href='/pricing'>

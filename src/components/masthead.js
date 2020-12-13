@@ -13,7 +13,7 @@ const Masthead = () => {
         Remote jobs for the Jamstack ecosystem
       </h1>
       <p className='max-w-xl py-8 mx-auto text-xl text-gray-500'>
-        We cater to jobs with a focus on modern technologies using JavaScript,
+        Find and post jobs with a focus on modern technologies using JavaScript,
         APIs, and markup.
       </p>
       <div>
@@ -23,9 +23,9 @@ const Masthead = () => {
           </a>
         </Link>
 
-        <Link href='/about'>
+        <Link href='/jobs'>
           <a className='inline-block px-8 py-2 mx-4 text-lg font-medium text-gray-800 bg-white border border-gray-300 rounded-md hover:bg-gray-100'>
-            Learn More
+            View All Jobs
           </a>
         </Link>
       </div>
