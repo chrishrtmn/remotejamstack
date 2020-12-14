@@ -32,9 +32,9 @@ const Header = () => {
                 >
                   <path
                     fill='#EF4444'
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='M1001.83 380.376c341.69-36.294 627.67-42.409 1245.05-40.616 30.46-.987 30.66-50.031 1.1-54.997-417.53 12.71-833.81 16.298-1251.491 40.261-34.323 1.08-28.713 56.407 5.341 55.352z'
-                    clip-rule='evenodd'
+                    clipRule='evenodd'
                   />
                   <path
                     fill='#1F2937'
@@ -130,7 +130,7 @@ const Header = () => {
                       aria-orientation='vertical'
                       aria-labelledby='user-menu'
                     >
-                      <div class='py-1'>
+                      <div className='py-1'>
                         <Link href='/dashboard'>
                           <a
                             className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
@@ -140,7 +140,7 @@ const Header = () => {
                           </a>
                         </Link>
                       </div>
-                      <div class='py-1'>
+                      <div className='py-1'>
                         <Link href='/profile'>
                           <a
                             className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
@@ -158,7 +158,7 @@ const Header = () => {
                           </a>
                         </Link>
                       </div>
-                      <div class='py-1'>
+                      <div className='py-1'>
                         <button
                           onClick={(e) =>
                             auth.signout() && userToast('You logged out.')

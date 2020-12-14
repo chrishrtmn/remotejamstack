@@ -1,86 +1,11 @@
 import Link from 'next/link'
 
-const FeaturedJobsFull = () => {
+const FeaturedJobs = () => {
   return (
     <div className='py-20 m-auto max-w-7xl sm:px-6 lg:px-8'>
       <div className='mb-20 text-center'>
-        {/* <span className='inline-block px-3 mb-4 text-xs font-medium leading-6 text-gray-400 bg-gray-100 border border-gray-200 rounded-full'>
-          Coming Soon
-        </span> */}
-        {/* <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
-          Featured Jobs
-        </h2> */}
         <h3 className='relative inline-block text-5xl font-bold text-center text-gray-800'>
           Featured Jobs
-          {/* Drop It Like It's Hot */}
-          {/* <svg
-            aria-hidden='true'
-            focusable='false'
-            className='absolute w-20 h-auto text-red-500 -right-1 -bottom-8'
-            viewBox='0 0 1064 471'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
-              d='M1042.91 0.0566553C537.93 61.1834 303.471 82.5844 21.0434 79.3006C-6.90519 81.525 -7.12354 137.135 21.0434 134.91C424.781 140.065 629.868 120.659 824.566 72.6274L311.447 245.435C288.411 253.22 292.232 303.964 317.233 300.071L693.666 240.43C721.976 233.987 750.622 230.223 779.368 229.169L666.045 313.557C657.579 319.913 647.17 326.411 636.053 333.351C603.156 353.886 564.058 378.293 550.757 414.35C550.757 414.35 548.5 447 569 459.85C594.534 473.683 603.374 475.318 602.695 459.85C600.286 448.048 600.676 435.602 603.816 424.081C605.052 408.802 658.152 382.703 697.815 354.569L848.366 241.542C861.249 231.81 863.869 202.337 848.366 193.579C790.244 160.796 722.782 175.013 659.176 188.418L659.172 188.419C652.647 189.794 646.163 191.16 639.734 192.467L1048.16 54.6933C1071.96 46.9079 1067.92 -1.88969 1042.91 0.0566553Z'
-              fill='#EF4444'
-            />
-          </svg> */}
-          {/* <svg
-            aria-hidden='true'
-            focusable='false'
-            className='absolute w-20 h-auto text-red-500 -right-1 -bottom-4'
-            viewBox='0 0 4302 991'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'
-          >
-            <path
-              d='M859.358 85.1096L1019.06 196.395L555.703 861.353L396 750.068L859.358 85.1096Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M3312.39 71L3479.75 170.4L3078.36 846.223L2911 746.823L3312.39 71Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M2435.55 0L2608.46 89.4012L2198.91 881.504L2026 792.103L2435.55 0Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M1539.38 44.6636L1713.36 131.955L1363.98 828.318L1190 741.027L1539.38 44.6636Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M2443 195.878L2606.34 90L3089.56 835.464L2926.22 941.342L2443 195.878Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M1550 241.878L1713.34 136L2198.37 884.266L2035.04 990.144L1550 241.878Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M3293 236.435L3472.44 161L3760.25 845.621L3580.81 921.056L3293 236.435Z'
-              fill='#EF4444'
-            />
-            <path
-              d='M862 83.4799L992.624 24L1362.16 835.544L1231.54 895.023L862 83.4799Z'
-              fill='#EF4444'
-            />
-            <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
-              d='M163.834 65.1105C205.347 331.212 310.282 497.161 580.206 820.35C590.415 838.81 448.61 953.657 421.563 949.596C279.299 698.461 111.177 469.323 1.40038 191.775C-10.1937 171.048 152.28 44.5843 163.834 65.1105Z'
-              fill='#EF4444'
-            />
-            <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
-              d='M3587.44 739.067C3815.06 598.576 3928.7 438.552 4126.55 66.8469C4139.71 50.3868 4295.15 136.063 4301.13 162.403C4123.23 389.422 3974.63 631.658 3761.03 839.089C3746.29 857.69 3572.87 757.555 3587.44 739.067Z'
-              fill='#EF4444'
-            />
-          </svg> */}
         </h3>
         <h4 className='max-w-3xl mx-auto mt-8 text-xl text-gray-500'>
           Promote your jobs to the top of the{' '}
@@ -88,11 +13,6 @@ const FeaturedJobsFull = () => {
             <a className='text-red-500'>Jobs</a>
           </Link>{' '}
           page with your company logo.
-          {/* This feature will be available after the{' '}
-          <Link href='/pricing#earlyaccess'>
-            <a className='text-red-500'>Early Access</a>
-          </Link>{' '}
-          promotion ends. */}
         </h4>
       </div>
       <div className='grid grid-cols-3 gap-10'>
@@ -492,4 +412,4 @@ const FeaturedJobsFull = () => {
   )
 }
 
-export default FeaturedJobsFull
+export default FeaturedJobs

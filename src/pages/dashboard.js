@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { useAuth } from '../utilities/firebase-auth'
 
 import JobsEmpty from '../components/dashboard/jobs-empty'
-import Jobs from '../components/dashboard/jobs'
 
 const Dashboard = () => {
   const auth = useAuth()
@@ -29,7 +28,6 @@ const Dashboard = () => {
       </Head>
 
       <JobsEmpty />
-      {/* <Jobs /> */}
     </>
   )
 }

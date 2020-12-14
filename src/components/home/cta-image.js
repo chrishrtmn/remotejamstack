@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 import { useAuth } from '../utilities/firebase-auth'
 
-const CtaImageFull = () => {
+const CtaImage = () => {
   const auth = useAuth()
 
   const href = auth.user ? '/job/create' : '/signup'
@@ -11,9 +10,6 @@ const CtaImageFull = () => {
   return (
     <div className='py-20 bg-white sm:px-6 lg:px-8'>
       <div className='w-full m-auto max-w-7xl'>
-        {/* <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
-          Get started
-        </h2> */}
         <h3 className='pb-12 text-5xl font-bold text-gray-800'>
           Ready to find <span className='sr-only'>A+</span>
           <svg
@@ -40,26 +36,26 @@ const CtaImageFull = () => {
               strokeWidth='4'
             />
             <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
+              fillRule='evenodd'
+              clipRule='evenodd'
               d='M64.8577 36.182C78.7264 52.953 84.8495 68.6082 94.6795 103.406C95.4074 105.052 106.497 101.79 107.129 99.7982C97.3343 77.194 89.622 54.0508 77.2809 32.1884C76.4679 30.3325 64.0548 34.3393 64.8577 36.182Z'
               fill='#EF4444'
             />
             <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
+              fillRule='evenodd'
+              clipRule='evenodd'
               d='M76.6265 32.4915C63.2843 53.3156 58.7403 71.7621 53.0233 112.215C52.4478 114.166 39.0584 112.121 38 109.979C45.6666 83.2058 50.8309 56.1309 61.5708 29.8192C62.2105 27.6197 77.2566 30.3083 76.6265 32.4915Z'
               fill='#EF4444'
             />
             <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
+              fillRule='evenodd'
+              clipRule='evenodd'
               d='M49.8581 84.2942C63.242 75.7226 74.8406 73.5343 100.126 71.8911C101.356 71.5892 100.562 61.5103 99.2707 60.5861C82.3987 64.5582 65.4281 66.6519 48.7336 72.937C47.3472 73.2707 48.4821 84.6218 49.8581 84.2942Z'
               fill='#EF4444'
             />
             <path
-              fill-rule='evenodd'
-              clip-rule='evenodd'
+              fillRule='evenodd'
+              clipRule='evenodd'
               d='M129.911 42.1384C126.451 52.585 127.481 60.2576 132.129 76.1604C132.184 76.9925 124.251 79.1616 123.239 78.6153C122.348 67.2464 119.99 56.3121 120.918 44.4424C120.851 43.5063 129.841 41.2103 129.911 42.1384Z'
               fill='#EF4444'
             />
@@ -93,11 +89,8 @@ const CtaImageFull = () => {
           </Link>
         </div>
       </div>
-      {/* <div className='absolute bottom-0 right-0 opacity-20'>
-        <Image src='/images/person-get-started.jpg' height={600} width={600} />
-      </div> */}
     </div>
   )
 }
 
-export default CtaImageFull
+export default CtaImage

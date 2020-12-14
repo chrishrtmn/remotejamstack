@@ -1,12 +1,11 @@
 import Head from 'next/head'
 
-import Masthead from '../components/masthead'
-import FeaturedJobsFull from '../components/featured-jobs-full'
-import TestimonialsFull from '../components/testimonials-full'
-import StacksCloudFull from '../components/stacks-cloud-full'
-import SiteMetricsFull from '../components/site-metrics-full'
-import CtaImageFull from '../components/cta-image-full'
-import SubscribeFull from '../components/subscribe-full'
+import Masthead from '../components/home/masthead'
+import FeaturedJobs from '../components/home/featured-jobs'
+import Testimonials from '../components/home/testimonials'
+import StacksCloud from '../components/home/stacks-cloud'
+import CtaImage from '../components/home/cta-image'
+import Newsletter from '../components/home/newsletter'
 
 const Home = () => {
   return (
@@ -16,12 +15,11 @@ const Home = () => {
       </Head>
 
       <Masthead />
-      <FeaturedJobsFull />
-      <TestimonialsFull />
-      <StacksCloudFull />
-      {/* <SiteMetricsFull /> */}
-      <CtaImageFull />
-      <SubscribeFull />
+      <FeaturedJobs />
+      <Testimonials />
+      <StacksCloud />
+      <CtaImage />
+      <Newsletter />
     </>
   )
 }

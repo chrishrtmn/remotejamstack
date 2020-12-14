@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const SubscribeFull = () => {
+const Newsletter = () => {
   return (
     <div id='subscribe' className='px-5 my-20 sm:px-6 lg:px-8'>
       <div className='flex items-center justify-between px-10 mx-auto bg-blue-700 rounded-md max-w-7xl py-14'>
@@ -39,4 +39,4 @@ const SubscribeFull = () => {
   )
 }
 
-export default SubscribeFull
+export default Newsletter

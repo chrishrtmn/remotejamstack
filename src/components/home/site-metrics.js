@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const SiteMetricsFull = () => (
+const SiteMetrics = () => (
   <div className='py-20 bg-gray-800 sm:px-6 lg:px-8'>
     <div className='w-full m-auto max-w-7xl'>
       <div className='grid grid-cols-3 gap-10'>
@@ -121,4 +121,4 @@ const SiteMetricsFull = () => (
   </div>
 )
 
-export default SiteMetricsFull
+export default SiteMetrics
