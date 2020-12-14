@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 const HeaderBanner = () => {
   return (
-    <div className='relative z-10 bg-gray-700'>
-      <div className='px-3 py-3 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+    <div className='px-5 bg-gray-700 sm:px-6 lg:px-8'>
+      <div className='py-3 mx-auto max-w-7xl'>
         <div className='flex flex-wrap items-center justify-between'>
           <div className='flex items-center flex-1 w-0'>
             <span className='flex p-2 bg-white rounded-md'>
@@ -23,13 +23,13 @@ const HeaderBanner = () => {
               </svg>
             </span>
             <p className='ml-3 font-medium text-white truncate'>
-              <span className='md:hidden'>
-                With our Early Access launch, we're giving out the next 20
-                standard job submissions for free!
+              <span className='md:hidden'>Welcome! Post a job free!</span>
+              <span className='hidden md:inline lg:hidden'>
+                Welcome! We're giving out the next 20 job submissions for free!
               </span>
-              <span className='hidden md:inline'>
+              <span className='hidden lg:inline'>
                 Welcome! With our Early Access launch, we're giving out the next
-                20 standard job submissions for free!
+                20 job submissions for free!
               </span>
             </p>
           </div>
@@ -43,10 +43,9 @@ const HeaderBanner = () => {
           <div className='flex-shrink-0 order-2 sm:order-3 sm:ml-3'>
             <button
               type='button'
-              className='flex p-2 -mr-1 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2'
+              className='flex p-2 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-white'
             >
               <span className='sr-only'>Dismiss</span>
-
               <svg
                 className='w-6 h-6 text-white'
                 xmlns='http://www.w3.org/2000/svg'

@@ -11,16 +11,17 @@ const StacksCloudFull = () => {
   }
 
   return (
-    <div className='py-32'>
-      <div className='w-full m-auto sm:px-6 lg:px-8 max-w-7xl'>
-        <div className='px-10 text-center'>
-          <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
+    <>
+      <div className='w-full pt-20 m-auto max-w-7xl sm:px-6 lg:px-8'>
+        <div className='text-center '>
+          {/* <h2 className='pb-4 text-lg font-medium text-gray-400 uppercase'>
             Popular Tags
-          </h2>
-          <h3 className='pb-12 text-5xl font-bold text-center text-gray-800'>
-            Stacks on stacks on{' '}
+          </h2> */}
+          <h3 className='text-5xl font-bold text-center text-gray-800'>
+            Popular Tags
+            {/* Stacks On Stacks On{' '}
             <span className='relative z-0'>
-              stacks
+              Stacks
               <svg
                 className='absolute w-14 h-14 -left-8 -bottom-11'
                 viewBox='0 0 530 438'
@@ -39,16 +40,19 @@ const StacksCloudFull = () => {
               <span className='absolute font-normal text-red-500 right-1.5 top-1 transform rotate-12'>
                 /
               </span>
-            </span>
+            </span> */}
           </h3>
+          <h4 className='max-w-3xl mx-auto mt-8 text-xl text-gray-500'>
+            We cater to jobs that contain at least three tags to form a stack.
+          </h4>
         </div>
       </div>
-      <div className='mx-auto mt-20 text-4xl font-bold'>
+      <div className='py-20 mx-auto text-4xl font-bold'>
         <PageVisibility onChange={handleVisibilityChange}>
           {pageIsVisible && (
             <>
-              <Ticker speed={3}>
-                {({ index }) => (
+              <Ticker speed={2}>
+                {() => (
                   <>
                     <span className='mx-10 text-gray-800 whitespace-nowrap'>
                       React.js
@@ -68,17 +72,26 @@ const StacksCloudFull = () => {
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Strapi
                     </span>
+                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                      Typescript
+                    </span>
                     <span className='mx-10 text-gray-300 whitespace-nowrap'>
                       Hugo
+                    </span>
+                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                      Serverless
+                    </span>
+                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                      CSS
                     </span>
                   </>
                 )}
               </Ticker>
               <div className='py-6'>
-                <Ticker direction='toRight'>
-                  {({ index }) => (
+                <Ticker speed={3} direction='toRight'>
+                  {() => (
                     <>
-                      <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                      <span className='mx-10 text-gray-800 whitespace-nowrap'>
                         Contentful
                       </span>
                       <span className='mx-10 text-gray-400 whitespace-nowrap'>
@@ -105,23 +118,26 @@ const StacksCloudFull = () => {
                       <span className='mx-10 text-gray-300 whitespace-nowrap'>
                         Gridsome
                       </span>
+                      <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                        Stripe
+                      </span>
                     </>
                   )}
                 </Ticker>
               </div>
-              <Ticker>
-                {({ index }) => (
+              <Ticker speed={4}>
+                {() => (
                   <>
                     <span className='mx-10 text-gray-300 whitespace-nowrap'>
                       Jekyll
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-10 text-gray-800 whitespace-nowrap'>
                       Netlify
                     </span>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
                       Google Firebase
                     </span>
-                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Render
                     </span>
                     <span className='mx-10 text-gray-300 whitespace-nowrap'>
@@ -133,6 +149,15 @@ const StacksCloudFull = () => {
                     <span className='mx-10 text-gray-400 whitespace-nowrap'>
                       Hasura
                     </span>
+                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                      Heroku
+                    </span>
+                    <span className='mx-10 text-gray-800 whitespace-nowrap'>
+                      Express
+                    </span>
+                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                      Primsic CMS
+                    </span>
                   </>
                 )}
               </Ticker>
@@ -140,7 +165,7 @@ const StacksCloudFull = () => {
           )}
         </PageVisibility>
       </div>
-    </div>
+    </>
   )
 }
 

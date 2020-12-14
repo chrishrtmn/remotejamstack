@@ -19,7 +19,7 @@ const Home = () => {
       <FeaturedJobsFull />
       <TestimonialsFull />
       <StacksCloudFull />
-      <SiteMetricsFull />
+      {/* <SiteMetricsFull /> */}
       <CtaImageFull />
       <SubscribeFull />
     </>

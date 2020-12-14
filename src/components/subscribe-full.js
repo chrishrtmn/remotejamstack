@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 const SubscribeFull = () => {
   return (
-    <div id='subscribe' className='mx-auto my-20 max-w-7xl sm:px-6 lg:px-8'>
-      <div className='flex items-center justify-between px-10 bg-blue-700 rounded-md py-14'>
+    <div id='subscribe' className='px-5 my-20 sm:px-6 lg:px-8'>
+      <div className='flex items-center justify-between px-10 mx-auto bg-blue-700 rounded-md max-w-7xl py-14'>
         <div className='pr-20'>
           <h3 className='text-4xl font-bold text-white'>
             Sign up for our newsletter
@@ -23,11 +23,6 @@ const SubscribeFull = () => {
             </button>
           </form>
           <p className='mt-4 text-sm text-blue-200'>
-            {/* We care about the protection of your data. Read our{' '}
-            <Link href='/privacy-policy'>
-              <a className='underline'>Privacy Policy</a>
-            </Link>
-            */}
             By sharing your email, you agree to our{' '}
             <Link href='/terms-conditions'>
               <a className='underline'>Terms</a>

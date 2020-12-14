@@ -2,6 +2,7 @@
 
 - Responsive fixes
 - Optimize images, svgs, favicons
+- Toastify color updates
 - [Job listing structured data](https://developers.google.com/search/docs/data-types/job-posting#definitions)
 - [Cross-post to Google + others](https://www.betterteam.com/free-job-posting-sites)
 - Sitemaps
