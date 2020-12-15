@@ -3,17 +3,17 @@ import Link from 'next/link'
 const FeaturedJobs = () => {
   return (
     <div className='py-20 m-auto max-w-7xl sm:px-6 lg:px-8'>
-      <div className='mb-20 text-center'>
-        <h3 className='relative inline-block text-5xl font-bold text-center text-gray-800'>
+      <div className='mb-16 text-center'>
+        <h3 className='relative inline-block text-4xl font-bold text-center text-gray-800'>
           Featured Jobs
         </h3>
-        <h4 className='max-w-3xl mx-auto mt-8 text-xl text-gray-500'>
-          Promote your jobs to the top of the{' '}
-          <Link href='/jobs'>
-            <a className='text-red-500'>Jobs</a>
-          </Link>{' '}
-          page with your company logo.
-        </h4>
+        {/* <h4 className='max-w-3xl mx-auto mt-8 text-xl text-gray-500'>
+            Promote your positions to the top of the{' '}
+            <Link href='/jobs'>
+              <a className='text-red-500'>Jobs</a>
+            </Link>{' '}
+            page with your company logo.
+          </h4> */}
       </div>
       <div className='grid grid-cols-3 gap-10'>
         <div className='bg-white rounded-md shadow-md'>
@@ -53,14 +53,14 @@ const FeaturedJobs = () => {
               <p className='text-lg font-bold leading-6 text-gray-800'>
                 Your Open Position
               </p>
-              <p className='text-gray-500'>Your Company Name</p>
+              <p className='text-gray-600'>Your Company Name</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
-            <div className='flex-1 px-4 py-2 text-sm text-gray-500 border-r border-gray-200 border-1'>
+            <div className='flex-1 px-4 py-2 text-sm text-gray-600 border-r border-gray-200 border-1'>
               Full-Time
             </div>
-            <div className='flex-1 px-4 py-2 text-sm text-gray-500'>
+            <div className='flex-1 px-4 py-2 text-sm text-gray-600'>
               Anywhere
             </div>
           </div>

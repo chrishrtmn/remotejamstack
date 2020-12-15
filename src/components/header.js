@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { useAuth } from '../utilities/firebase-auth'
+import { useAuth } from '../utilities/auth'
 
 import { toast } from 'react-toastify'
 
@@ -21,7 +21,7 @@ const Header = () => {
 
       <header className='relative top-0 z-20 px-5 bg-white shadow-md sm:px-6 lg:px-8 lg:sticky'>
         <div className='mx-auto max-w-7xl'>
-          <div className='flex justify-between py-5'>
+          <div className='flex justify-between py-3'>
             <Link href='/'>
               <a className='pt-1'>
                 <svg
@@ -93,21 +93,20 @@ const Header = () => {
                   Browse Jobs
                 </a>
               </Link>
-              <Link href='/about'>
+              {/* <Link href='/about'>
                 <a className='pt-2.5 ml-8 font-medium text-gray-800 text-md hover:text-red-500'>
                   About
                 </a>
-              </Link>
-              <Link href='/pricing'>
+              </Link> */}
+              <Link href='/employers'>
                 <a className='pt-2.5 ml-8 font-medium text-gray-800 text-md hover:text-red-500'>
-                  Pricing
+                  Employers
                 </a>
               </Link>
-
               {auth.user ? (
                 <>
                   <Link href='/job/create'>
-                    <a className='inline-block px-4 py-2 mx-8 font-medium text-white bg-red-500 border border-opacity-0 rounded-md hover:bg-red-600'>
+                    <a className='inline-block px-4 py-2 mx-8 font-medium text-red-500 border border-red-200 rounded-md hover:border-red-300 hover:bg-red-50'>
                       Post a Job
                     </a>
                   </Link>
@@ -120,7 +119,7 @@ const Header = () => {
                       <span className='sr-only'>Open user menu</span>
                       <img
                         className='rounded-md w-11 h-11 tr'
-                        src={auth.user.photoUrl}
+                        src={auth.user?.photoUrl}
                         alt=''
                       />
                     </button>
@@ -178,12 +177,12 @@ const Header = () => {
                     onClick={(e) =>
                       auth.signinWithGitHub() && userToast('Welcome back!')
                     }
-                    className='inline-block px-4 pb-2 pt-1.5 ml-8 mr-4 font-medium text-red-500 border border-red-300 rounded-md hover:bg-red-50'
+                    className='inline-block px-4 pb-2 pt-1.5 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'
                   >
                     Login
                   </button>
                   <Link href='/signup'>
-                    <a className='inline-block px-4 py-2 font-medium text-white bg-red-500 border border-opacity-0 rounded-md hover:bg-red-600'>
+                    <a className='inline-block px-4 py-2 font-medium text-red-500 border border-red-200 rounded-md hover:text-red-500 hover:bg-red-50 hover:border-red-300'>
                       Sign Up
                     </a>
                   </Link>

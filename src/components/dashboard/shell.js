@@ -1,7 +1,7 @@
-import { useAuth } from '../../utilities/firebase-auth'
+import { useAuth } from '../../utilities/auth'
 
 const Shell = ({ children }) => {
-  const auth = useAuth()
+  const { user } = useAuth()
 
   return (
     <div className='px-5 py-10 sm:px-6 lg:px-8'>
@@ -9,7 +9,7 @@ const Shell = ({ children }) => {
         <div className='grid items-center grid-cols-2 pb-10 border-b-2 border-gray-100'>
           <h2 className='text-4xl font-bold text-gray-800'>Dashboard</h2>
           <span className='text-sm italic text-gray-500 justify-self-end'>
-            {auth.user.email}
+            {user?.email}
           </span>
         </div>
         <div className='p-6 text-gray-800 bg-white rounded-md shadow-md '>

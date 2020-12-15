@@ -1,23 +1,26 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { useAuth } from '../utilities/firebase-auth'
+import { useAuth } from '../utilities/auth'
 
+import Shell from '../components/dashboard/shell'
 import JobsEmpty from '../components/dashboard/jobs-empty'
 
 const Dashboard = () => {
-  const auth = useAuth()
+  const { user } = useAuth()
 
-  if (!auth.user) {
+  if (!user) {
     return (
-      <div className='p-10 font-medium text-center'>
-        Please sign in or{' '}
-        <Link href='/'>
-          <a className='text-red-500'>go back home</a>
-        </Link>
-        <br />
-        (This can be the loading state too)
-      </div>
+      <Shell>
+        <div className='p-10 font-medium text-center'>
+          Please sign in or{' '}
+          <Link href='/'>
+            <a className='text-red-500'>go back home</a>
+          </Link>
+          <br />
+          Loading/Skeleton State here
+        </div>
+      </Shell>
     )
   }
 
@@ -27,7 +30,9 @@ const Dashboard = () => {
         <title>Dashboard - Remote Jamstack</title>
       </Head>
 
-      <JobsEmpty />
+      <Shell>
+        <JobsEmpty />
+      </Shell>
     </>
   )
 }

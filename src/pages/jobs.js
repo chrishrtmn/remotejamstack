@@ -41,18 +41,27 @@ const Jobs = () => {
                     fill='#EF4444'
                   />
                 </svg>
-                <p className='text-lg font-bold leading-6 text-gray-800'>
-                  Front-End Developer
+                <p className='py-0.5 text-sm font-medium text-gray-700'>
+                  Your Company Name
                 </p>
-                <p className='text-gray-500'>Double Slash Studios</p>
+                <p className='font-bold leading-6 text-gray-900 text-md'>
+                  Your Open Position
+                </p>
               </div>
             </div>
             <div className='flex border-t border-gray-200 border-1'>
-              <div className='flex-1 px-4 py-2 text-sm text-gray-500 border-r border-gray-200 border-1'>
-                Full-Time
+              <div className='flex-1 px-4 py-2 text-sm text-gray-600 border-r border-red-100 border-1'>
+                Position Type
               </div>
-              <div className='flex-1 px-4 py-2 text-sm text-gray-500'>
-                United States
+              <div className='flex-1 px-4 py-2 text-sm text-gray-600'>
+                Location Preference
+              </div>
+            </div>
+            <div className='flex border-t border-gray-200 border-1'>
+              <div className='flex-1 px-4 py-2 text-sm text-gray-600 border-r border-gray-200 border-1'>
+                Short introduction/pitch of the company. Short
+                introduction/pitch of the company. Short introduction/pitch of
+                the company.
               </div>
             </div>
           </div>
@@ -107,27 +116,7 @@ const Jobs = () => {
           </div>
           <div className='bg-white rounded-md shadow-md'>
             <div className='flex p-4'>
-              <div className='flex-shrink-0'>
-                <div className='flex items-center justify-center w-12 h-12 text-white bg-blue-300 rounded-md'>
-                  <svg
-                    aria-hidden='true'
-                    focusable='false'
-                    className='w-9 h-9'
-                    xmlns='http://www.w3.org/2000/svg'
-                    fill='none'
-                    viewBox='0 0 24 24'
-                    stroke='currentColor'
-                  >
-                    <path
-                      strokeLinecap='round'
-                      strokeLinejoin='round'
-                      strokeWidth={2}
-                      d='M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4'
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div className='relative w-full ml-4 text-left'>
+              <div className='relative w-full text-left'>
                 <p className='text-lg font-bold leading-6 text-gray-800'>
                   GraphQL Technician
                 </p>
@@ -221,10 +210,11 @@ const Jobs = () => {
           </div>
         </div>
         <div className='flex justify-between mt-20 mb-5'>
-          <h3 className='text-2xl font-medium text-gray-800'>Results</h3>
-          <div className='text-gray-500 place-self-center'>
-            Showing <span className='font-medium text-gray-800'>10</span> of{' '}
-            <span className='font-medium text-gray-800'>100</span> results
+          <h2 className='inline-block text-3xl font-medium text-gray-800'>
+            Results
+          </h2>
+          <div className='text-gray-500 text-md font-regular'>
+            Showing <span className='font-medium text-gray-800'>5</span> results
           </div>
         </div>
         <div className='flex flex-col'>
@@ -258,22 +248,87 @@ const Jobs = () => {
                       >
                         Role
                       </th>
-                      <th scope='col' className='relative px-6 py-3'>
-                        <span className='sr-only'>Edit</span>
-                      </th>
                     </tr>
                   </thead>
                   <tbody className='bg-white divide-y divide-gray-200'>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
+                    <tr className='bg-red-50'>
+                      <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'>
                         <div className='flex items-center'>
                           <div className='flex-shrink-0 w-10 h-10'>
                             <img
-                              className='w-10 h-10 rounded-full'
+                              className='w-10 h-10 rounded-md'
                               src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
                               alt=''
                             />
                           </div>
+                          <div className='ml-4'>
+                            <div className='text-sm font-medium text-gray-900'>
+                              Jane Cooper
+                            </div>
+                            <div className='text-sm text-gray-500'>
+                              jane.cooper@example.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'>
+                        <div className='text-sm text-gray-900'>
+                          Regional Paradigm Technician
+                        </div>
+                        <div className='text-sm text-gray-500'>
+                          Optimization
+                        </div>
+                      </td>
+                      <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
+                          Active
+                        </span>
+                      </td>
+                      <td className='px-6 py-4 text-sm text-gray-500 border-b border-red-200 whitespace-nowrap'>
+                        Admin
+                      </td>
+                    </tr>
+                    <tr className='bg-red-50'>
+                      <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
+                        <div className='flex items-center'>
+                          <div className='flex-shrink-0 w-10 h-10'>
+                            <img
+                              className='w-10 h-10 rounded-md'
+                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
+                              alt=''
+                            />
+                          </div>
+                          <div className='ml-4'>
+                            <div className='text-sm font-medium text-gray-900'>
+                              Jane Cooper
+                            </div>
+                            <div className='text-sm text-gray-500'>
+                              jane.cooper@example.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
+                        <div className='text-sm text-gray-900'>
+                          Regional Paradigm Technician
+                        </div>
+                        <div className='text-sm text-gray-500'>
+                          Optimization
+                        </div>
+                      </td>
+                      <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
+                          Active
+                        </span>
+                      </td>
+                      <td className='px-6 py-4 text-sm text-gray-500 border-t border-b border-red-200 whitespace-nowrap'>
+                        Admin
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className='px-6 py-4 whitespace-nowrap'>
+                        <div className='flex items-center'>
+                          <div className='flex-shrink-0 w-10 h-10'></div>
                           <div className='ml-4'>
                             <div className='text-sm font-medium text-gray-900'>
                               Jane Cooper
@@ -293,20 +348,43 @@ const Jobs = () => {
                         </div>
                       </td>
                       <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
                           Active
                         </span>
                       </td>
                       <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
                         Admin
                       </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
+                    </tr>
+                    <tr className='bg-red-50'>
+                      <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
+                        <div className='flex items-center'>
+                          <div className='flex-shrink-0 w-10 h-10'></div>
+                          <div className='ml-4'>
+                            <div className='text-sm font-medium text-gray-900'>
+                              Jane Cooper
+                            </div>
+                            <div className='text-sm text-gray-500'>
+                              jane.cooper@example.com
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
+                        <div className='text-sm text-gray-900'>
+                          Regional Paradigm Technician
+                        </div>
+                        <div className='text-sm text-gray-500'>
+                          Optimization
+                        </div>
+                      </td>
+                      <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
+                          Active
+                        </span>
+                      </td>
+                      <td className='px-6 py-4 text-sm text-gray-500 border-t border-b border-red-200 whitespace-nowrap'>
+                        Admin
                       </td>
                     </tr>
                     <tr>
@@ -314,7 +392,7 @@ const Jobs = () => {
                         <div className='flex items-center'>
                           <div className='flex-shrink-0 w-10 h-10'>
                             <img
-                              className='w-10 h-10 rounded-full'
+                              className='w-10 h-10 rounded-md'
                               src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
                               alt=''
                             />
@@ -338,380 +416,12 @@ const Jobs = () => {
                         </div>
                       </td>
                       <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
                           Active
                         </span>
                       </td>
                       <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
                         Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
                       </td>
                     </tr>
                   </tbody>
@@ -721,12 +431,16 @@ const Jobs = () => {
           </div>
         </div>
         <div className='flex justify-between mt-20 mb-5'>
-          <h3 className='text-2xl font-medium text-gray-800'>Third-Party</h3>
-          <div className='text-gray-500 place-self-center'>
-            Showing <span className='font-medium text-gray-800'>5</span> of{' '}
-            <span className='font-medium text-gray-800'>50</span> results
+          <h2 className='text-3xl font-medium text-gray-800'>Third-Party</h2>
+          <div className='text-gray-500 text-md font-regular'>
+            Showing <span className='font-medium text-gray-800'>5</span> results
           </div>
         </div>
+        <p className='mb-5 text-gray-600'>
+          Are you still unable to find a job match? We connect with third-party
+          job engines that focus on Jamstack keywords to help give you more
+          options.
+        </p>
         <div className='flex flex-col'>
           <div className='-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8'>
             <div className='inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8'>
@@ -758,9 +472,6 @@ const Jobs = () => {
                       >
                         Role
                       </th>
-                      <th scope='col' className='relative px-6 py-3'>
-                        <span className='sr-only'>Edit</span>
-                      </th>
                     </tr>
                   </thead>
                   <tbody className='bg-white divide-y divide-gray-200'>
@@ -768,11 +479,9 @@ const Jobs = () => {
                       <td className='px-6 py-4 whitespace-nowrap'>
                         <div className='flex items-center'>
                           <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
+                            <div className='w-10 h-10 bg-gray-200 rounded-md'>
+                              G
+                            </div>
                           </div>
                           <div className='ml-4'>
                             <div className='text-sm font-medium text-gray-900'>
@@ -793,31 +502,21 @@ const Jobs = () => {
                         </div>
                       </td>
                       <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
                           Active
                         </span>
                       </td>
                       <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
                         Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td className='px-6 py-4 whitespace-nowrap'>
                         <div className='flex items-center'>
                           <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
+                            <div className='w-10 h-10 bg-gray-200 rounded-md'>
+                              G
+                            </div>
                           </div>
                           <div className='ml-4'>
                             <div className='text-sm font-medium text-gray-900'>
@@ -838,31 +537,21 @@ const Jobs = () => {
                         </div>
                       </td>
                       <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
                           Active
                         </span>
                       </td>
                       <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
                         Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td className='px-6 py-4 whitespace-nowrap'>
                         <div className='flex items-center'>
                           <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
+                            <div className='w-10 h-10 bg-gray-200 rounded-md'>
+                              G
+                            </div>
                           </div>
                           <div className='ml-4'>
                             <div className='text-sm font-medium text-gray-900'>
@@ -883,110 +572,12 @@ const Jobs = () => {
                         </div>
                       </td>
                       <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
+                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
                           Active
                         </span>
                       </td>
                       <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
                         Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='flex items-center'>
-                          <div className='flex-shrink-0 w-10 h-10'>
-                            <img
-                              className='w-10 h-10 rounded-full'
-                              src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                              alt=''
-                            />
-                          </div>
-                          <div className='ml-4'>
-                            <div className='text-sm font-medium text-gray-900'>
-                              Jane Cooper
-                            </div>
-                            <div className='text-sm text-gray-500'>
-                              jane.cooper@example.com
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <div className='text-sm text-gray-900'>
-                          Regional Paradigm Technician
-                        </div>
-                        <div className='text-sm text-gray-500'>
-                          Optimization
-                        </div>
-                      </td>
-                      <td className='px-6 py-4 whitespace-nowrap'>
-                        <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full'>
-                          Active
-                        </span>
-                      </td>
-                      <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                        Admin
-                      </td>
-                      <td className='px-6 py-4 text-sm font-medium text-right whitespace-nowrap'>
-                        <a
-                          href='#'
-                          className='text-indigo-600 hover:text-indigo-900'
-                        >
-                          Edit
-                        </a>
                       </td>
                     </tr>
                   </tbody>

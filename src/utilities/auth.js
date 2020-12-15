@@ -3,7 +3,7 @@ import Router from 'next/router'
 // import cookie from 'js-cookie';
 
 import firebase from './firebase'
-import { createUser } from './firestore'
+import { createUser } from './db'
 
 const authContext = createContext()
 

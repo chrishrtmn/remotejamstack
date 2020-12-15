@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
-import { useAuth } from '../utilities/firebase-auth'
+import { useAuth } from '../../utilities/auth'
 
-const CtaImage = () => {
-  const auth = useAuth()
+const PricingCTA = () => {
+  const { user } = useAuth()
 
-  const href = auth.user ? '/job/create' : '/signup'
+  const href = user ? '/job/create' : '/signup'
 
   return (
     <div className='py-20 bg-white sm:px-6 lg:px-8'>
@@ -93,4 +93,4 @@ const CtaImage = () => {
   )
 }
 
-export default CtaImage
+export default PricingCTA

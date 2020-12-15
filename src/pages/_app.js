@@ -1,4 +1,4 @@
-import { AuthProvider } from '../utilities/firebase-auth'
+import { AuthProvider } from '../utilities/auth'
 
 import { ToastContainer, Slide } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'

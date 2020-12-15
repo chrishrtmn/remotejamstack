@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const HeaderBanner = () => {
   return (
-    <div className='px-5 bg-gray-700 sm:px-6 lg:px-8'>
+    <div className='px-5 bg-gray-800 sm:px-6 lg:px-8'>
       <div className='py-3 mx-auto max-w-7xl'>
         <div className='flex flex-wrap items-center justify-between'>
           <div className='flex items-center flex-1 w-0'>

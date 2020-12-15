@@ -1,11 +1,9 @@
 import Head from 'next/head'
 
 import Masthead from '../components/home/masthead'
-import FeaturedJobs from '../components/home/featured-jobs'
-import Testimonials from '../components/home/testimonials'
 import StacksCloud from '../components/home/stacks-cloud'
-import CtaImage from '../components/home/cta-image'
-import Newsletter from '../components/home/newsletter'
+import FeaturedJobs from '../components/home/featured-jobs'
+import Newsletter from '../components/newsletter'
 
 const Home = () => {
   return (
@@ -15,10 +13,8 @@ const Home = () => {
       </Head>
 
       <Masthead />
-      <FeaturedJobs />
-      <Testimonials />
       <StacksCloud />
-      <CtaImage />
+      <FeaturedJobs />
       <Newsletter />
     </>
   )

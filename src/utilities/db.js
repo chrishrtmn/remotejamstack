@@ -1,3 +1,5 @@
+// Client-side database
+
 import firebase from './firebase'
 
 const firestore = firebase.firestore()
@@ -12,5 +14,5 @@ export function createUser(uid, data) {
 
 // Create new job
 export function createJob(data) {
-  return firestore.collection('job').add(data)
+  return firestore.collection('jobs').add(data)
 }
