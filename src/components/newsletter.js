@@ -9,7 +9,7 @@ const Newsletter = () => {
             Sign up for our newsletter
           </h3>
           <p className='mt-6 text-xl text-gray-300'>
-            Receive weekly job alerts, new blog posts, and feature updates.
+            Receive new job alerts, blog posts, and feature updates.
           </p>
         </div>
         <div>

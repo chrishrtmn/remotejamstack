@@ -112,7 +112,7 @@ const Header = () => {
                   </Link>
                   <div className='relative'>
                     <button
-                      className='flex items-center max-w-xs text-sm bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white'
+                      className='flex items-center max-w-xs text-sm bg-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-offset-red-300 focus:ring-white'
                       id='user-menu'
                       aria-haspopup='true'
                     >
@@ -124,7 +124,7 @@ const Header = () => {
                       />
                     </button>
                     <div
-                      className='absolute right-0 w-40 mt-2 origin-top-right bg-white divide-y divide-gray-200 rounded-sm shadow-md ring-1 ring-black ring-opacity-5'
+                      className='absolute right-0 w-40 mt-2 origin-top-right bg-white divide-y divide-gray-200 rounded-md shadow-md ring-1 ring-black ring-opacity-5'
                       role='menu'
                       aria-orientation='vertical'
                       aria-labelledby='user-menu'

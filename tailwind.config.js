@@ -9,6 +9,9 @@ module.exports = {
         'red-theme': '#F95C73',
         'blue-theme': '#3C82F4',
       },
+      maxWidth: {
+        mh: '710px',
+      },
     },
   },
   variants: {

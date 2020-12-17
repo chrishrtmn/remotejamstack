@@ -7,13 +7,6 @@ const FeaturedJobs = () => {
         <h3 className='relative inline-block text-4xl font-bold text-center text-gray-800'>
           Featured Jobs
         </h3>
-        {/* <h4 className='max-w-3xl mx-auto mt-8 text-xl text-gray-500'>
-            Promote your positions to the top of the{' '}
-            <Link href='/jobs'>
-              <a className='text-red-500'>Jobs</a>
-            </Link>{' '}
-            page with your company logo.
-          </h4> */}
       </div>
       <div className='grid grid-cols-3 gap-10'>
         <div className='bg-white rounded-md shadow-md'>

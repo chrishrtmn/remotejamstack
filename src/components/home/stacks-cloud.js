@@ -48,7 +48,7 @@ const StacksCloud = () => {
                       Strapi
                     </span>
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
-                      Typescript
+                      TypeScript
                     </span>
                     <span className='mx-10 text-gray-700 whitespace-nowrap'>
                       Hugo
