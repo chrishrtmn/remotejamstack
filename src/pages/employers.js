@@ -1,17 +1,22 @@
-import Testimonials from '../components/testimonials'
-import PricingCTA from '../components/employers/pricing-cta'
+import Masthead from '../components/employers/masthead'
+import Features from '../components/employers/features'
+import FeaturedJobs from '../components/employers/featured-jobs'
+import CTA from '../components/employers/cta'
+import FAQ from '../components/employers/faq'
+import Pricing from '../components/employers/pricing'
 import Newsletter from '../components/newsletter'
 import SiteMetrics from '../components/site-metrics'
 
 const Employers = () => {
   return (
     <>
-      <div className='py-20'>Masthead</div>
-      <div className='py-20'>Features</div>
-      <Testimonials />
-      <div className='py-20'>Spacer</div>
+      <Masthead />
+      <Features />
       <SiteMetrics />
-      <PricingCTA />
+      <FeaturedJobs />
+      <FAQ />
+      <Pricing />
+      <CTA />
       <Newsletter />
     </>
   )

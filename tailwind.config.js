@@ -10,7 +10,7 @@ module.exports = {
         'blue-theme': '#3C82F4',
       },
       maxWidth: {
-        mh: '710px',
+        mh: '720px',
       },
     },
   },
