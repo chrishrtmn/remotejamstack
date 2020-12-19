@@ -4,9 +4,15 @@ const FeaturedJobs = () => {
   return (
     <div className='py-20 m-auto max-w-7xl sm:px-6 lg:px-8'>
       <div className='mb-16 text-center'>
-        <h3 className='relative inline-block text-4xl font-bold text-center text-gray-800'>
+        <h2 className='relative inline-block text-4xl font-bold text-center text-gray-800'>
           Featured Jobs
-        </h3>
+        </h2>
+        <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-500 max-w-prose'>
+          Select the Featured plan to post your open position into the Featured
+          jobs section. It will be listed at the top of the Jobs page for better
+          visibility and more views.
+        </p>
+        <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
       </div>
       <div className='grid grid-cols-3 gap-10'>
         <div className='bg-white rounded-md shadow-md'>

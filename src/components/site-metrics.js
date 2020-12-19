@@ -3,6 +3,16 @@ import Link from 'next/link'
 const SiteMetrics = () => (
   <div className='px-4 py-20 bg-gray-800 sm:px-6 lg:px-8'>
     <div className='w-full m-auto max-w-7xl'>
+      <div className='mb-16 text-center'>
+        <h2 className='relative inline-block text-4xl font-bold text-center text-white'>
+          Site Metrics
+        </h2>
+        <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-400 max-w-prose'>
+          Our statistics may not be current at this period. Will be updated
+          periodically.
+        </p>
+        <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
+      </div>
       <div className='grid grid-cols-3 gap-10'>
         <Link href='/jobs'>
           <a className='px-6 py-4 text-gray-400 transition-all bg-gray-700 rounded-md shadow-md hover:bg-gray-600 group'>

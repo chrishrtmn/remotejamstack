@@ -25,12 +25,11 @@ const Masthead = () => {
           <main className='py-20 pl-4 mx-auto sm:pl-6 lg:pl-8'>
             <div className='max-w-2xl mx-auto text-center lg:text-left lg:mx-0'>
               <h1 className='text-6xl font-bold leading-tight text-gray-800'>
-                Hire the right developer for your Jamstack team
+                Hire the right candidate for your team
               </h1>
               <p className='max-w-xl pt-4 pb-8 mx-auto text-xl text-gray-500 lg:mx-0'>
-                Find and post jobs with a focus on{' '}
-                {/* (developers and teams) */}
-                modern technologies using JavaScript, APIs, and markup.
+                Post remote jobs that are catered to Jamstack technologies and
+                discover the right developer for your team.
               </p>
               <div>
                 <Link href={href}>

@@ -22,7 +22,7 @@ const StacksCloud = () => {
           </h4>
         </div>
       </div> */}
-      <div className='py-12 mx-auto text-4xl font-bold bg-gray-800'>
+      <div className='py-8 mx-auto text-3xl font-bold bg-gray-800'>
         <PageVisibility onChange={handleVisibilityChange}>
           {pageIsVisible && (
             <>
@@ -62,10 +62,13 @@ const StacksCloud = () => {
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Node.js
                     </span>
+                    <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                      Cloudflare
+                    </span>
                   </>
                 )}
               </Ticker>
-              <div className='py-6'>
+              <div className='py-3'>
                 <Ticker speed={3} direction='toRight'>
                   {() => (
                     <>
@@ -104,6 +107,9 @@ const StacksCloud = () => {
                       </span>
                       <span className='mx-10 text-gray-500 whitespace-nowrap'>
                         Forestry
+                      </span>
+                      <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                        Supabase
                       </span>
                     </>
                   )}
