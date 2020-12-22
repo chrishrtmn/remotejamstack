@@ -25,11 +25,11 @@ const Masthead = () => {
           <main className='py-20 pl-4 mx-auto sm:pl-6 lg:pl-8'>
             <div className='max-w-2xl mx-auto text-center lg:text-left lg:mx-0'>
               <h1 className='text-6xl font-bold leading-tight text-gray-800'>
-                Hire the right candidate for your team
+                Hire the right talent for your team
               </h1>
               <p className='max-w-xl pt-4 pb-8 mx-auto text-xl text-gray-500 lg:mx-0'>
-                Post remote jobs that are catered to Jamstack technologies and
-                discover the right developer for your team.
+                Post remote jobs that caters to Jamstack technologies and
+                discover the right candidate for your team.
               </p>
               <div>
                 <Link href={href}>
@@ -48,6 +48,8 @@ const Masthead = () => {
           src='/images/masthead-employers.webp'
           alt=''
           layout='fill'
+          objectFit='cover'
+          priority
         />
       </div>
     </div>

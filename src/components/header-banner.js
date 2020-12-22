@@ -23,18 +23,23 @@ const HeaderBanner = () => {
               </svg>
             </span>
             <p className='ml-3 font-medium text-white truncate'>
-              <span className='md:hidden'>Welcome! Post a job free!</span>
+              <span className='sm:hidden'>
+                Post free job with promo: "FREE"
+              </span>
+              <span className='hidden sm:inline md:hidden lg:hidden'>
+                Welcome! Post your free job with promo: "FREE"
+              </span>
               <span className='hidden md:inline lg:hidden'>
-                Welcome! We're giving out the next 20 job submissions for free!
+                Welcome! Post your first free job with our promo code: "FREE"
               </span>
               <span className='hidden lg:inline'>
-                Welcome! With our Early Access launch, we're giving out the next
-                20 job submissions for free!
+                Welcome! For a limited time only, post your first free job with
+                our promo code: "FREE"
               </span>
             </p>
           </div>
           <div className='flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto'>
-            <Link href='/about#pricing'>
+            <Link href='/employers#pricing'>
               <a className='flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-800 bg-white border border-transparent rounded-md shadow-sm hover:text-gray-900 hover:bg-gray-200'>
                 Learn more
               </a>

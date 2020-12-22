@@ -74,7 +74,7 @@ const PricingCTA = () => {
           plan starts at $49.
         </p>
         <p className='inline-block p-1 p-2 text-blue-700 bg-blue-100 border border-blue-200 rounded-md'>
-          The next 20 job submissions are free! Submit yours now.
+          Submit your first free job posting free with the "FREE" promo code!
         </p>
         <div className='block mt-6'>
           <Link href={href}>

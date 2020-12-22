@@ -11,14 +11,14 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Remote Jamstack</title>
+        <title>Remote Jamstack - Find and Post Remote Jamstack Jobs</title>
       </Head>
 
       <Masthead />
       <StacksCloud />
-      <Features />
+      {/* <Features /> */}
       <Testimonials />
-      <LatestBlogPosts />
+      {/* <LatestBlogPosts /> */}
       <Newsletter />
     </>
   )

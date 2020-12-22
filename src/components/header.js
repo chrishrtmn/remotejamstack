@@ -174,8 +174,8 @@ const Header = () => {
               ) : (
                 <>
                   <button
-                    onClick={(e) =>
-                      auth.signinWithGitHub() && userToast('Welcome back!')
+                    onClick={
+                      (e) => auth.signinWithGitHub() // && userToast('Welcome back!')
                     }
                     className='inline-block px-4 pb-2 pt-1.5 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'
                   >

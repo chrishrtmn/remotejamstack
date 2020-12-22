@@ -8,8 +8,8 @@ const SiteMetrics = () => (
           Site Metrics
         </h2>
         <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-400 max-w-prose'>
-          Our statistics may not be current at this period. Will be updated
-          periodically.
+          Our statistics are updated periodically and may not be current during
+          this period.
         </p>
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
       </div>

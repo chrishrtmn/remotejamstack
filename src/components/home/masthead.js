@@ -54,6 +54,8 @@ const Masthead = () => {
           src='/images/masthead-main.webp'
           alt=''
           layout='fill'
+          objectFit='cover'
+          priority
         />
       </div>
     </div>

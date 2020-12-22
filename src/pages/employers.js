@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Masthead from '../components/employers/masthead'
 import Features from '../components/employers/features'
 import FeaturedJobs from '../components/employers/featured-jobs'
@@ -10,6 +12,10 @@ import SiteMetrics from '../components/site-metrics'
 const Employers = () => {
   return (
     <>
+      <Head>
+        <title>Employers - Remote Jamstack</title>
+      </Head>
+
       <Masthead />
       <Features />
       <SiteMetrics />

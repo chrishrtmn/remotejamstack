@@ -8,7 +8,7 @@ const FeaturedJobs = () => {
           Featured Jobs
         </h2>
         <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-500 max-w-prose'>
-          Select the Featured plan to post your open position into the Featured
+          Select the Featured plan to post your open position to the Featured
           jobs section. It will be listed at the top of the Jobs page for better
           visibility and more views.
         </p>
@@ -49,10 +49,10 @@ const FeaturedJobs = () => {
                   fill='#EF4444'
                 />
               </svg>
+              <p className='py-0.5 text-sm text-gray-700'>Your Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
                 Your Open Position
               </p>
-              <p className='text-gray-600'>Your Company Name</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -86,10 +86,8 @@ const FeaturedJobs = () => {
                 </svg>
               </div>
             </div>
-            <div className='relative w-full ml-4 text-left'>
+            <div className='relative flex-grow ml-4 text-left'>
               <svg
-                aria-hidden='true'
-                focusable='false'
                 className='absolute w-8 h-8 -top-7 -right-8'
                 viewBox='0 0 390 406'
                 fill='none'
@@ -100,10 +98,10 @@ const FeaturedJobs = () => {
                   fill='#9ca3af'
                 />
               </svg>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                Front-End Developer
+                Open Position
               </p>
-              <p className='text-gray-500'>Vercel</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -137,10 +135,8 @@ const FeaturedJobs = () => {
                 </svg>
               </div>
             </div>
-            <div className='relative w-full ml-4 text-left'>
+            <div className='relative flex-grow ml-4 text-left'>
               <svg
-                aria-hidden='true'
-                focusable='false'
                 className='absolute w-8 h-8 -top-7 -right-8'
                 viewBox='0 0 390 406'
                 fill='none'
@@ -151,10 +147,10 @@ const FeaturedJobs = () => {
                   fill='#9ca3af'
                 />
               </svg>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                GraphQL Technician
+                Open Position
               </p>
-              <p className='text-gray-500'>GraphCMS</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -188,10 +184,8 @@ const FeaturedJobs = () => {
                 </svg>
               </div>
             </div>
-            <div className='relative w-full ml-4 text-left'>
+            <div className='relative flex-grow ml-4 text-left'>
               <svg
-                aria-hidden='true'
-                focusable='false'
                 className='absolute w-8 h-8 -top-7 -right-8'
                 viewBox='0 0 390 406'
                 fill='none'
@@ -202,10 +196,10 @@ const FeaturedJobs = () => {
                   fill='#9ca3af'
                 />
               </svg>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                DX Specialist
+                Open Position
               </p>
-              <p className='text-gray-500'>Netlify</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -238,10 +232,10 @@ const FeaturedJobs = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                UI/UX Developer
+                Open Position
               </p>
-              <p className='text-gray-500'>Gatsby</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -276,10 +270,10 @@ const FeaturedJobs = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                React Developer
+                Open Position
               </p>
-              <p className='text-gray-500'>Facebook</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -315,10 +309,10 @@ const FeaturedJobs = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                Full-Stack Developer
+                Open Position
               </p>
-              <p className='text-gray-500'>Nuxt</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -353,10 +347,10 @@ const FeaturedJobs = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                Serverless Engineer
+                Open Position
               </p>
-              <p className='text-gray-500'>Fauna</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
@@ -391,10 +385,10 @@ const FeaturedJobs = () => {
               </div>
             </div>
             <div className='ml-4 text-left'>
+              <p className='py-0.5 text-sm text-gray-700'>Company Name</p>
               <p className='text-lg font-bold leading-6 text-gray-800'>
-                Back-End Developer
+                Open Position
               </p>
-              <p className='text-gray-500'>Google</p>
             </div>
           </div>
           <div className='flex border-t border-gray-200 border-1'>
