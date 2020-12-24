@@ -24,17 +24,18 @@ const HeaderBanner = () => {
             </span>
             <p className='ml-3 font-medium text-white truncate'>
               <span className='sm:hidden'>
-                Post free job with promo: "FREE"
+                Post free job with promo: "FREEMOTE"
               </span>
               <span className='hidden sm:inline md:hidden lg:hidden'>
-                Welcome! Post your free job with promo: "FREE"
+                Welcome! Post your free job with promo: "FREEMOTE"
               </span>
               <span className='hidden md:inline lg:hidden'>
-                Welcome! Post your first free job with our promo code: "FREE"
+                Welcome! Post your first free job with our promo code:
+                "FREEMOTE"
               </span>
               <span className='hidden lg:inline'>
                 Welcome! For a limited time only, post your first free job with
-                our promo code: "FREE"
+                our promo code: "FREEMOTE"
               </span>
             </p>
           </div>

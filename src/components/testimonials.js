@@ -9,7 +9,7 @@ const Testimonials = () => {
           <cite className='block mt-10 text-lg not-italic'>
             <span className='font-bold'>Chris Hartman</span>{' '}
             <span className='text-gray-600'>
-              - Owner &amp; Developer, Remote Jamstack
+              - Founder &amp; Developer, Remote Jamstack
             </span>
           </cite>
         </blockquote>

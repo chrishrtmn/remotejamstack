@@ -1,9 +1,6 @@
 import Link from 'next/link'
-
-import { useAuth } from '../utilities/auth'
-
+import { useAuth } from '../libraries/firebase/auth'
 import { toast } from 'react-toastify'
-
 import HeaderBanner from './header-banner'
 
 const Header = () => {

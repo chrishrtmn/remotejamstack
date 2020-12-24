@@ -7,7 +7,7 @@ const Jobs = () => {
         <title>Browse Jobs - Remote Jamstack</title>
       </Head>
 
-      <div className='my-10 sm:px-6 lg:px-8'>
+      <div className='mt-10 mb-20 sm:px-6 lg:px-8'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex justify-between pb-10'>
             <h2 className='text-4xl font-bold text-gray-800'>Jobs</h2>

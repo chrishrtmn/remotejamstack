@@ -4,10 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'black-theme': '#141414',
-        'orange-theme': '#FEB679',
-        'red-theme': '#F95C73',
-        'blue-theme': '#3C82F4',
+        'dark-gray-theme': '#1f2937',
+        'red-theme': '#ef4444',
         producthunt: '#da542f',
       },
       maxWidth: {

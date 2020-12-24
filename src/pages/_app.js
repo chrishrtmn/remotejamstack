@@ -1,16 +1,34 @@
-import { AuthProvider } from '../utilities/auth'
-
+import { useEffect } from 'react'
+import Router from 'next/router'
+import dynamic from 'next/dynamic'
+import { AuthProvider } from '../libraries/firebase/auth'
+import * as gtag from '../libraries/google-analytics'
 import { ToastContainer, Slide } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.min.css'
-
 import Header from '../components/header'
+import Newsletter from '../components/newsletter'
 import Footer from '../components/footer'
-
 import '../styles/global.css'
 
+const CrispWithNoSSR = dynamic(() => import('../libraries/crisp'), {
+  ssr: false,
+})
+
 const App = ({ Component, pageProps }) => {
+  // Google Analytics
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageview(url)
+    }
+    Router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
+
   return (
     <AuthProvider>
+      <CrispWithNoSSR />
       <ToastContainer
         hideProgressBar
         newestOnTop
@@ -21,6 +39,7 @@ const App = ({ Component, pageProps }) => {
       />
       <Header />
       <Component {...pageProps} />
+      <Newsletter />
       <Footer />
     </AuthProvider>
   )

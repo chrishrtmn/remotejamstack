@@ -1,6 +1,5 @@
 import Link from 'next/link'
-
-import { useAuth } from '../../utilities/auth'
+import { useAuth } from '../../libraries/firebase/auth'
 
 const PricingCTA = () => {
   const { user } = useAuth()
@@ -64,7 +63,7 @@ const PricingCTA = () => {
               fill='#EF4444'
             />
           </svg>{' '}
-          developers?
+          talent?
         </h3>
         <p className='my-4'>
           Our{' '}

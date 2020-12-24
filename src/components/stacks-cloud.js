@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import Ticker from 'react-ticker'
 import PageVisibility from 'react-page-visibility'
 
@@ -53,11 +52,8 @@ const StacksCloud = () => {
                     <span className='mx-10 text-gray-700 whitespace-nowrap'>
                       Hugo
                     </span>
-                    <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
                       Serverless
-                    </span>
-                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
-                      CSS
                     </span>
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Node.js

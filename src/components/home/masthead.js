@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
-import { useAuth } from '../../utilities/auth'
+import { useAuth } from '../../libraries/firebase/auth'
 
 const Masthead = () => {
   const auth = useAuth()
@@ -22,7 +21,7 @@ const Masthead = () => {
             <polygon points='50,0 100,0 50,100 0,100' />
           </svg>
 
-          <main className='py-20 pl-4 mx-auto sm:pl-6 lg:pl-8'>
+          <main className='px-4 py-20 mx-auto sm:px-6 lg:pl-8 lg:pr-0'>
             <div className='max-w-2xl mx-auto text-center lg:text-left lg:mx-0'>
               <h1 className='text-6xl font-bold leading-tight text-gray-800 '>
                 Remote jobs in the Jamstack ecosystem

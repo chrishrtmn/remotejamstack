@@ -8,9 +8,9 @@ const FeaturedJobs = () => {
           Featured Jobs
         </h2>
         <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-500 max-w-prose'>
-          Select the Featured plan to post your open position to the Featured
-          jobs section. It will be listed at the top of the Jobs page for better
-          visibility and more views.
+          Get better visibility and more views on your open positions with the
+          Featured package. Featured jobs will be pinned to the top of the Jobs
+          listing page.
         </p>
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
       </div>

@@ -1,4 +1,4 @@
-import db from '../../utilities/firebase-admin'
+import db from '../../libraries/firebase/firebase-admin'
 
 export default async (req, res) => {
   const snapshot = await db.collection('jobs').get()
