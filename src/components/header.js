@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useAuth } from '../libraries/firebase/auth'
 import { toast } from 'react-toastify'
+import ActiveLink from '../utilities/active-link'
 import HeaderBanner from './header-banner'
 
 const Header = () => {
@@ -85,21 +86,21 @@ const Header = () => {
               </a>
             </Link>
             <div className='flex'>
-              <Link href='/jobs'>
+              <ActiveLink activeClassName='text-red-500' href='/jobs'>
                 <a className='pt-2.5 font-medium text-gray-800 text-md hover:text-red-500'>
                   Browse Jobs
                 </a>
-              </Link>
+              </ActiveLink>
               {/* <Link href='/about'>
                 <a className='pt-2.5 ml-8 font-medium text-gray-800 text-md hover:text-red-500'>
                   About
                 </a>
               </Link> */}
-              <Link href='/employers'>
+              <ActiveLink activeClassName='text-red-500' href='/employers'>
                 <a className='pt-2.5 ml-8 font-medium text-gray-800 text-md hover:text-red-500'>
-                  Employers
+                  Employers &amp; Recruiters
                 </a>
-              </Link>
+              </ActiveLink>
               {auth.user ? (
                 <>
                   <Link href='/job/create'>
@@ -127,32 +128,41 @@ const Header = () => {
                       aria-labelledby='user-menu'
                     >
                       <div className='py-1'>
-                        <Link href='/dashboard'>
+                        <ActiveLink
+                          activeClassName='text-red-500 bg-red-50 hover:bg-red-50'
+                          href='/dashboard'
+                        >
                           <a
                             className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
                             role='menuitem'
                           >
                             Dashboard
                           </a>
-                        </Link>
+                        </ActiveLink>
                       </div>
                       <div className='py-1'>
-                        <Link href='/profile'>
+                        <ActiveLink
+                          activeClassName='text-red-500 bg-red-50 hover:bg-red-50'
+                          href='/profile'
+                        >
                           <a
                             className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
                             role='menuitem'
                           >
                             Profile
                           </a>
-                        </Link>
-                        <Link href='/settings'>
+                        </ActiveLink>
+                        <ActiveLink
+                          activeClassName='text-red-500 bg-red-50 hover:bg-red-50'
+                          href='/settings'
+                        >
                           <a
                             className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
                             role='menuitem'
                           >
                             Settings
                           </a>
-                        </Link>
+                        </ActiveLink>
                       </div>
                       <div className='py-1'>
                         <button
@@ -170,14 +180,19 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <button
+                  {/* <button
                     onClick={
                       (e) => auth.signinWithGitHub() // && userToast('Welcome back!')
                     }
                     className='inline-block px-4 pb-2 pt-1.5 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'
                   >
                     Login
-                  </button>
+                  </button> */}
+                  <Link href='/login'>
+                    <a className='inline-block px-4 py-2 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'>
+                      Login
+                    </a>
+                  </Link>
                   <Link href='/signup'>
                     <a className='inline-block px-4 py-2 font-medium text-red-500 border border-red-200 rounded-md hover:text-red-500 hover:bg-red-50 hover:border-red-300'>
                       Sign Up

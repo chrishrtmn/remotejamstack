@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import Router from 'next/router'
+import { useRouter } from 'next/router'
 import dynamic from 'next/dynamic'
 import { AuthProvider } from '../libraries/firebase/auth'
 import * as gtag from '../libraries/google-analytics'
@@ -15,16 +15,19 @@ const CrispWithNoSSR = dynamic(() => import('../libraries/crisp'), {
 })
 
 const App = ({ Component, pageProps }) => {
+  const router = useRouter()
+
   // Google Analytics
   useEffect(() => {
     const handleRouteChange = (url) => {
       gtag.pageview(url)
     }
-    Router.events.on('routeChangeComplete', handleRouteChange)
+    router.events.on('routeChangeComplete', handleRouteChange)
+
     return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange)
+      router.events.off('routeChangeComplete', handleRouteChange)
     }
-  }, [])
+  }, [router.events])
 
   return (
     <AuthProvider>

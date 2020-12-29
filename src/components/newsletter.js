@@ -1,28 +1,23 @@
-import Link from 'next/link'
+//import Link from 'next/link'
+
+import NewsletterForm from './newsletter-form'
 
 const Newsletter = () => {
   return (
     <div id='subscribe' className='px-4 py-20 bg-gray-800 sm:px-6 lg:px-8'>
       <div className='flex items-center justify-between mx-auto rounded-md max-w-7xl'>
-        <div className='pr-20'>
+        <div className='max-w-2xl pr-20'>
           <h3 className='text-4xl font-bold text-white'>
             Sign up for our newsletter
           </h3>
           <p className='mt-6 text-xl text-gray-300'>
-            Receive featured jobs, blog posts, and changelog updates.
+            Get notified of our official launch and receive new featured jobs,
+            articles, and special offers.
           </p>
         </div>
-        <div>
-          <form className='flex p-1 bg-white rounded-md'>
-            <input
-              placeholder='Enter your email'
-              className='flex-grow px-3 py-2 text-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent rounded-tl-md rounded-bl-md'
-            />
-            <button className='px-4 py-2 ml-1 text-lg font-medium text-white bg-red-500 hover:bg-red-600 focus:outline-none rounded-tr-md rounded-br-md'>
-              Subscribe
-            </button>
-          </form>
-          <p className='mt-4 text-sm text-gray-300'>
+        <div className='flex-1 max-w-lg'>
+          <NewsletterForm />
+          {/* <p className='mt-4 text-sm text-gray-300'>
             By sharing your email, you agree to our{' '}
             <Link href='/terms-conditions'>
               <a className='underline'>Terms</a>
@@ -32,6 +27,9 @@ const Newsletter = () => {
               <a className='underline'>Privacy Policy</a>
             </Link>
             .
+          </p> */}
+          <p className='mt-4 text-sm text-gray-300'>
+            We care about your data and will not send you spam.
           </p>
         </div>
       </div>

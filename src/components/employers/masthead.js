@@ -31,9 +31,14 @@ const Masthead = () => {
                 discover the right candidate for your team.
               </p>
               <div>
-                <Link href={href}>
+                {/* <Link href={href}>
                   <a className='inline-block px-8 py-2 mr-4 text-lg font-medium text-white bg-red-500 rounded-md hover:bg-red-600'>
                     Post a Job
+                  </a>
+                </Link> */}
+                <Link href='#subscribe'>
+                  <a className='inline-block px-8 py-2 text-lg font-medium text-red-500 bg-white border border-red-200 rounded-md hover:bg-red-50 hover:border-red-300'>
+                    Get Notified When We Launch
                   </a>
                 </Link>
               </div>

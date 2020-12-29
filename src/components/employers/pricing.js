@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Pricing = () => {
   return (
     <section id='pricing'>
@@ -14,12 +16,12 @@ const Pricing = () => {
             <div className='max-w-sm my-4 bg-white rounded-md shadow-md lg:my-8'>
               <div className='p-8 text-gray-800'>
                 <div className='block max-w-sm pb-8 mx-auto text-sm text-center sm:text-md'>
-                  <h1 className='mb-2 text-lg font-medium text-gray-400 uppercase'>
+                  <h3 className='mb-2 text-lg font-medium text-gray-400 uppercase'>
                     Basic
-                  </h1>
-                  <h2 className='text-5xl font-bold uppercase'>
-                    <span className='inline-block text-3xl align-top'>$</span>99
-                  </h2>
+                  </h3>
+                  <h4 className='text-5xl font-bold uppercase'>
+                    <span className='inline-block text-3xl align-top'>$</span>0
+                  </h4>
                 </div>
                 <div className='flex flex-wrap'>
                   <ul>
@@ -96,7 +98,7 @@ const Pricing = () => {
                         </svg>
                       </div>
                       <span className='ml-3 leading-6 text-gray-200 text-md'>
-                        Include your company logo to stand out
+                        Include your company or personal logo to stand out more
                       </span>
                     </li>
                     <li className='flex p-2'>
@@ -144,11 +146,12 @@ const Pricing = () => {
                     Post a Job
                   </button>
                 </div> */}
-                {/* <div className='pt-8 text-sm text-center'>
-                  Use promo code "
-                  <span className='font-bold text-red-500'>FREEMOTE</span>" to
-                  post your first Standard job for free.
-                </div> */}
+                <div className='pt-8 text-sm text-center'>
+                  Your first Basic job post is free!{' '}
+                  <span className='block'>
+                    Additional Basic job posts will be $99.
+                  </span>
+                </div>
               </div>
             </div>
             <div className='max-w-sm my-4 bg-white rounded-md shadow-md lg:my-8'>
@@ -237,7 +240,7 @@ const Pricing = () => {
                         </svg>
                       </div>
                       <span className='ml-3 leading-6 text-gray-700 text-md'>
-                        Include your company logo to stand out
+                        Include your company or personal logo to stand out more
                       </span>
                     </li>
                     <li className='flex p-2'>
@@ -354,8 +357,7 @@ const Pricing = () => {
                         </svg>
                       </div>
                       <span className='ml-3 leading-6 text-gray-700 text-md'>
-                        Your job gets pinned to the top of the page for best
-                        visibility
+                        Your job gets pinned at the top for the best visibility
                       </span>
                     </li>
                     <li className='flex p-2'>
@@ -374,7 +376,7 @@ const Pricing = () => {
                         </svg>
                       </div>
                       <span className='ml-3 leading-6 text-gray-700 text-md'>
-                        Include your company logo to stand out
+                        Include your company or personal logo to stand out more
                       </span>
                     </li>
                     <li className='flex p-2'>
@@ -427,10 +429,21 @@ const Pricing = () => {
           </div>
         </div>
         <div className='text-center'>
-          <div>Get in touch if you'd like to bulk purchase jobs.</div>
-          <div>
-            Are you a charity or non-profit? Get in touch! 20% lifetime
-            discount.
+          <div className='inline-block px-8 py-4 border border-gray-400 border-dashed rounded-md'>
+            Looking to bulk purchase jobs? Are you a charity or non-profit?{' '}
+            {/* <Link href='/contact'>
+              <a className='border-b border-red-500 hover:text-red-500'>
+                Get in touch with us.
+              </a>
+            </Link> */}
+            <a
+              href='mailto:hello@remotejamstack.com?subject=Pricing%20inquiry&body=What%20is%20your%20inquiry%3F'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='border-b border-red-500 hover:text-red-500'
+            >
+              Get in touch with us.
+            </a>
           </div>
         </div>
       </div>

@@ -16,12 +16,11 @@ const Dashboard = () => {
 
         <Shell>
           <div className='p-10 font-medium text-center'>
-            Please sign in or{' '}
-            <Link href='/'>
-              <a className='text-red-500'>go back home</a>
-            </Link>
-            <br />
-            Loading/Skeleton State here
+            We are still under construction behind the scenes. Please{' '}
+            <Link href='#subscribe'>
+              <a className='text-red-500'>subscribe</a>
+            </Link>{' '}
+            to be notified when we launch.
           </div>
         </Shell>
       </>

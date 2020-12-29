@@ -130,7 +130,7 @@ const StacksCloud = () => {
                       Dato CMS
                     </span>
                     <span className='mx-10 text-gray-700 whitespace-nowrap'>
-                      Amazon AWS
+                      AWS Amplify
                     </span>
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Fauna
@@ -139,13 +139,16 @@ const StacksCloud = () => {
                       Hasura
                     </span>
                     <span className='mx-10 text-gray-300 whitespace-nowrap'>
-                      Heroku
+                      Agility CMS
                     </span>
                     <span className='mx-10 text-gray-600 whitespace-nowrap'>
-                      Express
+                      Heroku
                     </span>
                     <span className='mx-10 text-gray-500 whitespace-nowrap'>
                       Primsic CMS
+                    </span>
+                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                      SnipCart
                     </span>
                   </>
                 )}

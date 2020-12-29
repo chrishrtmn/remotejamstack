@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import ActiveLink from '../utilities/active-link'
+
+const dateYear = new Date().getFullYear()
 
 const Footer = () => {
   return (
@@ -71,49 +74,34 @@ const Footer = () => {
                 </svg>
               </a>
             </Link>
-            <div className='text-sm '>
-              <p className='my-4'>
-                Find and post remote jobs in the Jamstack ecosystem.
-              </p>
-              <p>
-                Made with{' '}
-                <svg
-                  className='inline h-5 text-red-500'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth={2}
-                    d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
-                  />
-                </svg>{' '}
-                by{' '}
-                <Link href='/about#chris'>
-                  <a className='underline'>Chris Hartman</a>
-                </Link>
-                .
-              </p>
-            </div>
+            <p className='mt-6 text-md'>
+              Find and post remote jobs in the Jamstack ecosystem.
+            </p>
           </div>
           <div className='w-48 p-5'>
             <div className='text-sm font-medium text-gray-400 uppercase'>
               Company
             </div>
-            <Link href='/about'>
-              <a className='block my-3 text-sm'>About</a>
-            </Link>
-            <Link href='/employers#pricing'>
-              <a className='block my-3 text-sm'>Pricing</a>
-            </Link>
-            <Link href='/contact'>
-              <a className='block my-3 text-sm'>Contact</a>
-            </Link>
+            {/* <ActiveLink activeClassName='text-red-500' href='/about'>
+              <a className='block my-3 text-sm hover:text-red-500'>About</a>
+            </ActiveLink> */}
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              About
+            </div>
+            <ActiveLink
+              activeClassName='text-red-500'
+              href='/employers#pricing'
+            >
+              <a className='block my-3 text-sm hover:text-red-500'>Pricing</a>
+            </ActiveLink>
+            {/* <ActiveLink activeClassName='text-red-500' href='/contact'>
+              <a className='block my-3 text-sm hover:text-red-500'>Contact</a>
+            </ActiveLink> */}
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              Contact
+            </div>
             <a
-              className='block my-3 text-sm'
+              className='block my-3 text-sm hover:text-red-500'
               href='mailto:hello@remotejamstack.com?subject=What%20is%20the%20subject%3F&body=What%20would%20you%20like%20to%20say%3F'
               target='_blank'
               rel='noopener noreferrer'
@@ -125,38 +113,65 @@ const Footer = () => {
             <div className='text-sm font-medium text-gray-400 uppercase'>
               Resources
             </div>
-            <Link href='/blog'>
-              <a className='block my-3 text-sm'>Blog</a>
-            </Link>
+            {/* <ActiveLink activeClassName='text-red-500' href='/blog'>
+              <a className='block my-3 text-sm hover:text-red-500'>Blog</a>
+            </ActiveLink> */}
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              Blog
+            </div>
             {/* <a className='block my-3 text-sm'>
               OSS/Open Source Funding/Running Costs/2% Pledge
             </a> */}
-            <Link href='/roadmap'>
-              <a className='block my-3 text-sm'>Roadmap</a>
-            </Link>
-            <Link href='/changelog'>
-              <a className='block my-3 text-sm'>Changelog</a>
-            </Link>
+            <ActiveLink activeClassName='text-red-500' href='/roadmap'>
+              <a className='block my-3 text-sm hover:text-red-500'>Roadmap</a>
+            </ActiveLink>
+            <ActiveLink activeClassName='text-red-500' href='/changelog'>
+              <a className='block my-3 text-sm hover:text-red-500'>Changelog</a>
+            </ActiveLink>
             {/* <a className='block my-3 text-sm'>
               Partners/Sponsors
-            </a>
-            <a className='block my-3 text-sm'>
+            </a> */}
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              Partners &amp; Sponsors
+            </div>
+            {/* <a className='block my-3 text-sm'>
               Press &amp; Media
             </a> */}
-            <Link href='/sitemap.xml'>
-              <a className='block my-3 text-sm'>Sitemap</a>
-            </Link>
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              Press &amp; Media
+            </div>
+            <a
+              href='/sitemap.xml'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='block my-3 text-sm hover:text-red-500'
+            >
+              Sitemap
+            </a>
           </div>
           <div className='w-48 p-5'>
             <div className='text-sm font-medium text-gray-400 uppercase'>
               Legal
             </div>
-            <Link href='/privacy-policy'>
-              <a className='block my-3 text-sm'>Privacy Policy</a>
-            </Link>
-            <Link href='/terms-conditions'>
-              <a className='block my-3 text-sm'>Terms &amp; Conditions</a>
-            </Link>
+            {/* <ActiveLink activeClassName='text-red-500' href='/privacy-policy'>
+              <a className='block my-3 text-sm hover:text-red-500'>
+                Privacy Policy
+              </a>
+            </ActiveLink> */}
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              Privacy Policy
+            </div>
+            {/* <ActiveLink activeClassName='text-red-500' href='/terms-conditions'>
+              <a className='block my-3 text-sm hover:text-red-500'>
+                Terms &amp; Conditions
+              </a>
+            </ActiveLink> */}
+            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
+              Terms &amp; Conditions
+            </div>
+            {/* <Link href='/disclaimer'>
+              <a className='block my-3 text-sm'>Disclaimer</a>
+            </Link> */}
             {/* <a className='block my-3 text-sm'>
               Cookies Policy
             </a> */}
@@ -164,7 +179,31 @@ const Footer = () => {
         </div>
         <div className='flex justify-between pt-10 pb-16 border-t border-gray-200'>
           <div className='text-sm text-gray-400'>
-            &copy; 2021 Remote Jamstack. All rights reserved.
+            &copy; {dateYear} Remote Jamstack. All rights reserved. Made with{' '}
+            <svg
+              className='inline h-5 text-gray-400'
+              xmlns='http://www.w3.org/2000/svg'
+              fill='none'
+              viewBox='0 0 24 24'
+              stroke='currentColor'
+            >
+              <path
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth={2}
+                d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
+              />
+            </svg>{' '}
+            by{' '}
+            <a
+              href='https://chrishrtmn.com'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='border-b border-red-500 hover:text-red-500'
+            >
+              Chris Hartman
+            </a>
+            .
           </div>
           <div className='flex justify-between w-28'>
             <a
@@ -173,7 +212,7 @@ const Footer = () => {
               target='_blank'
             >
               <svg
-                className='h-5 text-gray-400 fill-current hover:text-gray-800'
+                className='h-5 text-gray-400 fill-current hover:text-twitter'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='#9ca3af'
@@ -187,7 +226,7 @@ const Footer = () => {
               target='_blank'
             >
               <svg
-                className='h-5 text-gray-400 fill-current hover:text-gray-800'
+                className='h-5 text-gray-400 fill-current hover:text-facebook'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='#9ca3af'
@@ -201,7 +240,7 @@ const Footer = () => {
               rel='noopener noreferrer'
             >
               <svg
-                className='h-5 text-gray-400 fill-current hover:text-gray-800'
+                className='h-5 text-gray-400 fill-current hover:text-linkedin'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
                 fill='#9ca3af'

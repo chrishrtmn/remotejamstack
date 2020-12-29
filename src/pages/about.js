@@ -25,7 +25,6 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Newsletter />
     </>
   )
 }

@@ -82,6 +82,15 @@ class MyDocument extends Document {
           <link rel='alternate' type='application/rss+xml' href='/feed.xml' />
         </Head>
         <body>
+          {/* Google Analytics */}
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
+              height='0'
+              width='0'
+              style={{ display: 'none', visibility: 'hidden' }}
+            />
+          </noscript>
           <Main />
           <NextScript />
         </body>

@@ -32,7 +32,7 @@ const Masthead = () => {
                 modern technologies using JavaScript, APIs, and markup.
               </p>
               <div>
-                <Link href='/jobs'>
+                {/* <Link href='/jobs'>
                   <a className='inline-block px-8 py-2 mr-4 text-lg font-medium text-white bg-red-500 rounded-md hover:bg-red-600'>
                     View All Jobs
                   </a>
@@ -40,6 +40,11 @@ const Masthead = () => {
                 <Link href={href}>
                   <a className='inline-block px-8 py-2 mx-4 text-lg font-medium text-red-500 bg-white border border-red-200 rounded-md hover:bg-red-50 hover:border-red-300'>
                     Post a Job
+                  </a>
+                </Link> */}
+                <Link href='#subscribe'>
+                  <a className='inline-block px-8 py-2 text-lg font-medium text-red-500 bg-white border border-red-200 rounded-md hover:bg-red-50 hover:border-red-300'>
+                    Get Notified When We Launch
                   </a>
                 </Link>
               </div>
