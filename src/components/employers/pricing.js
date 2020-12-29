@@ -41,7 +41,7 @@ const Pricing = () => {
                         </svg>
                       </div>
                       <span className='ml-3 leading-6 text-gray-700 text-md'>
-                        List your job for up to 30 days
+                        List your first job for up to 90 days
                       </span>
                     </li>
                     <li className='flex p-2'>
@@ -149,7 +149,7 @@ const Pricing = () => {
                 <div className='pt-8 text-sm text-center'>
                   Your first Basic job post is free!{' '}
                   <span className='block'>
-                    Additional Basic job posts will be $99.
+                    Additional jobs will be $99 and list for 30 days.
                   </span>
                 </div>
               </div>

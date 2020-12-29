@@ -20,7 +20,7 @@ const SiteMetrics = () => (
             Total Jobs Available
           </div>
           <div className='text-4xl font-bold text-gray-200'>
-            8
+            TBD
             <svg
               className='inline-block w-5 h-5'
               xmlns='http://www.w3.org/2000/svg'
@@ -58,7 +58,7 @@ const SiteMetrics = () => (
               </svg>
             </div>
             <div className='text-4xl font-bold text-gray-200 group-hover:text-white'>
-              2
+              5
               <svg
                 className='inline-block w-5 h-5'
                 xmlns='http://www.w3.org/2000/svg'
@@ -79,7 +79,7 @@ const SiteMetrics = () => (
             All-Time Site Visits
           </div>
           <div className='text-4xl font-bold text-gray-200'>
-            TBD
+            235
             <svg
               className='inline-block w-5 h-5'
               xmlns='http://www.w3.org/2000/svg'
