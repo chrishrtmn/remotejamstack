@@ -44,7 +44,7 @@ const NewsletterForm = () => {
       <button
         type='submit'
         disabled={state.submitting}
-        className='w-full px-4 py-2 text-lg font-medium leading-6 text-white bg-red-500 rounded-md md:ml-1 md:w-auto hover:bg-red-600 focus:outline-none md:rounded-tr-md md:rounded-br-md'
+        className='w-full px-4 py-2 text-lg font-medium leading-6 text-white bg-red-500 rounded-md md:ml-1 md:w-auto hover:bg-red-600 focus:outline-none md:rounded-tr-md md:rounded-tl-none md:rounded-bl-none md:rounded-br-md'
       >
         Notify Me
       </button>

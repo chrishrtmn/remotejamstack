@@ -66,7 +66,7 @@ const Changelog = () => {
             {/* Changelog Event End */}
             {/* Changelog Event */}
             <div className='py-10 border-b border-gray-200'>
-              <div className='text-lg text-gray-400'>December 29, 2020</div>
+              <div className='text-lg text-gray-400'>December 28, 2020</div>
               <div className='mt-4 text-xl font-bold'>
                 <svg
                   className='inline-block w-6 mr-2 -mt-1 text-red-500'

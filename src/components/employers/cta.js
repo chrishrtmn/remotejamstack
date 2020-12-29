@@ -7,7 +7,10 @@ const PricingCTA = () => {
   const href = user ? '/job/create' : '/signup'
 
   return (
-    <div id='signup' className='py-20 bg-white sm:px-6 lg:px-8'>
+    <div
+      id='signup'
+      className='px-4 py-10 bg-white md:py-16 lg:py-20 sm:px-6 lg:px-8'
+    >
       <div className='w-full m-auto max-w-7xl'>
         <div className='justify-between text-center md:text-left md:flex'>
           <h3 className='text-5xl font-bold text-gray-800'>
@@ -15,7 +18,7 @@ const PricingCTA = () => {
             <svg
               aria-hidden='true'
               focusable='false'
-              className='inline-block w-auto h-20'
+              className='inline-block w-auto h-12 lg:h-20 sm:h-16'
               viewBox='0 0 172 149'
               fill='none'
               xmlns='http://www.w3.org/2000/svg'

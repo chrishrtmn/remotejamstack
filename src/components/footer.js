@@ -86,7 +86,7 @@ const Footer = () => {
               <a className='block my-3 text-sm hover:text-red-500'>About</a>
             </ActiveLink> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              About
+              About (soon)
             </div>
             <ActiveLink
               activeClassName='text-red-500'
@@ -98,7 +98,7 @@ const Footer = () => {
               <a className='block my-3 text-sm hover:text-red-500'>Contact</a>
             </ActiveLink> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Contact
+              Contact (soon)
             </div>
             <a
               className='block my-3 text-sm hover:text-red-500'
@@ -117,7 +117,7 @@ const Footer = () => {
               <a className='block my-3 text-sm hover:text-red-500'>Blog</a>
             </ActiveLink> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Blog
+              Blog (soon)
             </div>
             {/* <a className='block my-3 text-sm'>
               OSS/Open Source Funding/Running Costs/2% Pledge
@@ -132,13 +132,13 @@ const Footer = () => {
               Partners/Sponsors
             </a> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Partners &amp; Sponsors
+              Partners &amp; Sponsors (soon)
             </div>
             {/* <a className='block my-3 text-sm'>
               Press &amp; Media
             </a> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Press &amp; Media
+              Press &amp; Media (soon)
             </div>
             <a
               href='/sitemap.xml'
@@ -159,7 +159,7 @@ const Footer = () => {
               </a>
             </ActiveLink> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Privacy Policy
+              Privacy Policy (soon)
             </div>
             {/* <ActiveLink activeClassName='text-red-500' href='/terms-conditions'>
               <a className='block my-3 text-sm hover:text-red-500'>
@@ -167,7 +167,7 @@ const Footer = () => {
               </a>
             </ActiveLink> */}
             <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Terms &amp; Conditions
+              Terms &amp; Conditions (soon)
             </div>
             {/* <Link href='/disclaimer'>
               <a className='block my-3 text-sm'>Disclaimer</a>
