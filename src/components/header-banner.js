@@ -5,7 +5,7 @@ const HeaderBanner = () => {
     <div className='px-5 bg-gray-800 sm:px-6 lg:px-8'>
       <div className='py-3 mx-auto max-w-7xl'>
         <div className='flex flex-wrap items-center justify-between'>
-          <div className='flex items-center flex-1 w-0'>
+          <div className='items-center flex-1 hidden sm:flex'>
             <span className='flex p-2 bg-white rounded-md'>
               {/* <svg
                 className='w-6 h-6 text-red-500'
@@ -53,13 +53,11 @@ const HeaderBanner = () => {
               </span>
             </p> */}
             <p className='ml-3 font-medium text-white truncate'>
-              <span className='sm:hidden'>We are under development.</span>
-              <span className='hidden sm:inline md:hidden lg:hidden'>
+              <span className='hidden sm:inline md:hidden'>
                 Welcome! We are under active development.
               </span>
               <span className='hidden md:inline lg:hidden'>
-                Welcome! We are under active development. Please see our
-                Roadmap.
+                Welcome! We are under active development. See our Roadmap.
               </span>
               <span className='hidden lg:inline'>
                 Welcome! We are under active development. Please see our Roadmap
@@ -67,7 +65,7 @@ const HeaderBanner = () => {
               </span>
             </p>
           </div>
-          <div className='flex-shrink-0 order-3 w-full mt-2 sm:order-2 sm:mt-0 sm:w-auto'>
+          <div className='flex-shrink-0 order-3 w-full sm:order-2 sm:w-auto'>
             {/* <Link href='/employers#pricing'>
               <a className='flex items-center justify-center px-4 py-2 text-sm font-medium text-gray-800 bg-white border border-transparent rounded-md shadow-sm hover:text-gray-900 hover:bg-gray-200'>
                 Learn more

@@ -9,7 +9,7 @@ const PricingCTA = () => {
   return (
     <div id='signup' className='py-20 bg-white sm:px-6 lg:px-8'>
       <div className='w-full m-auto max-w-7xl'>
-        <div className='flex justify-between'>
+        <div className='justify-between text-center md:text-left md:flex'>
           <h3 className='text-5xl font-bold text-gray-800'>
             Ready to find <span className='sr-only'>A+</span>
             <svg
@@ -77,7 +77,7 @@ const PricingCTA = () => {
           </Link>
         </div> */}
           <Link href='#subscribe'>
-            <a className='px-8 py-2 text-lg font-medium text-red-500 bg-white border border-red-200 rounded-md place-self-center hover:bg-red-50 hover:border-red-300'>
+            <a className='inline-block px-4 py-2 mt-4 text-lg font-medium leading-tight text-center text-red-500 bg-white border border-red-200 rounded-md md:mt-0 lg:px-8 place-self-center hover:bg-red-50 hover:border-red-300'>
               Get Notified When We Launch
             </a>
           </Link>

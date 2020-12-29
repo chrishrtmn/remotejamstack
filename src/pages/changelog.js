@@ -10,15 +10,17 @@ const Changelog = () => {
 
       <div className='px-4 pt-10 pb-20 sm:px-6 lg:px-8'>
         <div className='w-full m-auto max-w-prose'>
-          <div className='flex justify-between pb-10'>
-            <h2 className='text-4xl font-bold text-gray-800'>Changelog</h2>
+          <div className='justify-between pb-10 sm:flex'>
+            <h2 className='text-3xl font-bold text-gray-800 lg:text-4xl'>
+              Changelog
+            </h2>
             <Link href='/roadmap'>
-              <a className='inline-block px-4 py-2 font-medium text-red-500 border border-red-200 rounded-md hover:border-red-300 hover:bg-red-50 place-self-center'>
+              <a className='inline-block px-4 py-2 mt-2 font-medium text-red-500 border border-red-200 rounded-md sm:mt-0 hover:border-red-300 hover:bg-red-50 place-self-center'>
                 View Roadmap
               </a>
             </Link>
           </div>
-          <div className='px-10 bg-white border border-gray-200 rounded-md shadow-md'>
+          <div className='px-4 bg-white border border-gray-200 rounded-md shadow-md md:px-10'>
             <div className='py-10 text-sm border-b border-gray-200'>
               <p className='mb-0'>
                 Remote Jamstack is under active development and has been

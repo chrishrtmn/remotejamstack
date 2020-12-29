@@ -23,7 +23,7 @@ const Header = () => {
             <Link href='/'>
               <a className='pt-1'>
                 <svg
-                  className='h-10'
+                  className='h-8 header_nav:h-10'
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
                   viewBox='0 0 2270 381'
@@ -85,7 +85,7 @@ const Header = () => {
                 </svg>
               </a>
             </Link>
-            <div className='flex'>
+            <div className='hidden header_nav:flex'>
               <ActiveLink activeClassName='text-red-500' href='/jobs'>
                 <a className='pt-2.5 font-medium text-gray-800 text-md hover:text-red-500'>
                   Browse Jobs

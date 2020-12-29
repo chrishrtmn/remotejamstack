@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const SiteMetrics = () => (
-  <div className='px-4 py-20 bg-gray-800 sm:px-6 lg:px-8'>
+  <div className='px-4 py-10 bg-gray-800 md:py-16 lg:py-20 sm:px-6 lg:px-8'>
     <div className='w-full m-auto max-w-7xl'>
       <div className='mb-16 text-center'>
         <h2 className='relative inline-block text-4xl font-bold text-center text-white'>
@@ -13,7 +13,7 @@ const SiteMetrics = () => (
         </p>
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
       </div>
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid gap-5 md:gap-10 md:grid-cols-3'>
         {/* <Link href='/jobs'> */}
         <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
           <div className='mb-2 text-lg font-medium text-gray-400'>

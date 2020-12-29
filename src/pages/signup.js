@@ -12,10 +12,12 @@ const Signup = () => {
           <title>Signup - Remote Jamstack</title>
         </Head>
 
-        <div className='mt-10 mb-20 sm:px-6 lg:px-8'>
+        <div className='px-4 py-10 md:py-16 lg:py-20 sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-7xl'>
             <div className='flex justify-between pb-10'>
-              <h2 className='text-4xl font-bold text-gray-800'>Signup</h2>
+              <h2 className='text-3xl font-bold text-gray-800 lg:text-4xl'>
+                Signup
+              </h2>
               <div className='inline-block px-4 py-2 font-medium text-gray-400 border border-gray-200 rounded-md place-self-center'>
                 Coming Soon
               </div>

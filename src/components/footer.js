@@ -5,10 +5,10 @@ const dateYear = new Date().getFullYear()
 
 const Footer = () => {
   return (
-    <div className='py-10 sm:px-6 lg:px-8'>
+    <div className='px-4 py-10 sm:px-6 lg:px-8'>
       <div className='w-full m-auto max-w-7xl'>
-        <div className='flex flex-wrap justify-center text-gray-600'>
-          <div className='flex-1 p-5 pl-0'>
+        <div className='flex flex-wrap text-gray-600 lg:justify-center'>
+          <div className='w-full p-5 pl-0 lg:flex-1'>
             <Link href='/'>
               <a className='inline-block'>
                 <svg
@@ -177,7 +177,7 @@ const Footer = () => {
             </a> */}
           </div>
         </div>
-        <div className='flex justify-between pt-10 pb-16 border-t border-gray-200'>
+        <div className='pt-10 pb-16 border-t border-gray-200 md:flex md:justify-between'>
           <div className='text-sm text-gray-400'>
             &copy; {dateYear} Remote Jamstack. All rights reserved. Made with{' '}
             <svg
@@ -205,7 +205,7 @@ const Footer = () => {
             </a>
             .
           </div>
-          <div className='flex justify-between w-28'>
+          <div className='flex justify-between mt-4 md:mt-0 w-28'>
             <a
               href='https://twitter.com/remotejamstack'
               rel='noopener noreferrer'

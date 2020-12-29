@@ -10,7 +10,7 @@ const Masthead = () => {
   return (
     <div className='relative overflow-hidden bg-white'>
       <div className='mx-auto max-w-7xl'>
-        <div className='relative z-10 bg-white lg:max-w-mh lg:w-full'>
+        <div className='relative z-10 bg-white lg:max-w-masthead lg:w-full'>
           <svg
             className='absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block'
             fill='currentColor'
@@ -21,9 +21,9 @@ const Masthead = () => {
             <polygon points='50,0 100,0 50,100 0,100' />
           </svg>
 
-          <main className='px-4 py-20 mx-auto sm:px-6 lg:pl-8 lg:pr-0'>
+          <main className='px-4 py-10 mx-auto md:py-16 lg:py-20 sm:px-6 lg:pl-8 lg:pr-0'>
             <div className='max-w-2xl mx-auto text-center lg:text-left lg:mx-0'>
-              <h1 className='text-6xl font-bold leading-tight text-gray-800 '>
+              <h1 className='text-4xl font-bold leading-none text-gray-800 md:text-5xl lg:leading-tight lg:text-6xl '>
                 Remote jobs in the Jamstack ecosystem
               </h1>
               <p className='max-w-xl pt-4 pb-8 mx-auto text-xl text-gray-500 lg:mx-0'>
@@ -43,7 +43,7 @@ const Masthead = () => {
                   </a>
                 </Link> */}
                 <Link href='#subscribe'>
-                  <a className='inline-block px-8 py-2 text-lg font-medium text-red-500 bg-white border border-red-200 rounded-md hover:bg-red-50 hover:border-red-300'>
+                  <a className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md lg:px-8 hover:bg-red-50 hover:border-red-300'>
                     Get Notified When We Launch
                   </a>
                 </Link>

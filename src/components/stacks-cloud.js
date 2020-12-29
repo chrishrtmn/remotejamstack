@@ -21,44 +21,44 @@ const StacksCloud = () => {
           </h4>
         </div>
       </div> */}
-      <div className='py-8 mx-auto text-3xl font-bold bg-gray-800'>
+      <div className='py-4 mx-auto text-2xl font-bold bg-gray-800 lg:py-8 lg:text-3xl'>
         <PageVisibility onChange={handleVisibilityChange}>
           {pageIsVisible && (
             <>
               <Ticker speed={2}>
                 {() => (
                   <>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       React.js
                     </span>
-                    <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-600 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Vue.js
                     </span>
-                    <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Angular
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Svelte
                     </span>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       GraphCMS
                     </span>
-                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Strapi
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       TypeScript
                     </span>
-                    <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Hugo
                     </span>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Serverless
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Node.js
                     </span>
-                    <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Cloudflare
                     </span>
                   </>
@@ -68,43 +68,43 @@ const StacksCloud = () => {
                 <Ticker speed={3} direction='toRight'>
                   {() => (
                     <>
-                      <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-600 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Contentful
                       </span>
-                      <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Sanity
                       </span>
-                      <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Vercel
                       </span>
-                      <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Netlify CMS
                       </span>
-                      <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Next.js
                       </span>
-                      <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-600 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Gatbsy
                       </span>
-                      <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Nuxt.js
                       </span>
-                      <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         11ty
                       </span>
-                      <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Gridsome
                       </span>
-                      <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Stripe
                       </span>
-                      <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-600 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         BigCommerce
                       </span>
-                      <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Forestry
                       </span>
-                      <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                      <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                         Supabase
                       </span>
                     </>
@@ -114,40 +114,40 @@ const StacksCloud = () => {
               <Ticker speed={4}>
                 {() => (
                   <>
-                    <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Jekyll
                     </span>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Netlify
                     </span>
-                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Google Firebase
                     </span>
-                    <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-600 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Render
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Dato CMS
                     </span>
-                    <span className='mx-10 text-gray-700 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       AWS Amplify
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Fauna
                     </span>
-                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Hasura
                     </span>
-                    <span className='mx-10 text-gray-300 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Agility CMS
                     </span>
-                    <span className='mx-10 text-gray-600 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-600 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Heroku
                     </span>
-                    <span className='mx-10 text-gray-500 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Primsic CMS
                     </span>
-                    <span className='mx-10 text-gray-400 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       SnipCart
                     </span>
                   </>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Pricing = () => {
   return (
     <section id='pricing'>
-      <div className='container px-6 py-20 mx-auto max-w-7xl'>
+      <div className='container px-4 py-10 mx-auto md:py-16 lg:py-20 max-w-7xl sm:px-6 lg:px-8'>
         <h2 className='relative block text-4xl font-bold text-center text-gray-800'>
           Pricing
         </h2>
@@ -12,9 +12,9 @@ const Pricing = () => {
         </p>
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
         <div className='my-6'>
-          <div className='relative grid justify-between gap-5 lg:gap-10 md:grid-cols-3'>
-            <div className='max-w-sm my-4 bg-white rounded-md shadow-md lg:my-8'>
-              <div className='p-8 text-gray-800'>
+          <div className='relative justify-between gap-5 md:grid lg:gap-10 md:grid-cols-3'>
+            <div className='max-w-sm mx-auto my-4 bg-white rounded-md shadow-md lg:my-8'>
+              <div className='p-8 text-gray-800 sm:px-4 lg:px-8'>
                 <div className='block max-w-sm pb-8 mx-auto text-sm text-center sm:text-md'>
                   <h3 className='mb-2 text-lg font-medium text-gray-400 uppercase'>
                     Basic
@@ -154,8 +154,8 @@ const Pricing = () => {
                 </div>
               </div>
             </div>
-            <div className='max-w-sm my-4 bg-white rounded-md shadow-md lg:my-8'>
-              <div className='p-8 text-gray-800'>
+            <div className='max-w-sm mx-auto my-4 bg-white rounded-md shadow-md lg:my-8'>
+              <div className='p-8 text-gray-800 sm:px-4 lg:px-8'>
                 <div className='block max-w-sm pb-8 mx-auto text-sm text-center sm:text-md'>
                   <h1 className='mb-2 text-lg font-medium text-gray-400 uppercase'>
                     Plus
@@ -290,8 +290,8 @@ const Pricing = () => {
                 </div> */}
               </div>
             </div>
-            <div className='max-w-sm my-4 bg-white rounded-md shadow-md lg:my-8'>
-              <div className='p-8 text-gray-800'>
+            <div className='max-w-sm mx-auto my-4 bg-white rounded-md shadow-md lg:my-8'>
+              <div className='p-8 text-gray-800 sm:px-4 lg:px-8'>
                 <div className='block max-w-sm pb-8 mx-auto text-sm text-center sm:text-md'>
                   <h3 className='mb-2 text-lg font-medium text-gray-400 uppercase'>
                     Featured

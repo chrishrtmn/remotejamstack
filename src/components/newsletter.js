@@ -4,9 +4,12 @@ import NewsletterForm from './newsletter-form'
 
 const Newsletter = () => {
   return (
-    <div id='subscribe' className='px-4 py-20 bg-gray-800 sm:px-6 lg:px-8'>
-      <div className='flex items-center justify-between mx-auto rounded-md max-w-7xl'>
-        <div className='max-w-2xl pr-20'>
+    <div
+      id='subscribe'
+      className='px-4 py-10 text-center bg-gray-800 md:py-16 md:text-left lg:py-20 sm:px-6 lg:px-8'
+    >
+      <div className='items-center justify-between mx-auto rounded-md md:flex max-w-7xl'>
+        <div className='flex-1 sm:pr-10 lg:pr-20 lg:max-w-2xl'>
           <h3 className='text-4xl font-bold text-white'>
             Sign up for our newsletter
           </h3>
@@ -15,7 +18,7 @@ const Newsletter = () => {
             articles, and special offers.
           </p>
         </div>
-        <div className='flex-1 max-w-lg'>
+        <div className='flex-1 max-w-lg mx-auto mt-8 md:mt-0 md:mx-0'>
           <NewsletterForm />
           {/* <p className='mt-4 text-sm text-gray-300'>
             By sharing your email, you agree to our{' '}

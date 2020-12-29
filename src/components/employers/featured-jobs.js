@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const FeaturedJobs = () => {
   return (
-    <div className='py-20 m-auto max-w-7xl sm:px-6 lg:px-8'>
+    <div className='px-4 py-10 m-auto md:py-16 lg:py-20 max-w-7xl sm:px-6 lg:px-8'>
       <div className='mb-16 text-center'>
         <h2 className='relative inline-block text-4xl font-bold text-center text-gray-800'>
           Featured Jobs
@@ -14,7 +14,7 @@ const FeaturedJobs = () => {
         </p>
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
       </div>
-      <div className='grid grid-cols-3 gap-10'>
+      <div className='grid gap-5 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3'>
         <div className='bg-white rounded-md shadow-md'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
@@ -162,7 +162,7 @@ const FeaturedJobs = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white rounded-md shadow-md opacity-25'>
+        <div className='hidden bg-white rounded-md shadow-md opacity-25 lg:block'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
               <div className='flex items-center justify-center w-12 h-12 text-white bg-green-300 rounded-md'>
@@ -209,7 +209,7 @@ const FeaturedJobs = () => {
             <div className='flex-1 px-4 py-2 text-sm text-gray-500'>Canada</div>
           </div>
         </div>
-        <div className='bg-white rounded-md shadow-md opacity-20'>
+        <div className='hidden bg-white rounded-md shadow-md sm:block opacity-10 lg:opacity-20'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
               <div className='flex items-center justify-center w-12 h-12 text-white bg-purple-300 rounded-md'>
@@ -247,7 +247,7 @@ const FeaturedJobs = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white rounded-md shadow-md opacity-10'>
+        <div className='hidden bg-white rounded-md shadow-md lg:block opacity-10'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
               <div className='flex items-center justify-center w-12 h-12 text-white bg-indigo-300 rounded-md'>
@@ -286,7 +286,7 @@ const FeaturedJobs = () => {
           </div>
         </div>
 
-        <div className='bg-white rounded-md shadow-md opacity-20'>
+        <div className='hidden bg-white rounded-md shadow-md lg:block opacity-20'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
               <div className='flex items-center justify-center w-12 h-12 text-white bg-yellow-300 rounded-md'>
@@ -324,7 +324,7 @@ const FeaturedJobs = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white rounded-md shadow-md opacity-10'>
+        <div className='hidden bg-white rounded-md shadow-md lg:block opacity-10'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
               <div className='flex items-center justify-center w-12 h-12 text-white bg-red-300 rounded-md'>
@@ -362,7 +362,7 @@ const FeaturedJobs = () => {
             </div>
           </div>
         </div>
-        <div className='bg-white rounded-md shadow-md opacity-5'>
+        <div className='hidden bg-white rounded-md shadow-md lg:block opacity-5'>
           <div className='flex p-4'>
             <div className='flex-shrink-0'>
               <div className='flex items-center justify-center w-12 h-12 text-white bg-pink-300 rounded-md'>

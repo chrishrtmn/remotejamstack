@@ -12,7 +12,10 @@ module.exports = {
         producthunt: '#da542f',
       },
       maxWidth: {
-        mh: '720px',
+        masthead: '720px',
+      },
+      screens: {
+        header_nav: '880px',
       },
     },
   },

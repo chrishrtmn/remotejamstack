@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const FAQ = () => {
   return (
-    <div className='py-20 m-auto bg-gray-800 max-w-7xl sm:px-6 lg:px-8'>
+    <div className='px-4 py-10 m-auto bg-gray-800 md:py-16 lg:py-20 max-w-7xl sm:px-6 lg:px-8'>
       {/* <div className='mb-16 text-center'> */}
       <div className='text-center'>
         <h2 className='relative inline-block text-4xl font-bold text-center text-white'>
