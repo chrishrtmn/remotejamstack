@@ -58,7 +58,7 @@ const SiteMetrics = () => (
               </svg>
             </div>
             <div className='text-4xl font-bold text-gray-200 group-hover:text-white'>
-              7
+              10
               <svg
                 className='inline-block w-5 h-5'
                 xmlns='http://www.w3.org/2000/svg'
