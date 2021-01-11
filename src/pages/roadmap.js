@@ -67,7 +67,6 @@ const Roadmap = () => {
                 <li>Dashboard job list table buildout</li>
                 <li>Job page results table content and styling</li>
                 <li>Job Details page designing and styling</li>
-                <li>Create Contact form with FormSpree</li>
               </ul>
             </div>
             {/* End In-Progess */}

@@ -94,12 +94,9 @@ const Footer = () => {
             >
               <a className='block my-3 text-sm hover:text-red-500'>Pricing</a>
             </ActiveLink>
-            {/* <ActiveLink activeClassName='text-red-500' href='/contact'>
+            <ActiveLink activeClassName='text-red-500' href='/contact'>
               <a className='block my-3 text-sm hover:text-red-500'>Contact</a>
-            </ActiveLink> */}
-            <div className='my-3 text-sm text-gray-300 cursor-not-allowed'>
-              Contact (soon)
-            </div>
+            </ActiveLink>
             <a
               className='block my-3 text-sm hover:text-red-500'
               href='mailto:hello@remotejamstack.com?subject=What%20is%20the%20subject%3F&body=What%20would%20you%20like%20to%20say%3F'

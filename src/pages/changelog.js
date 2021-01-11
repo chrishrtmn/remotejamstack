@@ -28,12 +28,6 @@ const Changelog = () => {
                 what we do and publish all new features &amp; improvements we've
                 done to this public changelog.
               </p>
-              {/* <p>
-                <a href='#subscribe' className='text-red-500'>
-                  Subscribe
-                </a>{' '}
-                to our newsletter to get the latest updates as they release.
-              </p> */}
             </div>
             {/* Changelog Event */}
             {/* <div className='py-10 border-b border-gray-200'>
@@ -63,6 +57,38 @@ const Changelog = () => {
                 </li>
               </ul>
             </div> */}
+            {/* Changelog Event End */}
+            {/* Changelog Event */}
+            <div className='py-10 border-b border-gray-200'>
+              <div className='text-lg text-gray-400'>January 11, 2021</div>
+              <div className='mt-4 text-xl font-bold'>
+                <svg
+                  className='inline-block w-6 mr-2 -mt-1 text-red-500'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7'
+                  />
+                </svg>{' '}
+                New Features
+              </div>
+              <ul className='mt-2 space-y-2 list-disc ml-14'>
+                <li>
+                  <span className='block font-bold'>Contact</span>Our{' '}
+                  <Link href='/contact'>
+                    <a className='text-red-500'>Contact</a>
+                  </Link>{' '}
+                  page has been included to our site. Feel free to contact us
+                  with any questions or feedback.
+                </li>
+              </ul>
+            </div>
             {/* Changelog Event End */}
             {/* Changelog Event */}
             <div className='py-10 border-b border-gray-200'>
