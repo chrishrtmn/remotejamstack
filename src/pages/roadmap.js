@@ -63,7 +63,6 @@ const Roadmap = () => {
                 In-Progress
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
-                <li>Make site fully responsive (on-going)</li>
                 <li>Dashboard job list table buildout</li>
                 <li>Job page results table content and styling</li>
                 <li>Job Details page designing and styling</li>
@@ -136,7 +135,6 @@ const Roadmap = () => {
                   Create a 3-column feature section for landing page explaining
                   Jamstack
                 </li>
-                <li>Algolia Search integration for jobs</li>
                 <li>Search filter integration on Jobs page</li>
               </ul>
             </div>
@@ -161,6 +159,7 @@ const Roadmap = () => {
                 Backlog
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
+                <li>Algolia Search integration for jobs</li>
                 <li>
                   List total jobs posted for site metrics instead of manual
                 </li>

@@ -3,6 +3,9 @@ module.exports = {
   darkMode: 'media', // or 'false' or 'class'
   theme: {
     extend: {
+      boxShadow: {
+        'md-red': '0 0 6px 0 rgba(239, 68, 68, 0.5)',
+      },
       colors: {
         'dark-gray-theme': '#1f2937',
         'red-theme': '#ef4444',

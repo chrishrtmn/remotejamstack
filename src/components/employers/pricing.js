@@ -13,10 +13,10 @@ const Pricing = () => {
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
         <div className='my-6'>
           <div className='relative justify-between gap-5 md:grid lg:gap-10 md:grid-cols-3'>
-            <div className='max-w-sm mx-auto my-4 bg-white rounded-md shadow-md lg:my-8'>
+            <div className='max-w-sm mx-auto my-4 bg-white rounded-md shadow-md-red lg:my-8'>
               <div className='p-8 text-gray-800 sm:px-4 lg:px-8'>
                 <div className='block max-w-sm pb-8 mx-auto text-sm text-center sm:text-md'>
-                  <h3 className='mb-2 text-lg font-medium text-gray-400 uppercase'>
+                  <h3 className='mb-2 text-lg font-medium text-red-300 uppercase'>
                     Basic
                   </h3>
                   <h4 className='text-5xl font-bold uppercase'>

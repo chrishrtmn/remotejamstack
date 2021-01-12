@@ -60,6 +60,31 @@ const Changelog = () => {
             {/* Changelog Event End */}
             {/* Changelog Event */}
             <div className='py-10 border-b border-gray-200'>
+              <div className='text-lg text-gray-400'>January 12, 2021</div>
+              <div className='mt-4 text-xl font-bold'>
+                <svg
+                  className='inline-block w-6 mr-2 -mt-1 text-red-500'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
+                  />
+                </svg>{' '}
+                Bug Fixes &amp; Improvements
+              </div>
+              <ul className='mt-2 space-y-2 list-disc ml-14'>
+                <li>Highlighted the base package for Pricing section.</li>
+              </ul>
+            </div>
+            {/* Changelog Event End */}
+            {/* Changelog Event */}
+            <div className='py-10 border-b border-gray-200'>
               <div className='text-lg text-gray-400'>January 11, 2021</div>
               <div className='mt-4 text-xl font-bold'>
                 <svg
