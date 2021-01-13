@@ -8,5 +8,5 @@ export default async (req, res) => {
     jobs.push({ id: doc.id, ...doc.data() })
   })
 
-  res.status(200).json(jobs)
+  res.status(200).json({ jobs })
 }

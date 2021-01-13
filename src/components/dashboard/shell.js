@@ -12,9 +12,7 @@ const Shell = ({ children }) => {
             {user?.email}
           </span>
         </div>
-        <div className='p-6 text-gray-800 bg-white rounded-md shadow-md '>
-          {children}
-        </div>
+        {children}
       </div>
     </div>
   )

@@ -30,7 +30,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='p-1 bg-white rounded-md'>
+    <form onSubmit={handleSubmit} className='bg-white rounded-md'>
       <label htmlFor='email' className='sr-only'>
         Email
       </label>
@@ -39,14 +39,14 @@ const ContactForm = () => {
         type='email'
         name='email'
         placeholder='hello@email.com'
-        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 placeholder-gray-500 border border-gray-200 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
         required
       />
       <label className='sr-only'>Message</label>
       <textarea
         type='text'
         name='message'
-        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 placeholder-gray-500 border border-gray-200 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
         placeholder='Your message...'
         required
       />
@@ -54,7 +54,7 @@ const ContactForm = () => {
       <button
         type='submit'
         disabled={state.submitting}
-        className='w-full px-4 py-2 text-lg font-medium leading-6 text-white bg-red-500 rounded-md md:ml-1 hover:bg-red-600 focus:outline-none'
+        className='w-full px-4 py-2 text-lg font-medium leading-6 text-white bg-red-500 rounded-md md:ml-1 md:w-auto hover:bg-red-600 focus:outline-none'
       >
         Contact Us
       </button>

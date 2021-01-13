@@ -80,6 +80,7 @@ const Changelog = () => {
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
                 <li>Highlighted the base package for Pricing section.</li>
+                <li>Adjusted styling of Contact form.</li>
               </ul>
             </div>
             {/* Changelog Event End */}
