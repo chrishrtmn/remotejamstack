@@ -3,22 +3,32 @@ import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import { useAuth } from '../../libraries/firebase/auth'
 import { createJob } from '../../libraries/firebase/db'
+import { mutate } from 'swr'
 import { toast } from 'react-toastify'
 
 const CreateJob = () => {
   const router = useRouter()
   const auth = useAuth()
+  const fetcher = (url) => fetch(url).then((res) => res.json())
+  // const { data, mutate } = useSWR('/api/jobs', fetcher)
 
   const { register, handleSubmit } = useForm()
 
   const onCreateJob = ({ jobTitle, jobApplicationLink }) => {
-    createJob({
+    const newJob = {
       uid: auth.user.uid,
       createdAt: new Date().toISOString(),
       jobTitle,
       jobApplicationLink,
+    }
+
+    createJob(newJob)
+    toast("You've successfully posted your job listing.")
+    // mutate('api/jobs', { jobs: [...data.jobs, newJob] })
+    mutate('/api/jobs', async (data) => {
+      console.log('Created: ', data)
+      return { jobs: [...data.jobs, newJob] }
     })
-    toast("You've successfully posted your job opening.")
     router.push('/dashboard')
   }
 

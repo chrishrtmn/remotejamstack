@@ -12,7 +12,7 @@ const Dashboard = () => {
   const fetcher = (url) => fetch(url).then((res) => res.json())
   const { data } = useSWR('/api/jobs', fetcher)
 
-  console.log(data)
+  console.log('Dashboard: ', data)
 
   if (!data) {
     return (
