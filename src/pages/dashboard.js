@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import useSWR from 'swr'
+import useSWR, { mutate } from 'swr'
 import { useAuth } from '../libraries/firebase/auth'
 import Shell from '../components/dashboard/shell'
 import JobsTable from '../components/dashboard/jobs-table'
@@ -11,8 +11,9 @@ const Dashboard = () => {
   const auth = useAuth()
   const fetcher = (url) => fetch(url).then((res) => res.json())
   const { data } = useSWR('/api/jobs', fetcher)
+  mutate('/api/jobs')
 
-  console.log('Dashboard: ', data)
+  // console.log('Dashboard: ', data)
 
   if (!data) {
     return (
@@ -57,7 +58,7 @@ const Dashboard = () => {
       </Head>
 
       <Shell>
-        {data.jobs ? <JobsTable jobs={data.jobs} /> : <JobsEmpty />}
+        {data.jobs.length ? <JobsTable jobs={data.jobs} /> : <JobsEmpty />}
       </Shell>
     </>
   )
