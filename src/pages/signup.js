@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useAuth } from '../libraries/firebase/auth'
 
 const Signup = () => {
+  const router = useRouter()
   const { user } = useAuth()
 
   if (!user) {
@@ -25,9 +27,12 @@ const Signup = () => {
             <div className='p-6 bg-white rounded-md shadow-md'>
               <div className='p-10 font-medium text-center'>
                 We are still under construction behind the scenes. Please{' '}
-                <Link href='#subscribe'>
-                  <a className='text-red-500'>subscribe</a>
-                </Link>{' '}
+                <span
+                  onClick={() => router.push('#subscribe')}
+                  className='text-red-500 cursor-pointer'
+                >
+                  subscribe
+                </span>{' '}
                 to be notified when we launch.
               </div>
             </div>

@@ -1,15 +1,19 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useAuth } from '../libraries/firebase/auth'
+import useSWR from 'swr'
+import { useAuth } from '../../libraries/firebase/auth'
+import StandardTable from '../../components/jobs/standard-table'
 
 const Jobs = () => {
   const { user } = useAuth()
+  const fetcher = (url) => fetch(url).then((res) => res.json())
+  const { data } = useSWR('/api/jobs', fetcher)
 
   if (!user) {
     return (
       <>
         <Head>
-          <title>Unauthorized - Remote Jamstack</title>
+          <title>Browse Jobs - Remote Jamstack</title>
         </Head>
 
         <div className='px-4 py-10 md:py-16 lg:py-20 sm:px-6 lg:px-8'>
@@ -25,9 +29,12 @@ const Jobs = () => {
             <div className='p-6 bg-white rounded-md shadow-md'>
               <div className='p-10 font-medium text-center'>
                 We are still under construction behind the scenes. Please{' '}
-                <Link href='#subscribe'>
-                  <a className='text-red-500'>subscribe</a>
-                </Link>{' '}
+                <span
+                  onClick={() => router.push('#subscribe')}
+                  className='text-red-500 cursor-pointer'
+                >
+                  subscribe
+                </span>{' '}
                 to be notified when we launch.
               </div>
             </div>
@@ -43,15 +50,20 @@ const Jobs = () => {
         <title>Browse Jobs - Remote Jamstack</title>
       </Head>
 
-      <div className='px-4 py-10 md:py-16 lg:py-20 sm:px-6 lg:px-8'>
+      <div className='px-4 pt-10 pb-20 sm:px-6 lg:px-8'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex justify-between pb-10'>
             <h2 className='text-4xl font-bold text-gray-800'>Jobs</h2>
-            <div className='text-gray-500 place-self-center'>
+            {/* <div className='text-gray-500 place-self-center'>
               Search | Filter
+            </div> */}
+          </div>
+          <div className='border-2 border-gray-200 border-dashed rounded-md'>
+            <div className='p-5 text-sm text-center text-gray-400'>
+              Featured Jobs are under development. Check back soon!
             </div>
           </div>
-          <div className='grid grid-cols-3 gap-10'>
+          {/* <div className='grid grid-cols-3 gap-10'>
             <div className='bg-white rounded-md shadow-md'>
               <div className='flex p-4'>
                 <div className='flex-shrink-0'>
@@ -217,224 +229,31 @@ const Jobs = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className='flex justify-between mt-20 mb-5'>
             <h2 className='inline-block text-3xl font-medium text-gray-800'>
               Results
             </h2>
             <div className='text-gray-500 place-self-center text-md font-regular'>
-              Showing <span className='font-medium text-gray-800'>5</span>{' '}
+              Showing{' '}
+              <span className='font-medium text-gray-800'>
+                {data?.jobs.length}
+              </span>{' '}
               results
             </div>
           </div>
           <div className='flex flex-col'>
             <div className='-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8'>
-              <div className='inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8'>
-                <div className='overflow-hidden border-b border-gray-200 shadow-md sm:rounded-md'>
-                  <table className='min-w-full divide-y divide-gray-200'>
-                    <thead className='bg-gray-50'>
-                      <tr>
-                        <th
-                          scope='col'
-                          className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
-                        >
-                          Name
-                        </th>
-                        <th
-                          scope='col'
-                          className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
-                        >
-                          Title
-                        </th>
-                        <th
-                          scope='col'
-                          className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
-                        >
-                          Status
-                        </th>
-                        <th
-                          scope='col'
-                          className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
-                        >
-                          Role
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody className='bg-white divide-y divide-gray-200'>
-                      <tr className='bg-red-50'>
-                        <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'>
-                          <div className='flex items-center'>
-                            <div className='flex-shrink-0 w-10 h-10'>
-                              <img
-                                className='w-10 h-10 rounded-md'
-                                src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                                alt=''
-                              />
-                            </div>
-                            <div className='ml-4'>
-                              <div className='text-sm font-medium text-gray-900'>
-                                Jane Cooper
-                              </div>
-                              <div className='text-sm text-gray-500'>
-                                jane.cooper@example.com
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'>
-                          <div className='text-sm text-gray-900'>
-                            Regional Paradigm Technician
-                          </div>
-                          <div className='text-sm text-gray-500'>
-                            Optimization
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'>
-                          <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
-                            Active
-                          </span>
-                        </td>
-                        <td className='px-6 py-4 text-sm text-gray-500 border-b border-red-200 whitespace-nowrap'>
-                          Admin
-                        </td>
-                      </tr>
-                      <tr className='bg-red-50'>
-                        <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
-                          <div className='flex items-center'>
-                            <div className='flex-shrink-0 w-10 h-10'>
-                              <img
-                                className='w-10 h-10 rounded-md'
-                                src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
-                                alt=''
-                              />
-                            </div>
-                            <div className='ml-4'>
-                              <div className='text-sm font-medium text-gray-900'>
-                                Jane Cooper
-                              </div>
-                              <div className='text-sm text-gray-500'>
-                                jane.cooper@example.com
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
-                          <div className='text-sm text-gray-900'>
-                            Regional Paradigm Technician
-                          </div>
-                          <div className='text-sm text-gray-500'>
-                            Optimization
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
-                          <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
-                            Active
-                          </span>
-                        </td>
-                        <td className='px-6 py-4 text-sm text-gray-500 border-t border-b border-red-200 whitespace-nowrap'>
-                          Admin
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='px-6 py-4 whitespace-nowrap'>
-                          <div className='flex items-center'>
-                            <div className='flex-shrink-0 w-10 h-10'></div>
-                            <div className='ml-4'>
-                              <div className='text-sm font-medium text-gray-900'>
-                                Jane Cooper
-                              </div>
-                              <div className='text-sm text-gray-500'>
-                                jane.cooper@example.com
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 whitespace-nowrap'>
-                          <div className='text-sm text-gray-900'>
-                            Regional Paradigm Technician
-                          </div>
-                          <div className='text-sm text-gray-500'>
-                            Optimization
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 whitespace-nowrap'>
-                          <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
-                            Active
-                          </span>
-                        </td>
-                        <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                          Admin
-                        </td>
-                      </tr>
-                      <tr className='bg-red-50'>
-                        <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
-                          <div className='flex items-center'>
-                            <div className='flex-shrink-0 w-10 h-10'></div>
-                            <div className='ml-4'>
-                              <div className='text-sm font-medium text-gray-900'>
-                                Jane Cooper
-                              </div>
-                              <div className='text-sm text-gray-500'>
-                                jane.cooper@example.com
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
-                          <div className='text-sm text-gray-900'>
-                            Regional Paradigm Technician
-                          </div>
-                          <div className='text-sm text-gray-500'>
-                            Optimization
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 border-t border-b border-red-200 whitespace-nowrap'>
-                          <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
-                            Active
-                          </span>
-                        </td>
-                        <td className='px-6 py-4 text-sm text-gray-500 border-t border-b border-red-200 whitespace-nowrap'>
-                          Admin
-                        </td>
-                      </tr>
-                      <tr>
-                        <td className='px-6 py-4 whitespace-nowrap'>
-                          <div className='flex items-center'>
-                            <div className='flex-shrink-0 w-10 h-10'></div>
-                            <div className='ml-4'>
-                              <div className='text-sm font-medium text-gray-900'>
-                                Jane Cooper
-                              </div>
-                              <div className='text-sm text-gray-500'>
-                                jane.cooper@example.com
-                              </div>
-                            </div>
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 whitespace-nowrap'>
-                          <div className='text-sm text-gray-900'>
-                            Regional Paradigm Technician
-                          </div>
-                          <div className='text-sm text-gray-500'>
-                            Optimization
-                          </div>
-                        </td>
-                        <td className='px-6 py-4 whitespace-nowrap'>
-                          <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
-                            Active
-                          </span>
-                        </td>
-                        <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
-                          Admin
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
+              <StandardTable jobs={data?.jobs} />
+              {/* Plus Jobs with Avatar and Red Background/Borders
+              <tr className='bg-red-50'>
+                <td className='px-6 py-4 border-b border-red-200 whitespace-nowrap'></td>
+              </tr>
+              */}
             </div>
           </div>
-          {/* <div className='flex justify-between mt-20 mb-5'>
+          {/* Third-Party Jobs
+          <div className='flex justify-between mt-20 mb-5'>
             <h2 className='text-3xl font-medium text-gray-800'>Third-Party</h2>
             <div className='text-gray-500 text-md font-regular'>
               Showing <span className='font-medium text-gray-800'>1</span>{' '}

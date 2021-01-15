@@ -1,6 +1,9 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const FAQ = () => {
+  const router = useRouter()
+
   return (
     <div className='px-4 py-10 m-auto bg-gray-800 md:py-16 lg:py-20 max-w-7xl sm:px-6 lg:px-8'>
       {/* <div className='mb-16 text-center'> */}
@@ -10,9 +13,12 @@ const FAQ = () => {
         </h2>
         <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-400 max-w-prose'>
           This section is under construction behind the scenes. Please{' '}
-          <Link href='#subscribe'>
-            <a className='text-red-500'>subscribe</a>
-          </Link>{' '}
+          <span
+            onClick={() => router.push('#subscribe')}
+            className='text-red-500 cursor-pointer'
+          >
+            subscribe
+          </span>{' '}
           to be notified when we launch. If you have questions,{' '}
           <a
             className='text-red-500'

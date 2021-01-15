@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Roadmap = () => {
+  const router = useRouter()
+
   return (
     <>
       <Head>
@@ -37,9 +40,9 @@ const Roadmap = () => {
                 we'd like to work on to this public roadmap.
               </p>
               {/* <p>
-                <a href='#subscribe' className='text-red-500'>
+                <span onClick={() => router.push('#subscribe')} className='text-red-500 cursor-pointer'>
                   Subscribe
-                </a>{' '}
+                </span>{' '}
                 to our newsletter to get the latest updates as they release.
               </p> */}
             </div>
@@ -63,9 +66,15 @@ const Roadmap = () => {
                 In-Progress
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
-                <li>Dashboard job list table buildout</li>
-                <li>Job page results table content and styling</li>
-                <li>Job Details page designing and styling</li>
+                <li>
+                  Integrate rest of form fields for accounts and creating jobs
+                </li>
+                <li>Update and style Jobs tables to reflect form fields</li>
+                <li>
+                  Design and style Job details page with all information
+                  available
+                </li>
+                <li>Fix User menu dropdown not closing when logged in</li>
               </ul>
             </div>
             {/* End In-Progess */}
@@ -89,12 +98,11 @@ const Roadmap = () => {
                 Up Next
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
-                <li>Create a Sign Up page</li>
-                <li>Create a Login page</li>
-                <li>Settings page</li>
-                <li>Profile page</li>
-                <li>Create Job page styling enhancements</li>
-                <li>Stripe integration</li>
+                <li>Integrate more signup options for the Sign Up page</li>
+                <li>Create and setup the Login page</li>
+                <li>Plan out and setup Settings page</li>
+                <li>Plan out and setup Profile page</li>
+                <li>Stripe integration for purchasing jobs with upgrades</li>
               </ul>
             </div>
             {/* End Up Next */}
@@ -118,24 +126,30 @@ const Roadmap = () => {
                 Planned
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
+                <li>Convert Job ID routes into SEO-friendly slug urls</li>
+                <li>Add better SEO metadata with NextSEO</li>
+                <li>Setup dynamic sitemaps</li>
                 <li>Design and build out an About page</li>
-                <li>FAQ questions with dropdown states</li>
-                <li>Adjust Employers CTA section and styling</li>
-                <li>"Why us?" feature section on Employers page</li>
-                <li>Make site performance great with high Lighthouse scores</li>
-                <li>Update site metadata information</li>
                 <li>
-                  Blog page with either MDX with JSON data or pull down API from
-                  a Headless CMS
+                  Update FAQ section popular questions with dropdown states
                 </li>
-                <li>Create a blog section for landing page</li>
+                <li>
+                  Style and adjust Employers CTA section after beta launch
+                </li>
+                <li>Add "Why Us?" feature section on Employers page</li>
+                <li>
+                  Setup Blog with either MDX or pull down API from a Headless
+                  CMS
+                </li>
                 <li>Create a Privacy Policy and setup page</li>
                 <li>Create Terms and Conditions and setup page</li>
                 <li>
                   Create a 3-column feature section for landing page explaining
                   Jamstack
                 </li>
+                <li>Algolia Search integration for jobs</li>
                 <li>Search filter integration on Jobs page</li>
+                <li>Night mode based on color-scheme and user preferences</li>
               </ul>
             </div>
             {/* End Planned */}
@@ -159,29 +173,29 @@ const Roadmap = () => {
                 Backlog
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
-                <li>Algolia Search integration for jobs</li>
+                <li>Make site performance great with high Lighthouse scores</li>
                 <li>
-                  List total jobs posted for site metrics instead of manual
+                  Fix console verbose violations with FOUC and forced reflow
+                </li>
+                <li>List Feature section on homepage with Jamstack agencies</li>
+                <li>Integrate Google Analytics API for site metrics</li>
+                <li>Integrate FormSpree API for email subscriber count</li>
+                <li>
+                  Create a Blog section for landing page with latest posts
                 </li>
                 <li>
-                  Google Analytics API total of visits for site metrics instead
-                  of manual
-                </li>
-                <li>
-                  FormSpree API for email subscribers form for site metrics
-                  instead of manual
+                  Design and build out a FAQ page if there's enough questions
                 </li>
                 <li>Re-check image and svg optimization</li>
                 <li>Make site and links more accessible</li>
-                <li>Replace Toastify with React Hot Toasts</li>
                 <li>Framer Motion integration for in-viewport transitions</li>
                 <li>
                   Third-Party Jobs section pulling in API from other related
                   jobs
                 </li>
-                <li>Convert Roadmap to MDX with JSON data</li>
-                <li>Convert Changelog to MDX with JSON data</li>
-                <li>Switch from SWR to React Query</li>
+                <li>Design and setup Services/Running Costs page</li>
+                <li>Design and setup potential Advertising page</li>
+                <li>Design and setup Stack page</li>
               </ul>
             </div>
             {/* End Backlog */}

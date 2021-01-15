@@ -1,6 +1,6 @@
 {
   "name": "remotejamstack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,17 +10,19 @@
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@headlessui/react": "^0.2.0",
-    "autoprefixer": "^10.0.4",
-    "firebase": "^8.1.2",
+    "autoprefixer": "^10.2.1",
+    "date-fns": "^2.16.1",
+    "firebase": "^8.2.3",
     "firebase-admin": "^9.4.2",
-    "next": "10.0.3",
-    "postcss": "^8.1.12",
+    "next": "10.0.5",
+    "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-hook-form": "^6.13.0",
-    "react-page-visibility": "^6.2.0",
+    "react-hook-form": "^6.14.1",
+    "react-page-visibility": "^6.3.0",
     "react-ticker": "^1.2.2",
     "react-toastify": "^6.2.0",
-    "tailwindcss": "^2.0.1"
+    "swr": "^0.4.0",
+    "tailwindcss": "^2.0.2"
   }
 }
