@@ -40,9 +40,7 @@ const Dashboard = () => {
   //         <div className='p-6 text-gray-800 bg-white rounded-md shadow-md'>
   //           <div className='p-10 font-medium text-center'>
   //             We are still under construction behind the scenes. Please{' '}
-  //             <Link href='#subscribe'>
-  //               <a className='text-red-500'>subscribe</a>
-  //             </Link>{' '}
+  //               <span onClick={() => router.push('#subscribe')} className='text-red-500 cursor-pointer'>subscribe</span>{' '}
   //             to be notified when we launch.
   //           </div>
   //         </div>

@@ -289,19 +289,19 @@ const Header = () => {
                 </>
               ) : (
                 <>
-                  <button
+                  {/* <button
                     onClick={
                       (e) => auth.signinWithGitHub() // && userToast('Welcome back!')
                     }
                     className='inline-block px-4 pb-2 pt-1.5 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'
                   >
                     Login
-                  </button>
-                  {/*<Link href='/login'>
+                  </button> */}
+                  <Link href='/login'>
                     <a className='inline-block px-4 py-2 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'>
                       Login
                     </a>
-                  </Link>*/}
+                  </Link>
                   <Link href='/signup'>
                     <a className='inline-block px-4 py-2 font-medium text-red-500 border border-red-200 rounded-md hover:text-red-500 hover:bg-red-50 hover:border-red-300'>
                       Sign Up

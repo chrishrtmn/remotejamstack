@@ -60,7 +60,7 @@ const Changelog = () => {
             {/* Changelog Event End */}
             {/* Changelog Event */}
             <div className='py-10 border-b border-gray-200'>
-              <div className='text-lg text-gray-400'>January 12, 2021</div>
+              <div className='text-lg text-gray-400'>January 15, 2021</div>
               <div className='mt-4 text-xl font-bold'>
                 <svg
                   className='inline-block w-6 mr-2 -mt-1 text-red-500'
@@ -79,8 +79,18 @@ const Changelog = () => {
                 Bug Fixes &amp; Improvements
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
-                <li>Highlighted the base package for Pricing section.</li>
-                <li>Adjusted styling of Contact form.</li>
+                <li>
+                  Updated Roadmap to reflect better with my personal list.
+                </li>
+                <li>Site Metrics section displays Job count automatically.</li>
+                <li>Fixed console errors with subscribe url anchors.</li>
+                <li>
+                  Updated styling and highlighted Basic package for Pricing
+                  section.
+                </li>
+                <li>
+                  Adjusted styling of Contact form for better accessibility.
+                </li>
               </ul>
             </div>
             {/* Changelog Event End */}

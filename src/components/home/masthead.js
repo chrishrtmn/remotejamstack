@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { useAuth } from '../../libraries/firebase/auth'
 
 const Masthead = () => {
+  const router = useRouter()
   const auth = useAuth()
 
   const href = auth.user ? '/create' : '/signup'
@@ -42,11 +44,13 @@ const Masthead = () => {
                     Post a Job
                   </a>
                 </Link> */}
-                <Link href='#subscribe'>
-                  <a className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md lg:px-8 hover:bg-red-50 hover:border-red-300'>
-                    Get Notified When We Launch
-                  </a>
-                </Link>
+
+                <span
+                  onClick={() => router.push('#subscribe')}
+                  className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md cursor-pointer lg:px-8 hover:bg-red-50 hover:border-red-300'
+                >
+                  Get Notified When We Launch
+                </span>
               </div>
             </div>
           </main>
