@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { formatDistanceToNow, parseISO } from 'date-fns'
 import StandardEmpty from './standard-empty'
 
@@ -40,7 +41,7 @@ const StandardTable = ({ jobs }) => {
             </thead>
             <tbody className='bg-white divide-y divide-gray-200'>
               {jobs.map((job, index) => (
-                <tr key={index}>
+                <tr key={index} className='hover:bg-gray-100'>
                   <td className='py-4 pl-6 whitespace-nowrap'>
                     <div className='w-10 h-10'>
                       <img
@@ -52,9 +53,11 @@ const StandardTable = ({ jobs }) => {
                   </td>
                   <td className='py-4 pl-3 pr-6 whitespace-nowrap'>
                     <div>
-                      <div className='text-sm font-medium text-gray-900'>
-                        {job.jobTitle}
-                      </div>
+                      <Link href={'/job/' + job.id}>
+                        <a className='text-sm font-medium text-gray-900'>
+                          {job.jobTitle}
+                        </a>
+                      </Link>
                       <div className='text-sm text-gray-500'>{job.uid}</div>
                     </div>
                   </td>

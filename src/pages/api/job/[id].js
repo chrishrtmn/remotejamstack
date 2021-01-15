@@ -1,7 +1,8 @@
 import db from '../../../libraries/firebase/firebase-admin'
 
-export default (req, res) => {
-  db.collection('jobs')
+export default async (req, res) => {
+  await db
+    .collection('jobs')
     .doc(req.query.id)
     .get()
     .then((doc) => {

@@ -170,7 +170,7 @@ const Pricing = () => {
                   </Link>
                   <div className='mt-4 text-sm'>
                     <span className='block'>No credit card required.</span>
-                    <span className='block'>Additional posts will be $99.</span>
+                    <span className='block'>Additional jobs will be $99.</span>
                   </div>
                 </div>
               </div>
