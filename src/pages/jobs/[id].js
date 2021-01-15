@@ -3,10 +3,10 @@ import useSWR from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-const Job = () => {
+const Job = (props) => {
   const router = useRouter()
   const { id } = router.query
-  const { data } = useSWR(`/api/job/${id}`, fetcher)
+  const { data } = useSWR(`/api/jobs/${id}`, fetcher)
 
   if (!data) {
     return 'Loading...'

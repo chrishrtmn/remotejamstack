@@ -5,7 +5,7 @@ import { useAuth } from '../../libraries/firebase/auth'
 const Masthead = () => {
   const auth = useAuth()
 
-  const href = auth.user ? '/job/create' : '/signup'
+  const href = auth.user ? '/create' : '/signup'
 
   return (
     <div className='relative overflow-hidden bg-white'>

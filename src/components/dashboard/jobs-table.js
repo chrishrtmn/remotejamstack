@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { formatDistanceToNow, parseISO } from 'date-fns'
+import { formatDistanceToNowStrict, parseISO } from 'date-fns'
 
 const JobsTable = ({ jobs }) => {
   return (
@@ -20,7 +20,7 @@ const JobsTable = ({ jobs }) => {
               scope='col'
               className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
             >
-              Listed Date
+              Posted Date
             </th>
             <th
               scope='col'
@@ -50,7 +50,7 @@ const JobsTable = ({ jobs }) => {
               </td>
               <td className='py-4 pl-3 pr-6 whitespace-nowrap'>
                 <div>
-                  <Link href={'/job/' + job.id}>
+                  <Link href={'/jobs/' + job.id}>
                     <a className='text-sm font-medium text-gray-900'>
                       {job.jobTitle}
                     </a>
@@ -60,7 +60,8 @@ const JobsTable = ({ jobs }) => {
               </td>
               <td className='px-6 py-4 whitespace-nowrap'>
                 <div className='text-sm text-gray-500'>
-                  Created {formatDistanceToNow(parseISO(job.createdAt))} ago
+                  Posted {formatDistanceToNowStrict(parseISO(job.createdAt))}{' '}
+                  ago
                 </div>
               </td>
               <td className='px-6 py-4 whitespace-nowrap'>

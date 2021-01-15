@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
-import { useAuth } from '../../libraries/firebase/auth'
-import { createJob } from '../../libraries/firebase/db'
+import { useAuth } from '../libraries/firebase/auth'
+import { createJob } from '../libraries/firebase/db'
 import useSWR, { mutate } from 'swr'
 import { toast } from 'react-toastify'
 

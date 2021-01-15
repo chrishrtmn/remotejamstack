@@ -8,7 +8,7 @@ const StandardEmpty = () => {
           <h3 className='block text-xl font-bold text-gray-800'>
             No jobs have been posted yet.
           </h3>
-          <Link href='/job/create'>
+          <Link href='/create'>
             <a className='inline-block px-4 py-2 my-5 font-medium text-white bg-red-500 rounded-md hover:bg-red-600'>
               Submit Your First Job
             </a>

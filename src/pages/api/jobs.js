@@ -1,7 +1,10 @@
 import db from '../../libraries/firebase/firebase-admin'
 
 export default async (req, res) => {
-  const snapshot = await db.collection('jobs').get()
+  const snapshot = await db
+    .collection('jobs')
+    .orderBy('createdAt', 'desc')
+    .get()
   let jobs = []
 
   snapshot.forEach((doc) => {

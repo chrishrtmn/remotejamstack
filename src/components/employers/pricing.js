@@ -3,7 +3,7 @@ import { useAuth } from '../../libraries/firebase/auth'
 
 const Pricing = () => {
   const auth = useAuth()
-  const postLink = auth.user ? '/job/create' : '/signup'
+  const postLink = auth.user ? '/create' : '/signup'
 
   return (
     <section id='pricing'>

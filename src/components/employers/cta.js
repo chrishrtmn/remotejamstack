@@ -4,7 +4,7 @@ import { useAuth } from '../../libraries/firebase/auth'
 const PricingCTA = () => {
   const { user } = useAuth()
 
-  const href = user ? '/job/create' : '/signup'
+  const href = user ? '/create' : '/signup'
 
   return (
     <div

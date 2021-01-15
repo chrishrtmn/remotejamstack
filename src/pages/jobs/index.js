@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import useSWR from 'swr'
-import { useAuth } from '../libraries/firebase/auth'
-import StandardTable from '../components/jobs/standard-table'
+import { useAuth } from '../../libraries/firebase/auth'
+import StandardTable from '../../components/jobs/standard-table'
 
 const Jobs = () => {
   const { user } = useAuth()

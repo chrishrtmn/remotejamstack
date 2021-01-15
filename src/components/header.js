@@ -212,7 +212,7 @@ const Header = () => {
               </ActiveLink>
               {auth.user ? (
                 <>
-                  <Link href='/job/create'>
+                  <Link href='/create'>
                     <a className='inline-block px-4 py-2 mx-8 font-medium text-red-500 border border-red-200 rounded-md hover:border-red-300 hover:bg-red-50'>
                       Post a Job
                     </a>
