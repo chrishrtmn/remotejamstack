@@ -40,9 +40,10 @@ const Roadmap = () => {
                 we'd like to work on to this public roadmap.
               </p>
               {/* <p>
-                <span onClick={() => router.push('#subscribe')} className='text-red-500 cursor-pointer'>
+                <Link href='#subscribe'>
+                  <a className='text-red-500 cursor-pointer'>
                   Subscribe
-                </span>{' '}
+                </a></Link>{' '}
                 to our newsletter to get the latest updates as they release.
               </p> */}
             </div>
@@ -126,6 +127,7 @@ const Roadmap = () => {
                 Planned
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
+                <li>Add rich-text editing with Draft.js</li>
                 <li>Convert Job ID routes into SEO-friendly slug urls</li>
                 <li>Add better SEO metadata with NextSEO</li>
                 <li>Setup dynamic sitemaps</li>
@@ -173,6 +175,7 @@ const Roadmap = () => {
                 Backlog
               </div>
               <ul className='mt-2 space-y-2 list-disc ml-14'>
+                <li>Internationalization with react-i18next</li>
                 <li>Make site performance great with high Lighthouse scores</li>
                 <li>
                   Fix console verbose violations with FOUC and forced reflow
