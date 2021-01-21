@@ -16,3 +16,8 @@ export function createUser(uid, data) {
 export function createJob(data) {
   return firestore.collection('jobs').add(data)
 }
+
+// Create new company
+export function createCompany(data) {
+  return firestore.collection('companies').add(data)
+}

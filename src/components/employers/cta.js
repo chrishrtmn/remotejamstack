@@ -7,7 +7,7 @@ const PricingCTA = () => {
   const router = useRouter()
   const { user } = useAuth()
 
-  const href = user ? '/create' : '/signup'
+  const href = user ? '/jobs/create' : '/signup'
 
   return (
     <div
@@ -82,12 +82,11 @@ const PricingCTA = () => {
             </a>
           </Link>
         </div> */}
-          <span
-            onClick={() => router.push('#subscribe')}
-            className='inline-block px-4 py-2 mt-4 text-lg font-medium leading-tight text-center text-red-500 bg-white border border-red-200 rounded-md cursor-pointer md:mt-0 lg:px-8 place-self-center hover:bg-red-50 hover:border-red-300'
-          >
-            Get Notified When We Launch
-          </span>
+          <Link href='#subscribe'>
+            <a className='inline-block px-4 py-2 mt-4 text-lg font-medium leading-tight text-center text-red-500 bg-white border border-red-200 rounded-md cursor-pointer md:mt-0 lg:px-8 place-self-center hover:bg-red-50 hover:border-red-300'>
+              Get Notified When We Launch
+            </a>
+          </Link>
         </div>
       </div>
     </div>

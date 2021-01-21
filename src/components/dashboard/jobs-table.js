@@ -1,7 +1,23 @@
 import Link from 'next/link'
+import { useAuth } from '../../libraries/firebase/auth'
+// import { getCurrentUser } from '../../libraries/firebase/db'
 import { formatDistanceToNowStrict, parseISO } from 'date-fns'
+// import firebase from '../../libraries/firebase/firebase'
 
 const JobsTable = ({ jobs }) => {
+  const auth = useAuth()
+  // const currentUser = firebase.auth().currentUser
+
+  // console.log(currentUser.uid)
+
+  // if (auth.user.uid != currentUser.uid)
+  //   return (
+  //     <>
+  //       <div>Didn't work</div>
+  //     </>
+  //   )
+
+  // if (auth.user.uid === currentUser.uid) {
   return (
     <div className='overflow-hidden border-b border-gray-200 shadow-md sm:rounded-md'>
       <table className='min-w-full divide-y divide-gray-200'>

@@ -147,8 +147,11 @@ const StacksCloud = () => {
                     <span className='mx-4 text-gray-500 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       Primsic CMS
                     </span>
-                    <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
+                    <span className='mx-4 text-gray-700 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       SnipCart
+                    </span>
+                    <span className='mx-4 text-gray-400 md:mx-6 lg:mx-10 whitespace-nowrap'>
+                      Nhost
                     </span>
                   </>
                 )}

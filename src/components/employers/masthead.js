@@ -7,7 +7,7 @@ const Masthead = () => {
   const router = useRouter()
   const auth = useAuth()
 
-  const href = auth.user ? '/create' : '/signup'
+  const href = auth.user ? '/jobs/create' : '/signup'
 
   return (
     <div className='relative overflow-hidden bg-white'>
@@ -38,11 +38,46 @@ const Masthead = () => {
                     Post a Job
                   </a>
                 </Link> */}
-                <span
-                  onClick={() => router.push('#subscribe')}
-                  className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md cursor-pointer lg:px-8 hover:bg-red-50 hover:border-red-300'
-                >
-                  Get Notified When We Launch
+                <Link href='#subscribe'>
+                  <a className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md cursor-pointer lg:px-8 hover:bg-red-50 hover:border-red-300'>
+                    Get Notified When We Launch
+                  </a>
+                </Link>
+              </div>
+              <div className='mt-6'>
+                <span className='inline-block mr-6 text-gray-500 '>
+                  <svg
+                    className='inline w-5 h-5 mr-2 text-green-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M5 13l4 4L19 7'
+                    />
+                  </svg>
+                  No credit card required
+                </span>
+                <span className='text-gray-500'>
+                  <svg
+                    className='inline w-5 h-5 mr-2 text-green-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M5 13l4 4L19 7'
+                    />
+                  </svg>
+                  First job post free
                 </span>
               </div>
             </div>

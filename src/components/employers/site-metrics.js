@@ -15,7 +15,7 @@ const SiteMetrics = () => {
             Site Metrics
           </h2>
           <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-400 max-w-prose'>
-            An overview of our statistics during pre-release. Metrics are
+            An overview of our statistics during our alpha release. Metrics are
             updated periodically and may not be current during this period.
           </p>
           <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
@@ -27,7 +27,7 @@ const SiteMetrics = () => {
               Total Jobs Available
             </div>
             <div className='text-4xl font-bold text-gray-200'>
-              {data?.jobs.length}
+              {data?.jobs.length ? data?.jobs.length : 'TBD'}
               <svg
                 className='inline-block w-5 h-5'
                 xmlns='http://www.w3.org/2000/svg'
@@ -87,7 +87,7 @@ const SiteMetrics = () => {
               New User Visits
             </div>
             <div className='text-4xl font-bold text-gray-200'>
-              131
+              134
               <svg
                 className='inline-block w-5 h-5'
                 xmlns='http://www.w3.org/2000/svg'

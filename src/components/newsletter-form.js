@@ -37,7 +37,7 @@ const NewsletterForm = () => {
         type='email'
         name='email'
         placeholder='Enter your email'
-        className='flex-grow w-full px-3 py-2 mb-1 text-lg text-gray-800 rounded-md md:mb-0 md:w-auto focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent md:rounded-tl-md md:rounded-bl-md'
+        className='flex-grow w-full px-3 py-2 mb-1 text-lg text-gray-800 border-none rounded-md md:mb-0 md:w-auto focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent md:rounded-tl-md md:rounded-bl-md'
         required
       />
       <ValidationError field='email' prefix='Email' errors={state.errors} />

@@ -27,12 +27,9 @@ const Signup = () => {
             <div className='p-6 bg-white rounded-md shadow-md'>
               <div className='p-10 font-medium text-center'>
                 We are still under construction behind the scenes. Please{' '}
-                <span
-                  onClick={() => router.push('#subscribe')}
-                  className='text-red-500 cursor-pointer'
-                >
-                  subscribe
-                </span>{' '}
+                <Link href='#subscribe'>
+                  <a className='text-red-500 cursor-pointer'>subscribe</a>
+                </Link>{' '}
                 to be notified when we launch.
               </div>
             </div>

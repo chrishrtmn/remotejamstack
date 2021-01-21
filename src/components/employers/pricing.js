@@ -3,7 +3,7 @@ import { useAuth } from '../../libraries/firebase/auth'
 
 const Pricing = () => {
   const auth = useAuth()
-  const postLink = auth.user ? '/create' : '/signup'
+  const postLink = auth.user ? '/jobs/create' : '/signup'
 
   return (
     <section id='pricing'>
@@ -48,7 +48,7 @@ const Pricing = () => {
                     </span>
                   </li> */}
                   <li className='flex p-2'>
-                    <div className='text-red-500 rounded-full fill-current'>
+                    <div className='text-green-500 rounded-full fill-current'>
                       <svg
                         className='w-5 h-5 align-middle'
                         viewBox='0 0 24 24'
@@ -67,7 +67,7 @@ const Pricing = () => {
                     </span>
                   </li>
                   <li className='flex p-2'>
-                    <div className='text-red-500 rounded-full fill-current'>
+                    <div className='text-green-500 rounded-full fill-current'>
                       <svg
                         className='w-5 h-5 align-middle'
                         viewBox='0 0 24 24'
@@ -247,7 +247,7 @@ const Pricing = () => {
                       </span>
                     </li> */}
                     <li className='flex p-2'>
-                      <div className='text-red-500 rounded-full fill-current'>
+                      <div className='text-green-500 rounded-full fill-current'>
                         <svg
                           className='w-5 h-5 align-middle'
                           viewBox='0 0 24 24'
@@ -266,7 +266,7 @@ const Pricing = () => {
                       </span>
                     </li>
                     <li className='flex p-2'>
-                      <div className='text-red-500 rounded-full fill-current'>
+                      <div className='text-green-500 rounded-full fill-current'>
                         <svg
                           className='w-5 h-5 align-middle'
                           viewBox='0 0 24 24'
@@ -404,7 +404,7 @@ const Pricing = () => {
                       </span>
                     </li> */}
                     <li className='flex p-2'>
-                      <div className='text-red-500 rounded-full fill-current'>
+                      <div className='text-green-500 rounded-full fill-current'>
                         <svg
                           className='w-5 h-5 align-middle'
                           viewBox='0 0 24 24'
@@ -423,7 +423,7 @@ const Pricing = () => {
                       </span>
                     </li>
                     <li className='flex p-2'>
-                      <div className='text-red-500 rounded-full fill-current'>
+                      <div className='text-green-500 rounded-full fill-current'>
                         <svg
                           className='w-5 h-5 align-middle'
                           viewBox='0 0 24 24'
@@ -442,7 +442,7 @@ const Pricing = () => {
                       </span>
                     </li>
                     <li className='flex p-2'>
-                      <div className='text-red-500 rounded-full fill-current'>
+                      <div className='text-green-500 rounded-full fill-current'>
                         <svg
                           className='w-5 h-5 align-middle'
                           viewBox='0 0 24 24'
@@ -457,11 +457,11 @@ const Pricing = () => {
                         </svg>
                       </div>
                       <span className='ml-3 leading-6 text-gray-700 text-md'>
-                        Post your listing across our social media channels
+                        Share your job across our social media channels
                       </span>
                     </li>
                     <li className='flex p-2'>
-                      <div className='text-red-500 rounded-full fill-current'>
+                      <div className='text-green-500 rounded-full fill-current'>
                         <svg
                           className='w-5 h-5 align-middle'
                           viewBox='0 0 24 24'

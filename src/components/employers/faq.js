@@ -13,12 +13,9 @@ const FAQ = () => {
         </h2>
         <p className='px-6 mx-auto mt-2 text-lg text-center text-gray-400 max-w-prose'>
           This section is under construction behind the scenes. Please{' '}
-          <span
-            onClick={() => router.push('#subscribe')}
-            className='text-red-500 cursor-pointer'
-          >
-            subscribe
-          </span>{' '}
+          <Link href='#subscribe'>
+            <a className='text-red-500 cursor-pointer'>subscribe</a>
+          </Link>{' '}
           to be notified when we launch. If you have questions,{' '}
           <a
             className='text-red-500'

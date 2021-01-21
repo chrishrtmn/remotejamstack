@@ -18,10 +18,18 @@ const Job = (props) => {
         <h2 className='pb-10 text-4xl font-bold text-gray-800'>
           {data.jobTitle}
         </h2>
-        <p>Job ID: {id}</p>
+        <p>Job Employment Type: {data.jobEmploymentType}</p>
+        <p>Job Role Level: {data.jobRoleLevel}</p>
+        <p>Job Base Compensation: {data.jobBaseCompensation}</p>
         <p>Job Application Link: {data.jobApplicationLink}</p>
-        <p>Created At: {data.createdAt}</p>
+        <p>Posted At: {data.createdAt}</p>
+        <p>Job Description: {data.jobDescription}</p>
+        <p>Job Interview Process: {data.jobInterviewProcess}</p>
+        <p>Job Remote Type: {data.jobRemoteType}</p>
+        <hr className='pb-10 mt-10' />
+        <p>Job ID: {id}</p>
         <p>User ID: {data.uid}</p>
+        <p>Job Referral: {data.jobReferral}</p>
       </div>
     </div>
   )

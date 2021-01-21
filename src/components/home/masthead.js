@@ -7,7 +7,7 @@ const Masthead = () => {
   const router = useRouter()
   const auth = useAuth()
 
-  const href = auth.user ? '/create' : '/signup'
+  const href = auth.user ? '/jobs/create' : '/signup'
 
   return (
     <div className='relative overflow-hidden bg-white'>
@@ -45,12 +45,11 @@ const Masthead = () => {
                   </a>
                 </Link> */}
 
-                <span
-                  onClick={() => router.push('#subscribe')}
-                  className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md cursor-pointer lg:px-8 hover:bg-red-50 hover:border-red-300'
-                >
-                  Get Notified When We Launch
-                </span>
+                <Link href='#subscribe'>
+                  <a className='inline-block px-4 py-2 text-lg font-medium leading-tight text-red-500 bg-white border border-red-200 rounded-md cursor-pointer lg:px-8 hover:bg-red-50 hover:border-red-300'>
+                    Get Notified When We Launch
+                  </a>
+                </Link>
               </div>
             </div>
           </main>
