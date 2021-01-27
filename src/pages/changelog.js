@@ -21,9 +21,23 @@ const Changelog = () => {
             </Link>
           </div>
           <div className='bg-white border border-gray-200 rounded-md shadow-md'>
-            <p className='px-4 pt-6 pb-6 text-2xl font-bold text-gray-800 md:px-10 bg-blue-50'>
-              Stage: Pre-Alpha
-            </p>
+            <div className='px-4 pt-6 pb-6 md:px-10 bg-blue-50'>
+              <h3 className='text-2xl font-bold text-gray-800'>
+                Stage: Pre-Alpha
+              </h3>
+              <ul className='mt-4 ml-4 space-y-1 text-sm text-gray-700 list-disc'>
+                <li>
+                  All Basic jobs will be free during the Alpha launch, with the
+                  option to upgrade your Basic package or purchase the Featured
+                  package coming in Beta.
+                </li>
+                <li>
+                  Automatically posting your job to Google Jobs Network is still
+                  under development, and will be done manually by us for the
+                  time being.
+                </li>
+              </ul>
+            </div>
             <div className='px-4 md:px-10'>
               <div className='py-10 text-sm border-b border-gray-200'>
                 <p className='mb-0'>
