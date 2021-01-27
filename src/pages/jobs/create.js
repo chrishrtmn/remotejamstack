@@ -17,55 +17,55 @@ const CreateJob = () => {
 
   const onCreateJob = ({
     jobPosition,
-    jobExperienceLevel,
-    jobExperienceYears,
-    jobMinCompensation,
-    jobMaxCompensation,
-    jobDescription,
-    jobInterviewProcess,
-    jobApplicationLink,
+    jobType,
     jobRemoteType,
+    jobExperienceLevel,
     jobTimezonePreference,
     jobTravelRequirement,
     jobSponsorship,
+    jobDescription,
+    jobApplicationLink,
+    jobCandidateNotes,
+    jobInterviewProcess,
+    jobMinCompensation,
+    jobMaxCompensation,
     companyName,
-    companyTagLine,
+    companyTagline,
     companyDescription,
+    companyWebsite,
     companyLocation,
     companySize,
-    companyInvestmentStage,
-    companyWebsite,
-    companySocialLinks,
+    companyInvestmentState,
     siteReferral,
   }) => {
     const newJob = {
       uid: auth.user.uid,
       createdAt: new Date().toISOString(),
       jobPosition,
-      jobExperienceLevel,
-      jobExperienceYears,
-      jobMinCompensation,
-      jobMaxCompensation,
-      jobDescription,
-      jobInterviewProcess,
-      jobApplicationLink,
+      jobType,
       jobRemoteType,
+      jobExperienceLevel,
       jobTimezonePreference,
       jobTravelRequirement,
       jobSponsorship,
+      jobDescription,
+      jobApplicationLink,
+      jobCandidateNotes,
+      jobInterviewProcess,
+      jobMinCompensation,
+      jobMaxCompensation,
       companyName,
-      companyTagLine,
+      companyTagline,
       companyDescription,
+      companyWebsite,
       companyLocation,
       companySize,
-      companyInvestmentStage,
-      companyWebsite,
-      companySocialLinks,
+      companyInvestmentState,
       siteReferral,
     }
 
     createJob(newJob)
-    toast("You've successfully posted your job listing.")
+    toast("🎉⠀You've successfully posted your job.")
     mutate('/api/jobs', { jobs: [...data.jobs, newJob] })
     router.push('/dashboard')
   }
@@ -89,7 +89,7 @@ const CreateJob = () => {
                 Job Details
               </h3>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Position{' '}
                   <span className='text-base italic font-normal text-red-500'>
                     *
@@ -106,7 +106,7 @@ const CreateJob = () => {
                 />
               </div>
               <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Job Type{' '}
                   <span className='text-base italic font-normal text-red-500'>
                     *
@@ -114,7 +114,7 @@ const CreateJob = () => {
                 </h3>
                 <label className='sr-only'>Job Type</label>
                 <select
-                  name='jobJobType'
+                  name='jobType'
                   ref={register({ required: true })}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
@@ -128,7 +128,7 @@ const CreateJob = () => {
                 </select>
               </div>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Remote Type{' '}
                   <span className='text-base italic font-normal text-red-500'>
                     *
@@ -150,9 +150,7 @@ const CreateJob = () => {
                 </select>
               </div>
               <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
-                  Experience Level
-                </h3>
+                <h3 className='mb-2 font-bold sm:text-md'>Experience Level</h3>
                 <label className='sr-only'>Job Experience Level</label>
                 <select
                   name='jobExperienceLevel'
@@ -167,8 +165,8 @@ const CreateJob = () => {
                   <option value='Senior-Level'>Senior-Level</option>
                 </select>
               </div>
-              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+              <div className='px-4 pt-6 pb-8 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Timezone Preference
                 </h3>
                 <label className='sr-only'>Job Timezone Preference</label>
@@ -177,7 +175,7 @@ const CreateJob = () => {
                   ref={register()}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
-                  <option value='' selected>
+                  <option value='Any' selected>
                     Any
                   </option>
                   <option value='Americas'>Americas</option>
@@ -186,8 +184,61 @@ const CreateJob = () => {
                   <option value='Pacific'>Pacific</option>
                 </select>
               </div>
+              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>Travel Required?</h3>
+                <label className='sr-only'>Job Travel Requirement</label>
+                <select
+                  name='jobTravelRequirement'
+                  ref={register()}
+                  className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
+                >
+                  <option value='' selected>
+                    Select
+                  </option>
+                  <option value='Yes'>Yes</option>
+                  <option value='No'>No</option>
+                </select>
+              </div>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
+                  Visa Sponsorship Opportunities
+                </h3>
+                <label className='sr-only'>
+                  Job Visa Sponsorship Opportunities
+                </label>
+                <select
+                  name='jobSponsorship'
+                  ref={register()}
+                  className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
+                >
+                  <option value='' selected>
+                    Select
+                  </option>
+                  <option value='Yes'>Yes</option>
+                  <option value='No'>No</option>
+                </select>
+              </div>
+              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>Job Skills</h3>
+                <label className='sr-only'>Job Skills</label>
+                <input
+                  type='text'
+                  name='jobSkills'
+                  placeholder='e.g. HTML, CSS, React, Vue, Serverless'
+                  ref={register()}
+                  className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
+                />
+                <p className='mt-2 text-sm text-gray-500'>
+                  Enter skills separated by a comma.
+                </p>
+                <p className='p-3 mt-2 text-sm text-gray-700 border border-red-100 bg-red-50'>
+                  <span className='text-red-500'>Recommended: </span>
+                  Adding skills can help candidates filter their search results
+                  and help you get quality applicants.
+                </p>
+              </div>
+              <div className='px-4 pt-6 pb-8 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Description{' '}
                   <span className='text-base italic font-normal text-red-500'>
                     *
@@ -201,28 +252,12 @@ const CreateJob = () => {
                   ref={register({ required: true, min: 120 })}
                   className='block w-full h-32 min-h-0 px-3 py-2 -mb-4 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md cursor-text md:h-60 md:min-h-full'
                 />
-                <p className='mt-8 text-sm text-gray-500'>
+                <p className='mt-6 text-sm text-gray-500'>
                   You can always edit your description after posting your job.
                 </p>
               </div>
               <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
-                  Notes for Candidates
-                </h3>
-                <label className='sr-only'>Notes for Candidates</label>
-                <input
-                  type='text'
-                  name='jobCandidateNotes'
-                  placeholder='Minimum 20 characters'
-                  ref={register({ min: 20 })}
-                  className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
-                />
-                <p className='mt-4 text-sm text-gray-500'>
-                  Let your candidate know any notes ahead of applying.
-                </p>
-              </div>
-              <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Application Link{' '}
                   <span className='text-base italic font-normal text-red-500'>
                     *
@@ -236,32 +271,43 @@ const CreateJob = () => {
                   ref={register({ required: true })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
-                <p className='mt-4 text-sm text-gray-500'>
+                <p className='mt-2 text-sm text-gray-500'>
                   Enter a URL (http://) or email address (@) for candidates to
                   apply to this job. This link will be public.
                 </p>
               </div>
-              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
-                  Interview Process
+              <div className='px-4 pt-6 pb-8 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>
+                  Notes for Candidates
                 </h3>
+                <label className='sr-only'>Notes for Candidates</label>
+                <textarea
+                  name='jobCandidateNotes'
+                  placeholder='Minimum 20 characters'
+                  ref={register({ min: 20 })}
+                  className='block w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
+                />
+                <p className='mt-2 text-sm text-gray-500'>
+                  Let your candidate know any notes ahead of applying.
+                </p>
+              </div>
+              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>Interview Process</h3>
                 <label className='sr-only'>Interview Process</label>
                 <textarea
                   name='jobInterviewProcess'
-                  placeholder='Minimum 40 characters'
-                  ref={register({ min: 40 })}
+                  placeholder='Minimum 20 characters'
+                  ref={register({ min: 20 })}
                   className='block w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
-                <p className='mt-4 text-sm text-gray-500'>
+                <p className='mt-2 text-sm text-gray-500'>
                   Be transparent about your process to help attract quality
                   candidates. Include how many rounds there are and what happens
                   at each stage.
                 </p>
               </div>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
-                  Compensation
-                </h3>
+                <h3 className='mb-2 font-bold sm:text-md'>Compensation</h3>
                 <div className='sm:grid sm:grid-cols-2 sm:gap-5'>
                   <div className='w-full border border-gray-200 rounded-md shadow-md'>
                     <span className='inline-block px-4 text-gray-500'>$</span>
@@ -269,8 +315,8 @@ const CreateJob = () => {
                     <input
                       type='number'
                       placeholder='Min'
-                      name='jobMinCompensation,'
-                      ref={register}
+                      name='jobMinCompensation'
+                      ref={register()}
                       className='inline w-1/2 px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border-transparent'
                     />
                     <span className='inline-block px-4 italic text-gray-500 border-l border-gray-300'>
@@ -283,8 +329,8 @@ const CreateJob = () => {
                     <input
                       type='number'
                       placeholder='Max'
-                      name='jobMaxCompensation,'
-                      ref={register}
+                      name='jobMaxCompensation'
+                      ref={register()}
                       className='inline w-1/2 px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border-transparent'
                     />
                     <span className='inline-block px-4 italic text-gray-500 border-l border-gray-300'>
@@ -292,11 +338,11 @@ const CreateJob = () => {
                     </span>
                   </div>
                 </div>
-                <p className='my-4 text-sm text-gray-500'>
+                <p className='mt-2 text-sm text-gray-500'>
                   Posting the salary will increase your chances of receiving
                   relevant candidates.
                 </p>
-                <p className='p-3 text-sm text-gray-700 border border-red-100 bg-red-50'>
+                <p className='p-3 mt-2 text-sm text-gray-700 border border-red-100 bg-red-50'>
                   <span className='text-red-500'>Recommended: </span>
                   Google does not index jobs without salary data. If this job
                   isn't a salary position, please convert the rate to the
@@ -309,7 +355,7 @@ const CreateJob = () => {
                 Company Details
               </h3>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   Company Name{' '}
                   <span className='text-base italic font-normal text-red-500'>
                     *
@@ -319,39 +365,99 @@ const CreateJob = () => {
                 <input
                   type='text'
                   name='companyName'
-                  placeholder='e.g. Netlify'
+                  placeholder='e.g. ACME Corporation'
                   ref={register({ required: true })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
               </div>
               <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
-                  Company Tagline
-                </h3>
+                <h3 className='mb-2 font-bold sm:text-md'>Company Tagline</h3>
                 <label className='sr-only'>Company Tagline</label>
                 <input
                   type='text'
                   name='companyTagline'
                   placeholder='Maximum 40 characters'
-                  ref={register({ max: 40 })}
+                  ref={register({ min: 40 })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
               </div>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
-                  Company Description{' '}
-                  <span className='text-base italic font-normal text-red-500'>
-                    *
-                  </span>
+                <h3 className='mb-2 font-bold sm:text-md'>
+                  Company Description
                 </h3>
                 <label className='sr-only'>Company Description</label>
                 <textarea
                   name='companyDescription'
                   control={control}
                   placeholder='Minimum 120 characters'
-                  ref={register({ required: true, min: 120 })}
+                  ref={register({ min: 120 })}
                   className='block w-full h-32 min-h-0 px-3 py-2 -mb-4 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md cursor-text md:h-60 md:min-h-full'
                 />
+                {/* <p className='mt-6 text-sm text-gray-500'>
+                  This can be changed in your settings.
+                </p> */}
+              </div>
+              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>Company Location</h3>
+                <label className='sr-only'>Company Location</label>
+                <input
+                  type='text'
+                  name='companyLocation'
+                  placeholder='e.g. Cleveland, OH'
+                  ref={register()}
+                  className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
+                />
+              </div>
+              <div className='px-4 pt-6 pb-8 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>Company Website</h3>
+                <label className='sr-only'>Company Website</label>
+                <input
+                  type='url'
+                  name='companyWebsite'
+                  placeholder='http://'
+                  ref={register()}
+                  className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
+                />
+                <p className='mt-2 text-sm text-gray-500'>
+                  Enter a URL (http://). This link will be public.
+                </p>
+              </div>
+              <div className='px-4 pt-6 pb-8 bg-gray-100 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>Company Size</h3>
+                <label className='sr-only'>Company Size</label>
+                <select
+                  name='companySize'
+                  ref={register()}
+                  className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
+                >
+                  <option value='' selected>
+                    Select
+                  </option>
+                  <option value='Small (~500)'>Small (~500)</option>
+                  <option value='Medium (500+)'>Medium (500+)</option>
+                  <option value='Large (1000+)'>Large (1000+)</option>
+                </select>
+              </div>
+              <div className='px-4 pt-6 pb-8 md:px-10'>
+                <h3 className='mb-2 font-bold sm:text-md'>
+                  Company Investment Stage
+                </h3>
+                <label className='sr-only'>Company Investment Stage</label>
+                <select
+                  name='companyInvestmentStage'
+                  ref={register()}
+                  className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
+                >
+                  <option value='' selected>
+                    Select
+                  </option>
+                  <option value='Seed Stage'>Seed Stage</option>
+                  <option value='Series A'>Series A</option>
+                  <option value='Series B'>Series B</option>
+                  <option value='Growth'>Growth</option>
+                  <option value='IPO'>IPO</option>
+                  <option value='Acquired'>Acquired</option>
+                </select>
               </div>
             </div>
             <div className='mt-16 bg-white border border-gray-200 rounded-md shadow-md'>
@@ -359,13 +465,13 @@ const CreateJob = () => {
                 Review
               </h3>
               <div className='px-4 pt-6 pb-8 md:px-10'>
-                <h3 className='mb-2 font-bold text-md sm:text-lg'>
+                <h3 className='mb-2 font-bold sm:text-md'>
                   How did you hear about us?
                 </h3>
                 <label className='sr-only'>How did you hear about us?</label>
                 <select
                   name='siteReferral'
-                  ref={register}
+                  ref={register()}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected disabled>
@@ -409,20 +515,6 @@ const CreateJob = () => {
                   Automatically posting your job to Google Jobs Network is still
                   under development, and will be done manually by us for the
                   time being.
-                </li>
-                <li>
-                  <Link href='#subscribe'>
-                    <a className='text-red-500'>Subscribe</a>
-                  </Link>{' '}
-                  or check our{' '}
-                  <Link href='/roadmap'>
-                    <a className='text-red-500'>Roadmap</a>
-                  </Link>{' '}
-                  and{' '}
-                  <Link href='/changelog'>
-                    <a className='text-red-500'>Changelog</a>
-                  </Link>{' '}
-                  to stay up to date on the latest changes.
                 </li>
               </ul>
               <div className='px-4 pb-8 md:px-10'>

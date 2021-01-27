@@ -38,7 +38,7 @@ const App = ({ Component, pageProps }) => {
         closeButton={false}
         transition={Slide}
         position='bottom-center'
-        toastClassName='rounded-md shadow-md'
+        toastClassName='text-center rounded-md shadow-md'
       />
       <Header />
       <Component {...pageProps} />

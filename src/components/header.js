@@ -276,7 +276,7 @@ const Header = () => {
                       <div className='py-1'>
                         <button
                           onClick={(e) =>
-                            auth.signout() && userToast('You logged out.')
+                            auth.signout() && userToast('👋⠀You logged out.')
                           }
                           className='w-full px-5 py-2 text-sm text-left text-gray-800 hover:bg-gray-100'
                           role='menuitem'
@@ -291,9 +291,9 @@ const Header = () => {
                 <>
                   {/* <button
                     onClick={
-                      (e) => auth.signinWithGitHub() // && userToast('Welcome back!')
+                      (e) => auth.signinWithGitHub() //&& userToast('🥳⠀Welcome back!')
                     }
-                    className='inline-block px-4 pb-2 pt-1.5 ml-8 mr-4 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'
+                    className='inline-block px-4 pb-2 pt-1.5 ml-8 font-medium text-gray-800 border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300'
                   >
                     Github Login
                   </button> */}

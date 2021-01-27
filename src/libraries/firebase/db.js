@@ -18,6 +18,6 @@ export function createJob(data) {
 }
 
 // Create new company
-export function createCompany(data) {
-  return firestore.collection('companies').add(data)
-}
+// export function createCompany(data) {
+//   return firestore.collection('companies').add(data)
+// }

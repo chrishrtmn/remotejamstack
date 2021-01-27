@@ -56,19 +56,20 @@ const JobsTable = ({ jobs }) => {
           {jobs.map((job, index) => (
             <tr key={index} className='hover:bg-gray-100'>
               <td className='py-4 pl-6 whitespace-nowrap'>
-                <div className='w-10 h-10'>
+                {/* <div className='w-10 h-10'>
                   <img
                     className='w-10 h-10 rounded-md'
                     src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=60'
                     alt=''
                   />
-                </div>
+                </div> */}
+                <div className='w-10 h-10 border-2 border-gray-200 border-dashed rounded-full'></div>
               </td>
               <td className='py-4 pl-3 pr-6 whitespace-nowrap'>
                 <div>
                   <Link href={'/jobs/' + job.id}>
                     <a className='text-sm font-medium text-gray-900'>
-                      {job.jobTitle}
+                      {job.jobPosition}
                     </a>
                   </Link>
                   <div className='text-sm text-gray-500'>{job.uid}</div>
