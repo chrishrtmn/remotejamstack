@@ -78,7 +78,7 @@ const Footer = () => {
               Find and post remote jobs in the Jamstack ecosystem.
             </p>
           </div>
-          <div className='w-48 p-5'>
+          <div className='w-full p-5 sm:w-1/3 lg:w-48'>
             <div className='text-sm font-medium text-gray-400 uppercase'>
               Company
             </div>
@@ -106,7 +106,7 @@ const Footer = () => {
               Email
             </a>
           </div>
-          <div className='w-48 p-5'>
+          <div className='w-full p-5 sm:w-1/3 lg:w-48'>
             <div className='text-sm font-medium text-gray-400 uppercase'>
               Resources
             </div>
@@ -146,7 +146,7 @@ const Footer = () => {
               Sitemap
             </a>
           </div>
-          <div className='w-48 p-5'>
+          <div className='w-full p-5 sm:w-1/3 lg:w-48'>
             <div className='text-sm font-medium text-gray-400 uppercase'>
               Legal
             </div>
@@ -176,31 +176,34 @@ const Footer = () => {
         </div>
         <div className='pt-10 pb-16 border-t border-gray-200 md:flex md:justify-between'>
           <div className='text-sm text-gray-400'>
-            &copy; {dateYear} Remote Jamstack. All rights reserved. Made with{' '}
-            <svg
-              className='inline h-5 text-gray-400'
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth={2}
-                d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
-              />
-            </svg>{' '}
-            by{' '}
-            <a
-              href='https://chrishrtmn.com'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='border-b border-red-500 hover:text-red-500'
-            >
-              Chris Hartman
-            </a>
-            .
+            &copy; {dateYear} Remote Jamstack. All rights reserved.{' '}
+            <span className='block mt-2 sm:mt-0 sm:inline'>
+              Made with{' '}
+              <svg
+                className='inline h-5 text-gray-400'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+                stroke='currentColor'
+              >
+                <path
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth={2}
+                  d='M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z'
+                />
+              </svg>{' '}
+              by{' '}
+              <a
+                href='https://chrishrtmn.com'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='border-b border-red-500 hover:text-red-500'
+              >
+                Chris Hartman
+              </a>
+              .
+            </span>
           </div>
           <div className='flex justify-between mt-4 md:mt-0 w-28'>
             <a

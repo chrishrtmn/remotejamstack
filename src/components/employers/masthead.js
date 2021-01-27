@@ -29,7 +29,7 @@ const Masthead = () => {
                 Hire the right talent for your team
               </h1>
               <p className='max-w-xl pt-4 pb-8 mx-auto text-xl text-gray-500 lg:mx-0'>
-                Post remote jobs that caters to Jamstack technologies and
+                Post remote jobs that cater to Jamstack technologies and
                 discover the right candidate for your team.
               </p>
               <div>
@@ -45,9 +45,9 @@ const Masthead = () => {
                 </Link>
               </div>
               <div className='mt-6'>
-                <span className='inline-block mr-6 text-gray-500 '>
+                <span className='block text-gray-500 sm:inline-block'>
                   <svg
-                    className='inline w-5 h-5 mr-2 text-green-500'
+                    className='inline w-5 h-5 mr-1 text-green-500'
                     xmlns='http://www.w3.org/2000/svg'
                     fill='none'
                     viewBox='0 0 24 24'
@@ -62,9 +62,9 @@ const Masthead = () => {
                   </svg>
                   No credit card required
                 </span>
-                <span className='text-gray-500'>
+                {/* <span className='block mt-2 text-gray-500 sm:ml-6 sm:mt-0 sm:inline-block'>
                   <svg
-                    className='inline w-5 h-5 mr-2 text-green-500'
+                    className='inline w-5 h-5 mr-1 text-green-500'
                     xmlns='http://www.w3.org/2000/svg'
                     fill='none'
                     viewBox='0 0 24 24'
@@ -78,7 +78,7 @@ const Masthead = () => {
                     />
                   </svg>
                   First job post free
-                </span>
+                </span> */}
               </div>
             </div>
           </main>

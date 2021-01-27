@@ -39,14 +39,14 @@ const ContactForm = () => {
         type='email'
         name='email'
         placeholder='hello@email.com'
-        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 placeholder-gray-500 border border-gray-200 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
         required
       />
       <label className='sr-only'>Message</label>
       <textarea
         type='text'
         name='message'
-        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 placeholder-gray-500 border border-gray-200 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
+        className='w-full px-3 py-2 mb-5 text-lg text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md focus:outline-none focus:ring-2 focus:ring-red-300 focus:border-transparent'
         placeholder='Your message...'
         required
       />

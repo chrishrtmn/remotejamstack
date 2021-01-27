@@ -16,7 +16,7 @@ const Job = (props) => {
     <div className='px-5 pt-10 pb-20 sm:px-6 lg:px-8'>
       <div className='m-auto max-w-7xl '>
         <h2 className='pb-10 text-4xl font-bold text-gray-800'>
-          {data.jobTitle}
+          {data.jobPosition}
         </h2>
         <p>Job Employment Type: {data.jobEmploymentType}</p>
         <p>Job Role Level: {data.jobRoleLevel}</p>

@@ -9,7 +9,7 @@ const Newsletter = () => {
       className='px-4 py-10 text-center bg-gray-800 md:py-16 md:text-left lg:py-20 sm:px-6 lg:px-8'
     >
       <div className='items-center justify-between mx-auto rounded-md md:flex max-w-7xl'>
-        <div className='flex-1 sm:pr-10 lg:pr-20 lg:max-w-2xl'>
+        <div className='flex-1 md:pr-10 lg:pr-20 lg:max-w-2xl'>
           <h3 className='text-4xl font-bold text-white'>
             Sign up for our newsletter
           </h3>

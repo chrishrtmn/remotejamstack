@@ -17,14 +17,9 @@ const FAQ = () => {
             <a className='text-red-500 cursor-pointer'>subscribe</a>
           </Link>{' '}
           to be notified when we launch. If you have questions,{' '}
-          <a
-            className='text-red-500'
-            href='mailto:hello@remotejamstack.com?subject=What%20is%20the%20subject%3F&body=What%20would%20you%20like%20to%20say%3F'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            email
-          </a>{' '}
+          <Link href='/contact'>
+            <a className='text-red-500'>contact</a>
+          </Link>{' '}
           us and we'll get back to you.
         </p>
         <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
