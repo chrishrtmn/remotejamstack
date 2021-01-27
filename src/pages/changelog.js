@@ -97,6 +97,10 @@ const Changelog = () => {
                   Bug Fixes &amp; Improvements
                 </div>
                 <ul className='mt-2 space-y-2 list-disc ml-14'>
+                  <li>
+                    Updated Pricing section with cleaner design and Beta
+                    overlays.
+                  </li>
                   <li>Fixed the homepage masthead copy alignment issues.</li>
                   <li>
                     Fixed footer menus and copyright alignment on smaller
