@@ -150,9 +150,7 @@ const Roadmap = () => {
                   <li>Add better SEO metadata with NextSEO</li>
                   <li>Setup dynamic sitemaps</li>
                   <li>Design and build out an About page</li>
-                  <li>
-                    Update FAQ section popular questions with dropdown states
-                  </li>
+                  <li>Add home FAQ section for jobs with popular questions</li>
                   <li>
                     Style and adjust Employers CTA section after beta launch
                   </li>

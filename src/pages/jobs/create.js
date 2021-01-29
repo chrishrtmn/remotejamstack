@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 import { useAuth } from '../../libraries/firebase/auth'
