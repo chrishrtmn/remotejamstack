@@ -109,7 +109,7 @@ const Pricing = () => {
               </div>
               <div className='relative bg-white rounded-md shadow-md'>
                 <div className='absolute z-10 grid w-full h-full bg-white rounded-md bg-opacity-80'>
-                  <div className='px-4 py-1 text-base font-medium text-center text-red-400 uppercase border border-red-200 rounded-full bg-red-50 place-self-center'>
+                  <div className='absolute px-4 py-1 text-base font-medium text-center text-red-400 uppercase border border-red-200 rounded-full bg-red-50 place-self-center'>
                     Coming to Beta
                   </div>
                 </div>
@@ -169,7 +169,7 @@ const Pricing = () => {
             <div className='max-w-sm mx-auto my-8 bg-white rounded-md shadow-md-red'>
               <div className='relative text-gray-800'>
                 <div className='absolute z-10 grid w-full h-full bg-white rounded-md bg-opacity-80'>
-                  <div className='px-4 py-1 text-base font-medium text-center text-red-400 uppercase border border-red-200 rounded-full bg-red-50 place-self-center'>
+                  <div className='absolute px-4 py-1 text-base font-medium text-center text-red-400 uppercase border border-red-200 rounded-full bg-red-50 place-self-center'>
                     Coming to Beta
                   </div>
                 </div>
