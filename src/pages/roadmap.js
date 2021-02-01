@@ -93,7 +93,10 @@ const Roadmap = () => {
                     Design and style Job details page with all information
                     available
                   </li>
-                  <li>Fix User menu dropdown not closing when logged in</li>
+                  <li>Integrate more signup options for the Sign Up page</li>
+                  <li>Create and setup the Login page</li>
+                  <li>Plan out and setup Settings page</li>
+                  <li>Plan out and setup Profile page</li>
                 </ul>
               </div>
               {/* End In-Progess */}
@@ -117,11 +120,8 @@ const Roadmap = () => {
                   Up Next
                 </div>
                 <ul className='mt-2 space-y-2 list-disc ml-14'>
-                  <li>Integrate more signup options for the Sign Up page</li>
-                  <li>Create and setup the Login page</li>
-                  <li>Plan out and setup Settings page</li>
-                  <li>Plan out and setup Profile page</li>
                   <li>Stripe integration for purchasing jobs with upgrades</li>
+                  <li>Add rich-text editing for Description fields</li>
                 </ul>
               </div>
               {/* End Up Next */}
@@ -145,7 +145,7 @@ const Roadmap = () => {
                   Planned
                 </div>
                 <ul className='mt-2 space-y-2 list-disc ml-14'>
-                  <li>Add rich-text editing with Draft.js</li>
+                  <li>Fix User menu dropdown not closing when logged in</li>
                   <li>Convert Job ID routes into SEO-friendly slug urls</li>
                   <li>Add better SEO metadata with NextSEO</li>
                   <li>Setup dynamic sitemaps</li>
@@ -155,10 +155,7 @@ const Roadmap = () => {
                     Style and adjust Employers CTA section after beta launch
                   </li>
                   <li>Add "Why Us?" feature section on Employers page</li>
-                  <li>
-                    Setup Blog with either MDX or pull down API from a Headless
-                    CMS
-                  </li>
+                  <li>Setup Blog</li>
                   <li>Create a Privacy Policy and setup page</li>
                   <li>Create Terms and Conditions and setup page</li>
                   <li>
