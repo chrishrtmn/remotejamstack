@@ -26,7 +26,7 @@ const StacksCloud = () => {
           {pageIsVisible && (
             <>
               <Ticker speed={2}>
-                {() => (
+                {({ index }) => (
                   <>
                     <span className='mx-4 text-gray-300 md:mx-6 lg:mx-10 whitespace-nowrap'>
                       React.js
