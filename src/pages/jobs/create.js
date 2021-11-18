@@ -100,7 +100,7 @@ const CreateJob = () => {
                   type='text'
                   name='jobPosition'
                   placeholder='e.g. Front-End Developer'
-                  ref={register({ required: true })}
+                  {...register('jobPosition', { required: true })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
               </div>
@@ -114,7 +114,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Job Type</label>
                 <select
                   name='jobType'
-                  ref={register({ required: true })}
+                  {...register('jobType', { required: true })}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected disabled>
@@ -136,7 +136,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Job Remote Type</label>
                 <select
                   name='jobRemoteType'
-                  ref={register({ required: true })}
+                  {...register('jobRemoteType', { required: true })}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected>
@@ -153,7 +153,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Job Experience Level</label>
                 <select
                   name='jobExperienceLevel'
-                  ref={register()}
+                  {...register('jobExperienceLevel')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected disabled>
@@ -171,7 +171,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Job Timezone Preference</label>
                 <select
                   name='jobTimezonePreference'
-                  ref={register()}
+                  {...register('jobTimezonePreference')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='Any' selected>
@@ -188,7 +188,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Job Travel Requirement</label>
                 <select
                   name='jobTravelRequirement'
-                  ref={register()}
+                  {...register('jobTravelRequirement')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected>
@@ -207,7 +207,7 @@ const CreateJob = () => {
                 </label>
                 <select
                   name='jobSponsorship'
-                  ref={register()}
+                  {...register('jobSponsorship')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected>
@@ -224,7 +224,7 @@ const CreateJob = () => {
                   type='text'
                   name='jobSkills'
                   placeholder='e.g. HTML, CSS, React, Vue, Serverless'
-                  ref={register()}
+                  {...register('jobSkills')}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
                 <p className='mt-2 text-sm text-gray-500'>
@@ -248,7 +248,7 @@ const CreateJob = () => {
                   name='jobDescription'
                   control={control}
                   placeholder='Minimum 120 characters'
-                  ref={register({ required: true, min: 120 })}
+                  {...register('jobDescription', { required: true, min: 120 })}
                   className='block w-full h-32 min-h-0 px-3 py-2 -mb-4 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md cursor-text md:h-60 md:min-h-full'
                 />
                 <p className='mt-6 text-sm text-gray-500'>
@@ -267,7 +267,7 @@ const CreateJob = () => {
                   type='text'
                   name='jobApplicationLink'
                   placeholder='URL or email'
-                  ref={register({ required: true })}
+                  {...register('jobApplicationLink', { required: true })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
                 <p className='mt-2 text-sm text-gray-500'>
@@ -283,7 +283,7 @@ const CreateJob = () => {
                 <textarea
                   name='jobCandidateNotes'
                   placeholder='Minimum 20 characters'
-                  ref={register({ min: 20 })}
+                  {...register('jobCandidateNotes', { min: 20 })}
                   className='block w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
                 <p className='mt-2 text-sm text-gray-500'>
@@ -296,7 +296,7 @@ const CreateJob = () => {
                 <textarea
                   name='jobInterviewProcess'
                   placeholder='Minimum 20 characters'
-                  ref={register({ min: 20 })}
+                  {...register('jobInterviewProcess', { min: 20 })}
                   className='block w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
                 <p className='mt-2 text-sm text-gray-500'>
@@ -315,7 +315,7 @@ const CreateJob = () => {
                       type='number'
                       placeholder='Min'
                       name='jobMinCompensation'
-                      ref={register()}
+                      {...register('jobMinCompensation')}
                       className='inline w-1/2 px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border-transparent'
                     />
                     <span className='inline-block px-4 italic text-gray-500 border-l border-gray-300'>
@@ -329,7 +329,7 @@ const CreateJob = () => {
                       type='number'
                       placeholder='Max'
                       name='jobMaxCompensation'
-                      ref={register()}
+                      {...register('jobMaxCompensation')}
                       className='inline w-1/2 px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border-transparent'
                     />
                     <span className='inline-block px-4 italic text-gray-500 border-l border-gray-300'>
@@ -345,7 +345,7 @@ const CreateJob = () => {
                   <span className='text-red-500'>Recommended: </span>
                   Google does not index jobs without salary data. If this job
                   isn't a salary position, please convert the rate to the
-                  closest annual figure.
+                  closest USD annual figure.
                 </p>
               </div>
             </div>
@@ -365,7 +365,7 @@ const CreateJob = () => {
                   type='text'
                   name='companyName'
                   placeholder='e.g. ACME Corporation'
-                  ref={register({ required: true })}
+                  {...register('companyName', { required: true })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
               </div>
@@ -376,7 +376,7 @@ const CreateJob = () => {
                   type='text'
                   name='companyTagline'
                   placeholder='Maximum 40 characters'
-                  ref={register({ min: 40 })}
+                  {...register('companyTagline', { min: 40 })}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
               </div>
@@ -389,7 +389,7 @@ const CreateJob = () => {
                   name='companyDescription'
                   control={control}
                   placeholder='Minimum 120 characters'
-                  ref={register({ min: 120 })}
+                  {...register('companyDescription', { min: 120 })}
                   className='block w-full h-32 min-h-0 px-3 py-2 -mb-4 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md cursor-text md:h-60 md:min-h-full'
                 />
                 {/* <p className='mt-6 text-sm text-gray-500'>
@@ -403,7 +403,7 @@ const CreateJob = () => {
                   type='text'
                   name='companyLocation'
                   placeholder='e.g. Cleveland, OH'
-                  ref={register()}
+                  {...register('companyLocation')}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
               </div>
@@ -414,7 +414,7 @@ const CreateJob = () => {
                   type='url'
                   name='companyWebsite'
                   placeholder='http://'
-                  ref={register()}
+                  {...register('companyWebsite')}
                   className='w-full px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                 />
                 <p className='mt-2 text-sm text-gray-500'>
@@ -426,7 +426,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Company Size</label>
                 <select
                   name='companySize'
-                  ref={register()}
+                  {...register('companySize')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected>
@@ -444,7 +444,7 @@ const CreateJob = () => {
                 <label className='sr-only'>Company Investment Stage</label>
                 <select
                   name='companyInvestmentStage'
-                  ref={register()}
+                  {...register('companyInvestmentStage')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected>
@@ -470,7 +470,7 @@ const CreateJob = () => {
                 <label className='sr-only'>How did you hear about us?</label>
                 <select
                   name='siteReferral'
-                  ref={register()}
+                  {...register('siteReferral')}
                   className='block w-full px-3 py-2 text-gray-800 border border-gray-200 rounded-md shadow-md appearance-none sm:w-1/2'
                 >
                   <option value='' selected disabled>
@@ -494,7 +494,7 @@ const CreateJob = () => {
                       type='text'
                       name='siteReferralOther'
                       placeholder='URL'
-                      ref={register()}
+                      {...register('siteReferralOther)}
                       className='block w-1/4 px-3 py-2 text-gray-800 placeholder-gray-500 placeholder-opacity-50 border border-gray-200 rounded-md shadow-md'
                     />
                   </div> */}
@@ -508,7 +508,7 @@ const CreateJob = () => {
                 </li>
                 <li>
                   The option to upgrade your Basic job and to purchase Featured
-                  jobs will come in the Beta stage (upcoming).
+                  jobs will come during the Beta period.
                 </li>
                 <li>
                   Automatically posting your job to Google Jobs Network is still

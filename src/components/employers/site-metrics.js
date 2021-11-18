@@ -82,7 +82,7 @@ const SiteMetrics = () => {
               </svg>
             </div>
           </div>
-          <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
+          {/* <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
             <div className='mb-2 text-lg font-medium text-gray-400'>
               New User Visits
             </div>
@@ -101,13 +101,13 @@ const SiteMetrics = () => {
                 />
               </svg>
             </div>
-          </div>
-          {/* <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
+          </div> */}
+          <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
             <div className='mb-2 text-lg font-medium text-gray-400'>
               All-Time Views
             </div>
             <div className='text-4xl font-bold text-gray-200'>
-              ###
+              985
               <svg
                 className='inline-block w-5 h-5'
                 xmlns='http://www.w3.org/2000/svg'
@@ -121,7 +121,7 @@ const SiteMetrics = () => {
                 />
               </svg>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
