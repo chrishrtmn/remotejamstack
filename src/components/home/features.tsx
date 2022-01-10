@@ -5,7 +5,7 @@ const Features = () => {
       better performance.
       <div className='flex'>
         <div>JavaScript &amp; Markup</div>
-        <div>Headless CMS & APIs</div>
+        <div>Headless CMS &amp; APIs</div>
         <div>Deployment &amp; Serverless Platforms</div>
       </div>
     </div>
