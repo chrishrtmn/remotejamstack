@@ -7,7 +7,7 @@ import FAQ from '../components/employers/faq'
 import Pricing from '../components/employers/pricing'
 import SiteMetrics from '../components/employers/site-metrics'
 
-const Employers = () => {
+const EmployersPage = () => {
   return (
     <>
       <Head>
@@ -25,4 +25,4 @@ const Employers = () => {
   )
 }
 
-export default Employers
+export default EmployersPage

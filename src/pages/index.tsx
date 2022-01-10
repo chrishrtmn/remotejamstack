@@ -5,7 +5,7 @@ import Features from '../components/home/features'
 import StacksCloud from '../components/home/stacks-cloud'
 import Testimonials from '../components/home/testimonials'
 
-const Home = () => {
+const IndexPage = () => {
   return (
     <>
       <Head>
@@ -21,4 +21,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default IndexPage

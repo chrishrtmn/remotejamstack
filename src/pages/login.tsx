@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useAuth } from '../libraries/firebase/auth'
 
-const Signup = () => {
+const LoginPage = () => {
   const router = useRouter()
   const { user } = useAuth()
 
@@ -11,14 +11,14 @@ const Signup = () => {
     return (
       <>
         <Head>
-          <title>Signup - Remote Jamstack</title>
+          <title>Login - Remote Jamstack</title>
         </Head>
 
         <div className='px-4 py-10 md:py-16 lg:py-20 sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-7xl'>
             <div className='flex justify-between pb-10'>
               <h2 className='text-3xl font-bold text-gray-800 lg:text-4xl'>
-                Signup
+                Login
               </h2>
               <div className='inline-block px-4 py-2 font-medium text-gray-400 border border-gray-200 rounded-md place-self-center'>
                 Coming Soon
@@ -42,12 +42,12 @@ const Signup = () => {
   return (
     <>
       <Head>
-        <title>Signup - Remote Jamstack</title>
+        <title>Login - Remote Jamstack</title>
       </Head>
 
-      <div>Signup page</div>
+      <div>Login page</div>
     </>
   )
 }
 
-export default Signup
+export default LoginPage

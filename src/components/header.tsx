@@ -14,6 +14,15 @@ const Header = () => {
     })
   }
 
+  function MyLink(props) {
+    let { href, children, ...rest } = props
+    return (
+      <Link href={href}>
+        <a {...rest}>{children}</a>
+      </Link>
+    )
+  }
+
   return (
     <>
       <HeaderBanner />
@@ -120,69 +129,80 @@ const Header = () => {
                           leaveFrom='transform opacity-100 scale-100'
                           leaveTo='transform opacity-0 scale-95'
                         >
-                          <Menu.Items
-                            static
-                            className='absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-md outline-none'
-                          >
+                          <Menu.Items className='absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-200 rounded-md shadow-md outline-none'>
                             <div className='py-1'>
                               <Menu.Item>
                                 {({ active }) => (
-                                  <Link href='/jobs'>
-                                    <a
+                                  <MyLink
+                                    href='/'
+                                    className={`${
+                                      active
+                                        ? 'text-red-500 bg-red-50'
+                                        : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                  >
+                                    Home
+                                  </MyLink>
+                                )}
+                              </Menu.Item>
+                              {auth.user && (
+                                <Menu.Item>
+                                  {({ active }) => (
+                                    <MyLink
+                                      href='/jobs'
                                       className={`${
                                         active
-                                          ? 'bg-gray-100 text-gray-900'
+                                          ? 'text-red-500 bg-red-50'
                                           : 'text-gray-700'
                                       } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
                                     >
                                       Browse Jobs
-                                    </a>
-                                  </Link>
+                                    </MyLink>
+                                  )}
+                                </Menu.Item>
+                              )}
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <MyLink
+                                    href='/employers'
+                                    className={`${
+                                      active
+                                        ? 'text-red-500 bg-red-50'
+                                        : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                  >
+                                    Employers &amp; Recruiters
+                                  </MyLink>
+                                )}
+                              </Menu.Item>
+                            </div>
+                            <div className='py-1'>
+                              <Menu.Item>
+                                {({ active }) => (
+                                  <MyLink
+                                    href='/login'
+                                    className={`${
+                                      active
+                                        ? 'text-red-500 bg-red-50'
+                                        : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                  >
+                                    Login
+                                  </MyLink>
                                 )}
                               </Menu.Item>
                               <Menu.Item>
                                 {({ active }) => (
-                                  <Link href='/employers'>
-                                    <a
-                                      className={`${
-                                        active
-                                          ? 'bg-gray-100 text-gray-900'
-                                          : 'text-gray-700'
-                                      } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                                    >
-                                      Employers &amp; Recruiters
-                                    </a>
-                                  </Link>
-                                )}
-                              </Menu.Item>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <Link href='/login'>
-                                    <a
-                                      className={`${
-                                        active
-                                          ? 'bg-gray-100 text-gray-900'
-                                          : 'text-gray-700'
-                                      } border-t border-gray-100 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                                    >
-                                      Login
-                                    </a>
-                                  </Link>
-                                )}
-                              </Menu.Item>
-                              <Menu.Item>
-                                {({ active }) => (
-                                  <Link href='/signup'>
-                                    <a
-                                      className={`${
-                                        active
-                                          ? 'bg-gray-100 text-gray-900'
-                                          : 'text-gray-700'
-                                      } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
-                                    >
-                                      Signup
-                                    </a>
-                                  </Link>
+                                  <MyLink
+                                    href='/signup'
+                                    className={`${
+                                      active
+                                        ? 'text-red-500 bg-red-50'
+                                        : 'text-gray-700'
+                                    } flex justify-between w-full px-4 py-2 text-sm leading-5 text-left`}
+                                  >
+                                    Signup
+                                  </MyLink>
                                 )}
                               </Menu.Item>
                             </div>
@@ -195,11 +215,17 @@ const Header = () => {
               </div>
             </div>
             <div className='hidden header_nav:flex'>
-              <ActiveLink activeClassName='text-red-500' href='/jobs'>
-                <a className='pt-2.5 font-medium text-gray-800 text-md hover:text-red-500'>
+              {auth.user ? (
+                <ActiveLink activeClassName='text-red-500' href='/jobs'>
+                  <a className='pt-2.5 font-medium text-gray-800 text-md hover:text-red-500'>
+                    Browse Jobs
+                  </a>
+                </ActiveLink>
+              ) : (
+                <span className='pt-2.5 font-medium text-gray-300 text-md cursor-not-allowed'>
                   Browse Jobs
-                </a>
-              </ActiveLink>
+                </span>
+              )}
               {/* <Link href='/about'>
                 <a className='pt-2.5 ml-8 font-medium text-gray-800 text-md hover:text-red-500'>
                   About
@@ -238,35 +264,33 @@ const Header = () => {
                     >
                       <div className='py-1'>
                         <ActiveLink
-                          activeClassName='text-red-500 bg-red-50 hover:bg-red-50'
+                          activeClassName='text-red-500 bg-red-50'
                           href='/dashboard'
                         >
                           <a
-                            className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
+                            className='block px-5 py-2 text-sm hover:bg-red-50 hover:text-red-500'
                             role='menuitem'
                           >
                             Dashboard
                           </a>
                         </ActiveLink>
-                      </div>
-                      <div className='py-1'>
                         <ActiveLink
-                          activeClassName='text-red-500 bg-red-50 hover:bg-red-50'
+                          activeClassName='text-red-500 bg-red-50'
                           href='/profile'
                         >
                           <a
-                            className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
+                            className='block px-5 py-2 text-sm hover:bg-red-50 hover:text-red-500'
                             role='menuitem'
                           >
                             Profile
                           </a>
                         </ActiveLink>
                         <ActiveLink
-                          activeClassName='text-red-500 bg-red-50 hover:bg-red-50'
+                          activeClassName='text-red-500 bg-red-50'
                           href='/settings'
                         >
                           <a
-                            className='block px-5 py-2 text-sm text-gray-800 hover:bg-gray-100'
+                            className='block px-5 py-2 text-sm hover:bg-red-50 hover:text-red-500'
                             role='menuitem'
                           >
                             Settings
@@ -278,7 +302,7 @@ const Header = () => {
                           onClick={(e) =>
                             auth.signout() && userToast('👋⠀You logged out.')
                           }
-                          className='w-full px-5 py-2 text-sm text-left text-gray-800 hover:bg-gray-100'
+                          className='w-full px-5 py-2 text-sm text-left hover:bg-red-50 hover:text-red-500'
                           role='menuitem'
                         >
                           Logout

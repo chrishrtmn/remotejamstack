@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Settings = () => {
+const SettingsPage = () => {
   return (
     <>
       <Head>
@@ -12,4 +12,4 @@ const Settings = () => {
   )
 }
 
-export default Settings
+export default SettingsPage

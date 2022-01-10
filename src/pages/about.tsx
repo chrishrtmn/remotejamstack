@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Newsletter from '../components/newsletter'
 
-const About = () => {
+const AboutPage = () => {
   return (
     <>
       <Head>
@@ -29,4 +29,4 @@ const About = () => {
   )
 }
 
-export default About
+export default AboutPage

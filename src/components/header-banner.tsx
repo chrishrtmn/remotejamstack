@@ -54,14 +54,14 @@ const HeaderBanner = () => {
             </p> */}
             <p className='ml-3 font-medium text-white truncate'>
               <span className='hidden sm:inline md:hidden'>
-                Welcome! We are under active development.
+                Welcome! We are under development.
               </span>
               <span className='hidden md:inline lg:hidden'>
-                Welcome! We are under active development. See our Roadmap.
+                Welcome! We are under development. See our Roadmap.
               </span>
               <span className='hidden lg:inline'>
-                Welcome! We are under active development. Please see our Roadmap
-                for upcoming changes.
+                Welcome! We are under development. Please see our Roadmap for
+                upcoming changes.
               </span>
             </p>
           </div>

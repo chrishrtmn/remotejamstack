@@ -4,7 +4,7 @@ import useSWR from 'swr'
 import { useAuth } from '../../libraries/firebase/auth'
 import StandardTable from '../../components/jobs/standard-table'
 
-const Jobs = () => {
+const JobsPage = () => {
   const { user } = useAuth()
   const fetcher = (url) => fetch(url).then((res) => res.json())
   const { data } = useSWR('/api/jobs', fetcher)
@@ -346,4 +346,4 @@ const Jobs = () => {
   )
 }
 
-export default Jobs
+export default JobsPage

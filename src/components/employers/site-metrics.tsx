@@ -20,11 +20,11 @@ const SiteMetrics = () => {
           </p>
           <div className='w-24 h-1 mx-auto mt-4 bg-red-500 rounded'></div>
         </div>
-        <div className='grid gap-5 md:gap-10 md:grid-cols-3'>
+        <div className='grid justify-center gap-5 md:gap-10 md:grid-cols-3'>
           {/* <Link href='/jobs'> */}
-          <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
+          <div className='min-w-[240px] px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
             <div className='mb-2 text-lg font-medium text-gray-400'>
-              Total Jobs Available
+              Jobs Available
             </div>
             <div className='text-4xl font-bold text-gray-200'>
               {data?.jobs.length ? data?.jobs.length : 'TBD'}
@@ -45,69 +45,52 @@ const SiteMetrics = () => {
           {/* </Link> */}
           <div
             onClick={() => router.push('#subscribe')}
-            className='px-6 py-4 text-gray-400 transition-all bg-gray-700 rounded-md shadow-md cursor-pointer hover:bg-gray-600 group'
+            className='min-w-[240px] px-6 py-4 text-gray-400 transition-all bg-gray-700 rounded-md shadow-md cursor-pointer hover:bg-gray-600 group'
           >
-            <div className='flex justify-between mb-2 text-lg font-medium text-gray-400'>
-              <div className='group-hover:text-white'>
-                Total Email Subscribers
-              </div>
-              <svg
-                className='w-8 h-8 group-hover:text-white'
-                xmlns='http://www.w3.org/2000/svg'
-                fill='none'
-                viewBox='0 0 24 24'
-                stroke='currentColor'
-              >
-                <path
-                  strokeLinecap='round'
-                  strokeLinejoin='round'
-                  strokeWidth={2}
-                  d='M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z'
-                />
-              </svg>
+            <div className='mb-2 text-lg font-medium text-gray-400 group-hover:text-white'>
+              Email Subscribers
             </div>
-            <div className='text-4xl font-bold text-gray-200 group-hover:text-white'>
-              24
-              <svg
-                className='inline-block w-5 h-5'
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 20 20'
-                fill='currentColor'
-              >
-                <path
-                  fillRule='evenodd'
-                  d='M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z'
-                  clipRule='evenodd'
-                />
-              </svg>
+            <div>
+              <div className='flex justify-between'>
+                <div className='text-4xl font-bold text-gray-200 group-hover:text-white'>
+                  26
+                  <svg
+                    className='inline-block w-5 h-5'
+                    xmlns='http://www.w3.org/2000/svg'
+                    viewBox='0 0 20 20'
+                    fill='currentColor'
+                  >
+                    <path
+                      fillRule='evenodd'
+                      d='M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z'
+                      clipRule='evenodd'
+                    />
+                  </svg>
+                </div>
+                <svg
+                  className='w-8 h-8 mt-1 ml-6 group-hover:text-white'
+                  xmlns='http://www.w3.org/2000/svg'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={2}
+                    d='M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z'
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-          {/* <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
-            <div className='mb-2 text-lg font-medium text-gray-400'>
-              New User Visits
-            </div>
-            <div className='text-4xl font-bold text-gray-200'>
-              318
-              <svg
-                className='inline-block w-5 h-5'
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 20 20'
-                fill='currentColor'
-              >
-                <path
-                  fillRule='evenodd'
-                  d='M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z'
-                  clipRule='evenodd'
-                />
-              </svg>
-            </div>
-          </div> */}
-          <div className='px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
+          <div className='min-w-[240px] px-6 py-4 text-gray-400 bg-gray-700 rounded-md shadow-md'>
             <div className='mb-2 text-lg font-medium text-gray-400'>
               All-Time Views
             </div>
             <div className='text-4xl font-bold text-gray-200'>
-              985
+              {/* 985 Google Analytics + Plausible*/}
+              1,061
               <svg
                 className='inline-block w-5 h-5'
                 xmlns='http://www.w3.org/2000/svg'

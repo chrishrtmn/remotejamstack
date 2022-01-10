@@ -3,7 +3,7 @@ import useSWR from 'swr'
 
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-const Job = (props) => {
+const JobPage = (props) => {
   const router = useRouter()
   const { id } = router.query
   const { data } = useSWR(`/api/jobs/${id}`, fetcher)
@@ -35,4 +35,4 @@ const Job = (props) => {
   )
 }
 
-export default Job
+export default JobPage

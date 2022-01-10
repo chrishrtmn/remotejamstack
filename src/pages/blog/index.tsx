@@ -1,5 +1,5 @@
-const Blog = () => {
+const BlogPage = () => {
   return 'Blog - How I bootstrapped Remote Jamstack'
 }
 
-export default Blog
+export default BlogPage

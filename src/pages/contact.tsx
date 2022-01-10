@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import ContactForm from '../components/contact/contact-form'
 
-const Contact = () => {
+const ContactPage = () => {
   return (
     <>
       <Head>
@@ -26,4 +26,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactPage

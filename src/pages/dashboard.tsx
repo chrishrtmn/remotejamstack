@@ -7,7 +7,7 @@ import JobsTable from '../components/dashboard/jobs-table'
 import JobsSkeleton from '../components/dashboard/jobs-skeleton'
 import JobsEmpty from '../components/dashboard/jobs-empty'
 
-const Dashboard = () => {
+const DashboardPage = () => {
   const auth = useAuth()
   const fetcher = (url) => fetch(url).then((res) => res.json())
   const { data } = useSWR('/api/jobs', fetcher)
@@ -63,4 +63,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default DashboardPage

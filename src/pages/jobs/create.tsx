@@ -6,7 +6,7 @@ import { createJob } from '../../libraries/firebase/db'
 import useSWR, { mutate } from 'swr'
 import { toast } from 'react-toastify'
 
-const CreateJob = () => {
+const CreateJobPage = () => {
   const router = useRouter()
   const auth = useAuth()
   const fetcher = (url) => fetch(url).then((res) => res.json())
@@ -532,4 +532,4 @@ const CreateJob = () => {
   )
 }
 
-export default CreateJob
+export default CreateJobPage

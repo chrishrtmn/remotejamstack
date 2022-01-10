@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const EditProfile = () => {
+const EditProfilePage = () => {
   return (
     <>
       <Head>
@@ -12,4 +12,4 @@ const EditProfile = () => {
   )
 }
 
-export default EditProfile
+export default EditProfilePage

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-const Profile = () => {
+const ProfilePage = () => {
   return (
     <>
       <Head>
@@ -12,4 +12,4 @@ const Profile = () => {
   )
 }
 
-export default Profile
+export default ProfilePage

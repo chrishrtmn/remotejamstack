@@ -1,4 +1,4 @@
-import dynamic from 'next/dynamic'
+import type { AppProps } from 'next/app'
 import { AuthProvider } from '../libraries/firebase/auth'
 import PlausibleProvider from 'next-plausible'
 import { ToastContainer, Slide } from 'react-toastify'
@@ -8,15 +8,14 @@ import Newsletter from '../components/newsletter'
 import Footer from '../components/footer'
 import '../styles/global.css'
 
-const CrispWithNoSSR = dynamic(() => import('../libraries/crisp'), {
-  ssr: false,
-})
-
-const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <PlausibleProvider domain='remotejamstack.com'>
+    <PlausibleProvider
+      domain='remotejamstack.com'
+      trackOutboundLinks={true}
+      exclude='/profile**, jobs**'
+    >
       <AuthProvider>
-        <CrispWithNoSSR />
         <ToastContainer
           hideProgressBar
           newestOnTop
@@ -33,5 +32,17 @@ const App = ({ Component, pageProps }) => {
     </PlausibleProvider>
   )
 }
+
+// Only uncomment this method if you have blocking data requirements for
+// every single page in your application. This disables the ability to
+// perform automatic static optimization, causing every page in your app to
+// be server-side rendered.
+//
+// MyApp.getInitialProps = async (appContext: AppContext) => {
+//   // calls page's `getInitialProps` and fills `appProps.pageProps`
+//   const appProps = await App.getInitialProps(appContext);
+
+//   return { ...appProps }
+// }
 
 export default App

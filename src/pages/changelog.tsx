@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-const Changelog = () => {
+const ChangelogPage = () => {
   return (
     <>
       <Head>
@@ -21,7 +21,7 @@ const Changelog = () => {
             </Link>
           </div>
           <div className='bg-white border border-gray-200 rounded-md shadow-md'>
-            <div className='px-4 pt-6 pb-6 md:px-10 bg-blue-50'>
+            {/* <div className='px-4 pt-6 pb-6 md:px-10 bg-blue-50'>
               <h3 className='text-2xl font-bold text-gray-800'>
                 Stage: Pre-Alpha
               </h3>
@@ -37,14 +37,22 @@ const Changelog = () => {
                   time being.
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div className='px-4 md:px-10'>
               <div className='py-10 text-sm border-b border-gray-200'>
                 <p className='mb-0'>
-                  Remote Jamstack is under active development and has been
-                  regularly pushing out updates. We strive to be transparent on
-                  what we do and publish all new features &amp; improvements
-                  we've done to this public changelog.
+                  Remote Jamstack is under development. We strive to be
+                  transparent on what we do and publish all new features &amp;
+                  improvements we've done to this public changelog. Follow us on{' '}
+                  <a
+                    href='https://twitter.com/remotejamstack'
+                    target='_blank'
+                    rel='noopener'
+                    className='border-b border-red-500 hover:text-red-500'
+                  >
+                    Twitter
+                  </a>{' '}
+                  to see more updates.
                 </p>
               </div>
               {/* Changelog Event */}
@@ -75,6 +83,97 @@ const Changelog = () => {
                 </li>
               </ul>
             </div> */}
+              {/* Changelog Event End */}
+              {/* Changelog Event */}
+              <div className='py-10 border-b border-gray-200'>
+                <div className='text-lg text-gray-400'>January 9, 2022</div>
+                <div className='mt-4 text-xl font-bold'>
+                  <svg
+                    className='inline-block w-6 mr-2 -mt-1 text-red-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z'
+                    />
+                  </svg>{' '}
+                  Internal Updates
+                </div>
+                <ul className='mt-2 space-y-2 list-disc ml-14'>
+                  <li>Removed Crisp live chat.</li>
+                  <li>Removed Hotjar analytics tracking.</li>
+                </ul>
+                <div className='mt-4 text-xl font-bold'>
+                  <svg
+                    className='inline-block w-6 mr-2 -mt-1 text-red-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
+                    />
+                  </svg>{' '}
+                  Bug Fixes &amp; Improvements
+                </div>
+                <ul className='mt-2 space-y-2 list-disc ml-14'>
+                  <li>
+                    Fixed bug with mobile menu not closing properly after
+                    clicking through a link.
+                  </li>
+                  <li>
+                    Removed multiple inactive links to undeveloped pages from
+                    footer menu.
+                  </li>
+                  <li>
+                    Fixed viewpoint sizing bug with Newsletter form submit
+                    button.
+                  </li>
+                </ul>
+              </div>
+              {/* Changelog Event End */}
+              {/* Changelog Event */}
+              <div className='py-10 border-b border-gray-200'>
+                <div className='text-lg text-gray-400'>November 16, 2021</div>
+                <div className='mt-4 text-xl font-bold'>
+                  <svg
+                    className='inline-block w-6 mr-2 -mt-1 text-red-500'
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      strokeWidth={2}
+                      d='M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z'
+                    />
+                  </svg>{' '}
+                  Internal Updates
+                </div>
+                <ul className='mt-2 space-y-2 list-disc ml-14'>
+                  <li>
+                    <span className='block font-bold'>Plausible Analytics</span>
+                    We swapped out Google Analytics in place of{' '}
+                    <a className='text-red-500' href='https://plausible.io/'>
+                      Plausible
+                    </a>{' '}
+                    Analytics, a privacy-focused alternative analytics platform
+                    that doesn't collect personal data or personally
+                    identifiable information (PII) from our users.
+                  </li>
+                </ul>
+              </div>
               {/* Changelog Event End */}
               {/* Changelog Event */}
               <div className='py-10 border-b border-gray-200'>
@@ -330,7 +429,7 @@ const Changelog = () => {
                       d='M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z'
                     />
                   </svg>{' '}
-                  Internal Features
+                  Internal Updates
                 </div>
                 <ul className='mt-2 space-y-2 list-disc ml-14'>
                   {/* <li>
@@ -427,4 +526,4 @@ const Changelog = () => {
   )
 }
 
-export default Changelog
+export default ChangelogPage
