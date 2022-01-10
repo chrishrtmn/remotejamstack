@@ -11,7 +11,7 @@ const EmployersPage = () => {
   return (
     <>
       <Head>
-        <title>Employers & Recruiters - Remote Jamstack</title>
+        <title>Employers &amp; Recruiters - Remote Jamstack</title>
       </Head>
 
       <Masthead />
