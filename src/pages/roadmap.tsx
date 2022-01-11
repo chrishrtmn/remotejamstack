@@ -17,19 +17,19 @@ const RoadmapPage = () => {
             <h2 className='text-3xl font-bold text-gray-800 lg:text-4xl'>
               Roadmap
             </h2>
-            {/* <Link href='/contact'>
-              <a className='inline-block px-4 py-2 font-medium text-red-500 border border-red-200 rounded-md hover:border-red-300 hover:bg-red-50 place-self-center'>
+            <Link href='/contact'>
+              <a className='inline-block px-4 py-2 mt-2 font-medium text-red-500 border border-red-200 rounded-md sm:mt-0 hover:border-red-300 hover:bg-red-50 place-self-center'>
                 Submit a Request
               </a>
-            </Link> */}
-            <a
+            </Link>
+            {/* <a
               href='mailto:hello@remotejamstack.com?subject=Request%20submission&body=What%20is%20your%20request%3F'
               target='_blank'
               rel='noopener'
               className='inline-block px-4 py-2 mt-2 font-medium text-red-500 border border-red-200 rounded-md sm:mt-0 hover:border-red-300 hover:bg-red-50 place-self-center'
             >
               Submit a Request
-            </a>
+            </a> */}
           </div>
           <div className='bg-white border border-gray-200 rounded-md shadow-md'>
             {/* <div className='px-4 pt-6 pb-6 md:px-10 bg-blue-50'>
