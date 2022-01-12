@@ -27,7 +27,7 @@ const Header = () => {
     <>
       <HeaderBanner />
 
-      <header className='relative top-0 z-20 px-5 bg-white shadow-md sm:px-6 lg:px-8 lg:sticky'>
+      <header className='relative top-0 z-30 px-5 bg-white shadow-md sm:px-6 lg:px-8 lg:sticky'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex justify-between py-3'>
             <Link href='/'>
