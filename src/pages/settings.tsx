@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const SettingsPage = () => {
   return (
@@ -9,7 +9,7 @@ const SettingsPage = () => {
 
       <div>Settings page</div>
     </>
-  )
-}
+  );
+};
 
-export default SettingsPage
+export default SettingsPage;

@@ -1,13 +1,12 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import useSWR from 'swr'
-import { useAuth } from '../../libraries/firebase/auth'
-import StandardTable from '../../components/jobs/standard-table'
+import Head from "next/head";
+import useSWR from "swr";
+import StandardTable from "../../components/jobs/standard-table";
+import { useAuth } from "../../libraries/firebase/auth";
 
 const JobsPage = () => {
-  const { user } = useAuth()
-  const fetcher = (url) => fetch(url).then((res) => res.json())
-  const { data } = useSWR('/api/jobs', fetcher)
+  const { user } = useAuth();
+  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const { data } = useSWR("/api/jobs", fetcher);
 
   if (!user) {
     return (
@@ -16,32 +15,32 @@ const JobsPage = () => {
           <title>Browse Jobs - Remote Jamstack</title>
         </Head>
 
-        <div className='px-4 py-10 md:py-16 lg:py-20 sm:px-6 lg:px-8'>
-          <div className='mx-auto max-w-7xl'>
-            <div className='flex justify-between pb-10'>
-              <h2 className='text-3xl font-bold text-gray-800 lg:text-4xl'>
+        <div className="px-4 py-10 md:py-16 lg:py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl">
+            <div className="flex justify-between pb-10">
+              <h2 className="text-3xl font-bold text-gray-800 lg:text-4xl">
                 Jobs
               </h2>
-              <div className='inline-block px-4 py-2 font-medium text-gray-400 border border-gray-200 rounded-md place-self-center'>
+              <div className="inline-block px-4 py-2 font-medium text-gray-400 border border-gray-200 rounded-md place-self-center">
                 Coming Soon
               </div>
             </div>
-            <div className='p-6 bg-white rounded-md shadow-md'>
-              <div className='p-10 font-medium text-center'>
-                We are still under construction behind the scenes. Please{' '}
+            <div className="p-6 bg-white rounded-md shadow-md">
+              <div className="p-10 font-medium text-center">
+                We are still under construction behind the scenes. Please{" "}
                 <span
-                  onClick={() => router.push('#subscribe')}
-                  className='text-red-500 cursor-pointer'
+                  onClick={() => router.push("#subscribe")}
+                  className="text-red-500 cursor-pointer"
                 >
                   subscribe
-                </span>{' '}
+                </span>{" "}
                 to be notified when we launch.
               </div>
             </div>
           </div>
         </div>
       </>
-    )
+    );
   }
 
   return (
@@ -50,16 +49,16 @@ const JobsPage = () => {
         <title>Browse Jobs - Remote Jamstack</title>
       </Head>
 
-      <div className='px-4 pt-10 pb-20 sm:px-6 lg:px-8'>
-        <div className='mx-auto max-w-7xl'>
-          <div className='flex justify-between pb-10'>
-            <h2 className='text-4xl font-bold text-gray-800'>Jobs</h2>
+      <div className="px-4 pt-10 pb-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex justify-between pb-10">
+            <h2 className="text-4xl font-bold text-gray-800">Jobs</h2>
             {/* <div className='text-gray-500 place-self-center'>
               Search | Filter
             </div> */}
           </div>
-          <div className='border-2 border-gray-200 border-dashed rounded-md'>
-            <div className='p-5 text-sm text-center text-gray-400'>
+          <div className="border-2 border-gray-200 border-dashed rounded-md">
+            <div className="p-5 text-sm text-center text-gray-400">
               Featured Jobs are under development. Check back soon!
             </div>
           </div>
@@ -230,20 +229,20 @@ const JobsPage = () => {
               </div>
             </div>
           </div> */}
-          <div className='flex justify-between mt-20 mb-5'>
-            <h2 className='inline-block text-3xl font-medium text-gray-800'>
+          <div className="flex justify-between mt-20 mb-5">
+            <h2 className="inline-block text-3xl font-medium text-gray-800">
               Results
             </h2>
-            <div className='text-gray-500 place-self-center text-md font-regular'>
-              Showing{' '}
-              <span className='font-medium text-gray-800'>
+            <div className="text-gray-500 place-self-center text-md font-regular">
+              Showing{" "}
+              <span className="font-medium text-gray-800">
                 {data?.jobs.length}
-              </span>{' '}
+              </span>{" "}
               results
             </div>
           </div>
-          <div className='flex flex-col'>
-            <div className='-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8'>
+          <div className="flex flex-col">
+            <div className="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
               <StandardTable jobs={data?.jobs} />
               {/* Plus Jobs with Avatar and Red Background/Borders
               <tr className='bg-red-50'>
@@ -343,7 +342,7 @@ const JobsPage = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default JobsPage
+export default JobsPage;

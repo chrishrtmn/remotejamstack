@@ -1,48 +1,48 @@
-import Link from 'next/link'
-import { formatDistanceToNowStrict, parseISO } from 'date-fns'
-import StandardEmpty from './standard-empty'
+import { formatDistanceToNowStrict, parseISO } from "date-fns";
+import Link from "next/link";
+import StandardEmpty from "./standard-empty";
 
 const StandardTable = ({ jobs }) => {
   return (
-    <div className='inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8'>
-      <div className='overflow-hidden border-b border-gray-200 shadow-md sm:rounded-md'>
+    <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
+      <div className="overflow-hidden border-b border-gray-200 shadow-md sm:rounded-md">
         {jobs?.length ? (
-          <table className='min-w-full divide-y divide-gray-200'>
-            <thead className='bg-gray-50'>
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-50">
               <tr>
-                <th scope='col' className='sr-only'>
+                <th scope="col" className="sr-only">
                   Logo
                 </th>
                 <th
-                  scope='col'
-                  className='py-3 pl-3 pr-6 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
+                  scope="col"
+                  className="py-3 pl-3 pr-6 text-xs font-medium tracking-wider text-left text-gray-500 uppercase"
                 >
                   Title &amp; User ID
                 </th>
                 <th
-                  scope='col'
-                  className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
+                  scope="col"
+                  className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase"
                 >
                   Posted Date
                 </th>
                 <th
-                  scope='col'
-                  className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
+                  scope="col"
+                  className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase"
                 >
                   Application Link
                 </th>
                 <th
-                  scope='col'
-                  className='px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase'
+                  scope="col"
+                  className="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase"
                 >
                   Job ID
                 </th>
               </tr>
             </thead>
-            <tbody className='bg-white divide-y divide-gray-200'>
+            <tbody className="bg-white divide-y divide-gray-200">
               {jobs.map((job, index) => (
-                <tr key={index} className='hover:bg-gray-100'>
-                  <td className='py-4 pl-6 whitespace-nowrap'>
+                <tr key={index} className="hover:bg-gray-100">
+                  <td className="py-4 pl-6 whitespace-nowrap">
                     {/* <div className='w-10 h-10'>
                       <img
                         className='w-10 h-10 rounded-md'
@@ -50,30 +50,30 @@ const StandardTable = ({ jobs }) => {
                         alt=''
                       />
                     </div> */}
-                    <div className='w-10 h-10 border-2 border-gray-200 border-dashed rounded-full'></div>
+                    <div className="w-10 h-10 border-2 border-gray-200 border-dashed rounded-full"></div>
                   </td>
-                  <td className='py-4 pl-3 pr-6 whitespace-nowrap'>
+                  <td className="py-4 pl-3 pr-6 whitespace-nowrap">
                     <div>
-                      <Link href={'/jobs/' + job.id}>
-                        <a className='text-sm font-medium text-gray-900'>
+                      <Link href={"/jobs/" + job.id}>
+                        <a className="text-sm font-medium text-gray-900">
                           {job.jobPosition}
                         </a>
                       </Link>
-                      <div className='text-sm text-gray-500'>{job.uid}</div>
+                      <div className="text-sm text-gray-500">{job.uid}</div>
                     </div>
                   </td>
-                  <td className='px-6 py-4 whitespace-nowrap'>
-                    <div className='text-sm text-gray-500'>
-                      Posted{' '}
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <div className="text-sm text-gray-500">
+                      Posted{" "}
                       {formatDistanceToNowStrict(parseISO(job.createdAt))} ago
                     </div>
                   </td>
-                  <td className='px-6 py-4 whitespace-nowrap'>
-                    <span className='inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md'>
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-md">
                       {job.jobApplicationLink}
                     </span>
                   </td>
-                  <td className='px-6 py-4 text-sm text-gray-500 whitespace-nowrap'>
+                  <td className="px-6 py-4 text-sm text-gray-500 whitespace-nowrap">
                     {job.id}
                   </td>
                 </tr>
@@ -85,7 +85,7 @@ const StandardTable = ({ jobs }) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StandardTable
+export default StandardTable;

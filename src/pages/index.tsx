@@ -1,9 +1,7 @@
-import Head from 'next/head'
-import Masthead from '../components/home/masthead'
-import LatestBlogPosts from '../components/home/latest-blog-posts'
-import Features from '../components/home/features'
-import StacksCloud from '../components/home/stacks-cloud'
-import Testimonials from '../components/home/testimonials'
+import Head from "next/head";
+import Masthead from "../components/home/masthead";
+import StacksCloud from "../components/home/stacks-cloud";
+import Testimonials from "../components/home/testimonials";
 
 const IndexPage = () => {
   return (
@@ -18,7 +16,7 @@ const IndexPage = () => {
       <Testimonials />
       {/* <LatestBlogPosts /> */}
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

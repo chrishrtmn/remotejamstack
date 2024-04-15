@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const TermsConditionsPage = () => {
   return (
@@ -9,7 +9,7 @@ const TermsConditionsPage = () => {
 
       <div>Terms and Conditions page</div>
     </>
-  )
-}
+  );
+};
 
-export default TermsConditionsPage
+export default TermsConditionsPage;

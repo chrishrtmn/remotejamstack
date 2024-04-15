@@ -1,5 +1,5 @@
 const LatestBlogPosts = () => {
-  return 'Latest Blog Posts'
-}
+  return "Latest Blog Posts";
+};
 
-export default LatestBlogPosts
+export default LatestBlogPosts;

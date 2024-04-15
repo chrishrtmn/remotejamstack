@@ -1,5 +1,5 @@
 const BlogPage = () => {
-  return 'Blog - How I bootstrapped Remote Jamstack'
-}
+  return "Blog - How I bootstrapped Remote Jamstack";
+};
 
-export default BlogPage
+export default BlogPage;

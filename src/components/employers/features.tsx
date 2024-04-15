@@ -1,5 +1,5 @@
 const Features = () => {
-  return 'Features'
-}
+  return "Features";
+};
 
-export default Features
+export default Features;

@@ -1,15 +1,15 @@
-import db from '../../libraries/firebase/firebase-admin'
+import db from "../../libraries/firebase/firebase-admin";
 
 export default async (req, res) => {
   const snapshot = await db
-    .collection('jobs')
-    .orderBy('createdAt', 'desc')
-    .get()
-  let jobs = []
+    .collection("jobs")
+    .orderBy("createdAt", "desc")
+    .get();
+  let jobs = [];
 
   snapshot.forEach((doc) => {
-    jobs.push({ id: doc.id, ...doc.data() })
-  })
+    jobs.push({ id: doc.id, ...doc.data() });
+  });
 
-  res.status(200).json({ jobs })
-}
+  res.status(200).json({ jobs });
+};

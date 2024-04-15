@@ -1,17 +1,16 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import useSWR, { mutate } from 'swr'
-import { useAuth } from '../libraries/firebase/auth'
-import Shell from '../components/dashboard/shell'
-import JobsTable from '../components/dashboard/jobs-table'
-import JobsSkeleton from '../components/dashboard/jobs-skeleton'
-import JobsEmpty from '../components/dashboard/jobs-empty'
+import Head from "next/head";
+import useSWR, { mutate } from "swr";
+import JobsEmpty from "../components/dashboard/jobs-empty";
+import JobsSkeleton from "../components/dashboard/jobs-skeleton";
+import JobsTable from "../components/dashboard/jobs-table";
+import Shell from "../components/dashboard/shell";
+import { useAuth } from "../libraries/firebase/auth";
 
 const DashboardPage = () => {
-  const auth = useAuth()
-  const fetcher = (url) => fetch(url).then((res) => res.json())
-  const { data } = useSWR('/api/jobs', fetcher)
-  mutate('/api/jobs')
+  const auth = useAuth();
+  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const { data } = useSWR("/api/jobs", fetcher);
+  mutate("/api/jobs");
 
   // console.log('Dashboard: ', data)
 
@@ -26,7 +25,7 @@ const DashboardPage = () => {
           <JobsSkeleton />
         </Shell>
       </>
-    )
+    );
   }
 
   // if (!auth.user) {
@@ -60,7 +59,7 @@ const DashboardPage = () => {
         {data.jobs.length ? <JobsTable jobs={data.jobs} /> : <JobsEmpty />}
       </Shell>
     </>
-  )
-}
+  );
+};
 
-export default DashboardPage
+export default DashboardPage;

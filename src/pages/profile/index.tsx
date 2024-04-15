@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const ProfilePage = () => {
   return (
@@ -9,7 +9,7 @@ const ProfilePage = () => {
 
       <div>Profile</div>
     </>
-  )
-}
+  );
+};
 
-export default ProfilePage
+export default ProfilePage;

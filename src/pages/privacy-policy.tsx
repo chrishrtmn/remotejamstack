@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 const PrivacyPolicyPage = () => {
   return (
@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
 
       <div>Privacy Policy page</div>
     </>
-  )
-}
+  );
+};
 
-export default PrivacyPolicyPage
+export default PrivacyPolicyPage;

@@ -1,47 +1,47 @@
-import React, { useState, useEffect, useContext, createContext } from 'react'
-import Router from 'next/router'
+import Router from "next/router";
+import { createContext, useContext, useEffect, useState } from "react";
 // import cookie from 'js-cookie';
-import firebase from './firebase'
-import { createUser } from './db'
+import { createUser } from "./db";
+import firebase from "./firebase";
 
-const authContext = createContext()
+const authContext = createContext();
 
 export function AuthProvider({ children }) {
-  const auth = useProvideAuth()
-  return <authContext.Provider value={auth}>{children}</authContext.Provider>
+  const auth = useProvideAuth();
+  return <authContext.Provider value={auth}>{children}</authContext.Provider>;
 }
 
 export const useAuth = () => {
-  return useContext(authContext)
-}
+  return useContext(authContext);
+};
 
 function useProvideAuth() {
-  const [user, setUser] = useState(null)
+  const [user, setUser] = useState(null);
   // const [loading, setLoading] = useState(true);
 
   const handleUser = async (rawUser) => {
     if (rawUser) {
-      const user = await formatUser(rawUser)
+      const user = await formatUser(rawUser);
       // const { token, ...userWithoutToken } = user;
 
       // createUser(user.uid, userWithoutToken);
-      createUser(user.uid, user)
-      setUser(user)
+      createUser(user.uid, user);
+      setUser(user);
 
       // cookie.set('fast-feedback-auth', true, {
       //   expires: 1
       // });
 
       // setLoading(false);
-      return user
+      return user;
     } else {
-      setUser(false)
+      setUser(false);
       // cookie.remove('fast-feedback-auth');
 
       // setLoading(false);
-      return false
+      return false;
     }
-  }
+  };
 
   // const signinWithEmail = (email, password) => {
   //   setLoading(true);
@@ -61,29 +61,29 @@ function useProvideAuth() {
       .auth()
       .signInWithPopup(new firebase.auth.GithubAuthProvider())
       .then((response) => {
-        handleUser(response.user)
+        handleUser(response.user);
 
         // if (redirect) {
         //   Router.push(redirect);
         // }
-      })
-  }
+      });
+  };
 
   const signout = () => {
-    Router.push('/')
+    Router.push("/");
 
     return firebase
       .auth()
       .signOut()
-      .then(() => handleUser(false))
-  }
+      .then(() => handleUser(false));
+  };
 
   useEffect(() => {
     // const unsubscribe = firebase.auth().onIdTokenChanged(handleUser);
-    const unsubscribe = firebase.auth().onAuthStateChanged(handleUser)
+    const unsubscribe = firebase.auth().onAuthStateChanged(handleUser);
 
-    return () => unsubscribe()
-  }, [])
+    return () => unsubscribe();
+  }, []);
 
   return {
     user,
@@ -91,7 +91,7 @@ function useProvideAuth() {
     // signinWithEmail,
     signinWithGitHub,
     signout,
-  }
+  };
 }
 
 // const getStripeRole = async () => {
@@ -110,5 +110,5 @@ const formatUser = async (user) => {
     provider: user.providerData[0].providerId,
     photoUrl: user.photoURL,
     // stripeRole: await getStripeRole()
-  }
-}
+  };
+};

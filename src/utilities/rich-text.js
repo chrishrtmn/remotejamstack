@@ -1,5 +1,5 @@
-import { Controller } from 'react-hook-form'
-import { Editor } from 'draft-js'
+import { Editor } from "draft-js";
+import { Controller } from "react-hook-form";
 
 const RichText = ({ name, control, placeholder }) => {
   return (
@@ -14,10 +14,10 @@ const RichText = ({ name, control, placeholder }) => {
             ref={ref}
             placeholder={placeholder}
           />
-        )
+        );
       }}
     />
-  )
-}
+  );
+};
 
-export default RichText
+export default RichText;
